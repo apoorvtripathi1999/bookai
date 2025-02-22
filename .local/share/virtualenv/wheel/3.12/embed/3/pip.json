@@ -1,0 +1,19 @@
+{
+  "completed": "2025-02-03T22:11:40.713220Z",
+  "periodic": true,
+  "started": "2025-02-03T22:11:35.610044Z",
+  "versions": [
+    {
+      "filename": "pip-25.0-py3-none-any.whl",
+      "found_date": "2025-02-03T22:11:35.828820Z",
+      "release_date": "2025-01-26T12:40:39.000000Z",
+      "source": "periodic"
+    },
+    {
+      "filename": "pip-24.3.1-py3-none-any.whl",
+      "found_date": "2025-02-03T22:11:38.507353Z",
+      "release_date": "2024-10-27T18:35:53.000000Z",
+      "source": "periodic"
+    }
+  ]
+}

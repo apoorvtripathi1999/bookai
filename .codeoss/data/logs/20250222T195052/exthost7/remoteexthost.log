@@ -1,0 +1,29 @@
+2025-02-22 20:59:54.657 [info] Extension host with pid 9566 started
+2025-02-22 20:59:54.657 [error] Error: EEXIST: file already exists, open '/home/apoorvtripathi537/.codeoss/data/User/workspaceStorage/11d61ec4/vscode.lock'
+2025-02-22 20:59:54.666 [info] Lock '/home/apoorvtripathi537/.codeoss/data/User/workspaceStorage/11d61ec4/vscode.lock': Could not acquire lock, checking if the file is stale.
+2025-02-22 20:59:54.675 [info] Lock '/home/apoorvtripathi537/.codeoss/data/User/workspaceStorage/11d61ec4/vscode.lock': The lock does not look stale, elapsed: 292 ms, giving up.
+2025-02-22 20:59:54.707 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2025-02-22 20:59:54.708 [info] ExtensionService#_doActivateExtension ms-python.python, startup: false, activationEvent: 'onLanguage:python'
+2025-02-22 20:59:55.043 [info] Lock '/home/apoorvtripathi537/.codeoss/data/User/workspaceStorage/11d61ec4-1/vscode.lock': Lock acquired.
+2025-02-22 20:59:55.129 [error] Error: spawn /google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python-env-tools/bin/pet ENOENT
+	at ChildProcess._handle.onexit (node:internal/child_process:286:19)
+	at onErrorNT (node:internal/child_process:484:16)
+	at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+2025-02-22 20:59:55.220 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+2025-02-22 20:59:55.282 [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+2025-02-22 20:59:55.282 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2025-02-22 20:59:55.499 [info] ExtensionService#_doActivateExtension redhat.fabric8-analytics, startup: true, activationEvent: 'workspaceContains:**/package.json,**/pom.xml,**/go.mod,**/requirements.txt,**/build.gradle,**/Dockerfile,**/Containerfile'
+2025-02-22 20:59:55.786 [info] Eager extensions activated
+2025-02-22 20:59:55.786 [info] ExtensionService#_doActivateExtension EditorConfig.EditorConfig, startup: false, activationEvent: 'onStartupFinished'
+2025-02-22 20:59:55.787 [info] ExtensionService#_doActivateExtension google.cloud-shell, startup: false, activationEvent: 'onStartupFinished'
+2025-02-22 20:59:55.787 [info] ExtensionService#_doActivateExtension google.geminicodeassist, startup: false, activationEvent: 'onStartupFinished', root cause: googlecloudtools.cloudcode
+2025-02-22 20:59:55.787 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2025-02-22 20:59:55.788 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2025-02-22 20:59:57.363 [info] ExtensionService#_doActivateExtension googlecloudtools.cloudcode, startup: false, activationEvent: 'onStartupFinished'
+2025-02-22 20:59:59.459 [info] ExtensionService#_doActivateExtension vscode.configuration-editing, startup: false, activationEvent: 'onLanguage:jsonc'
+2025-02-22 20:59:59.459 [info] ExtensionService#_doActivateExtension vscode.json-language-features, startup: false, activationEvent: 'onLanguage:jsonc'
+2025-02-22 20:59:59.459 [info] ExtensionService#_doActivateExtension vscode.typescript-language-features, startup: false, activationEvent: 'onLanguage:jsonc'
+2025-02-22 21:01:33.257 [info] ExtensionService#_doActivateExtension vscode.media-preview, startup: false, activationEvent: 'onCustomEditor:vscode.audioPreview'
+2025-02-22 21:15:05.913 [info] Extension host terminating: renderer disconnected for too long (2)
+2025-02-22 21:15:05.915 [info] Lock '/home/apoorvtripathi537/.codeoss/data/User/workspaceStorage/11d61ec4-1/vscode.lock': Marking the lockfile as scheduled to be released in 6000 ms.
+2025-02-22 21:15:05.979 [info] Extension host with pid 9566 exiting with code 0

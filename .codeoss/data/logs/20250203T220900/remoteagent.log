@@ -1,0 +1,19 @@
+2025-02-03 22:09:00.260 [info] 
+
+
+
+
+2025-02-03 22:09:00.277 [info] Extension host agent started.
+2025-02-03 22:09:00.298 [info] Started initializing default profile extensions in extensions installation folder. file:///home/apoorvtripathi537/.codeoss/extensions
+2025-02-03 22:09:00.324 [info] Completed initializing default profile extensions in extensions installation folder. file:///home/apoorvtripathi537/.codeoss/extensions
+2025-02-03 22:09:02.128 [info] [127.0.0.1][cd466aff][ExtensionHostConnection] New connection established.
+2025-02-03 22:09:02.130 [info] [127.0.0.1][fb8f3779][ManagementConnection] New connection established.
+2025-02-03 22:09:04.124 [info] [127.0.0.1][cd466aff][ExtensionHostConnection] <1249> Launched Extension Host Process.
+2025-02-03 22:31:21.953 [info] [127.0.0.1][fb8f3779][ManagementConnection] The client has disconnected, will wait for reconnection 3h before disposing...
+2025-02-03 22:36:20.795 [info] [127.0.0.1][fb8f3779][ManagementConnection] Another client has connected, will shorten the wait for reconnection 5m before disposing...
+2025-02-03 22:36:20.796 [info] [127.0.0.1][cd466aff][ExtensionHostConnection] The client has reconnected.
+2025-02-03 22:36:20.900 [info] [127.0.0.1][fb8f3779][ManagementConnection] The client has reconnected.
+2025-02-03 22:40:08.882 [info] [127.0.0.1][fb8f3779][ManagementConnection] The client has disconnected, will wait for reconnection 3h before disposing...
+2025-02-03 22:42:36.866 [info] [127.0.0.1][fb8f3779][ManagementConnection] Another client has connected, will shorten the wait for reconnection 5m before disposing...
+2025-02-03 22:42:36.866 [info] [127.0.0.1][fb8f3779][ManagementConnection] The client has reconnected.
+2025-02-03 22:42:36.991 [info] [127.0.0.1][cd466aff][ExtensionHostConnection] The client has reconnected.

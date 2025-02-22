@@ -1,0 +1,1113 @@
+I0222 21:10:23.700919   11887 serve.go:43] cloudcode_cli (Jan 21 2025 17:43:36 -0800, cl:718125841 baseline:716751907)
+I0222 21:10:23.700975   11887 serve.go:44] Command line: ["/home/apoorvtripathi537/.cache/cloud-code/cloudcode_cli/cloudcode_cli/linux_amd64/cloudcode_cli" "duet" "-logtostderr"]
+I0222 21:10:23.703308   11887 life_cycle.go:166] Initializing. Architecture: "amd64", Operating system: "linux"
+I0222 21:10:23.829296   11887 configuration.go:182] product updateChannel will be used
+W0222 21:10:23.829435   11887 configuration.go:792] ignoring configuration value "ragl.topKTestFilesToInclude" with type float64, need int
+W0222 21:10:23.829459   11887 configuration.go:792] ignoring configuration value "ragl.topKDocFilesToInclude" with type float64, need int
+I0222 21:10:23.829475   11887 configuration.go:642] language thresholds: map[]
+I0222 21:10:23.829490   11887 configuration.go:600] dataFileExtensions array: [.csv .tsv .jsonl]
+I0222 21:10:23.829508   11887 configuration.go:845] atlas codeCompletion llm options: {MaxTokens:64 Temp:0.2 Samples:4 EnablePrompt:<nil> PromptOverride: PostProcess:0xc00148b3e1 StopSequences:map[] DataFilePromptLines:0}
+I0222 21:10:23.829548   11887 configuration.go:845] atlas codeGeneration llm options: {MaxTokens:512 Temp:0.2 Samples:4 EnablePrompt:<nil> PromptOverride: PostProcess:0xc00148b3f1 StopSequences:map[*:[[eod] [EOF] [pre] [suf] [mid]]] DataFilePromptLines:5}
+I0222 21:10:23.829725   11887 configuration.go:270] Configured settings for atlasOpts: {"Project":"","LogPrompt":true,"UseTypeoverCache":true,"EnablePromptEnhancement":false,"EnablePromptEnhancementForTransform":false,"EnablePromptEnhancementForChat":false,"EnableAdminCitationBlock":false,"Complete":{"MaxTokens":64,"Temp":0.2,"Samples":4,"EnablePrompt":null,"PromptOverride":"","PostProcess":true,"StopSequences":null,"DataFilePromptLines":0},"Generate":{"MaxTokens":512,"Temp":0.2,"Samples":4,"EnablePrompt":null,"PromptOverride":"","PostProcess":true,"StopSequences":{"*":["[eod]","[EOF]","[pre]","[suf]","[mid]"]},"DataFilePromptLines":5},"DataFileExtensions":[".csv",".tsv",".jsonl"]}
+I0222 21:10:23.829782   11887 configuration.go:278] Configured settings for cloudCodeOpts: {"Project":"","LogPrompt":true,"UseTypeoverCache":true,"EnablePromptEnhancement":false,"EnablePromptEnhancementForTransform":false,"EnablePromptEnhancementForChat":false,"EnableAdminCitationBlock":false}
+I0222 21:10:23.829794   11887 configuration.go:282] Configured settings for opts: &{trace:false atlasAddr:cloudaicompanion.googleapis.com:443 cloudCodeAddr:cloudcode-pa.googleapis.com:443 cloudCodeQuotaProject: autoGen:false invokeGen:true codeCacheMaxEntries:1024 completionOpts:{debounce:300000000 throttle:100000000 minScoreThreshold:-6 languageThresholds:map[] enableThresholds:true commentCompletion:false citationLengthThreshold:-1 enableRecitations:true citationLogFilePath: repeatedStringFilterThreshold:60 otherFilesGenerationLimit:20 otherFilesGenerationSizeLimit:-1 otherFilesCompletionLimit:0 multiQueryTailNSForCompletion:[] multiQueryTailNSForGeneration:[]} contextExclusionFile:.aiexclude chatOpts:{contextOrdering:fsu maxFileBytes:75000 maxHistoryBytes:500000 escapeContext:false otherFilesLimit:20 otherFilesSizeLimit:-1 userSelectedFilesSizeLimit:-1} useRest:<nil> useCloudCodeAPI:true enableNotebooks:false enableRAGL:false enableRAGLCompletion:false enableRAGLChat:false ragLRerankByLangBoost:0 raglCoLocated:20 raglTotalFiles:250 raglFileLimit:524288 raglIncludeDocFiles:false raglIncludeUnitTestFile:false raglMaxFileSearchDepth:1 substringsToIdentifyTestPrompts:[test] substringsToIdentifyDocPrompts:[document comment] raglTopKTestFilesToInclude:0 raglTopKDocFilesToInclude:0}
+I0222 21:10:23.829858   11887 configuration.go:284] Configured settings for canCancelRequests: true
+I0222 21:10:23.829868   11887 configuration.go:286] Configured settings for contextPromptOpts: &{Endpoint:}
+W0222 21:10:23.831375   11887 configuration.go:290] Failed to retrieve verboseLogging: configuration value not is not a string: false
+I0222 21:10:23.852364   11887 handler.go:159] cancel was requested for: 1, needs to be canceled: false
+I0222 21:10:23.852386   11887 handler.go:163] cancel requested for 1 but not found
+Completion Provider - completion # 0 - New completion requested from language client at position {"line":129,"character":8}, triggerKind=1
+Completion Provider - completion # 0 - Completion result obtained from language client
+E0222 21:13:38.247638   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:13:38.247692   11887 retention.go:173] Could not get offsets for range in document. range: &{{129 8} {130 8}}, error: invalid column number
+W0222 21:13:38.247749   11887 document.go:267] Error computing chars added only: getting byte offset for start of change range: invalid column number
+Completion Provider - completion # 1 - New completion requested from language client at position {"line":130,"character":8}, triggerKind=1
+Completion Provider - completion # 1 - Completion result obtained from language client
+W0222 21:13:39.824496   11887 retention.go:173] Could not get offsets for range in document. range: &{{129 8} {130 8}}, error: invalid column number
+E0222 21:13:39.825056   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:13:39.825100   11887 retention.go:173] Could not get offsets for range in document. range: &{{129 8} {130 9}}, error: invalid column number
+Completion Provider - completion # 2 - New completion requested from language client at position {"line":130,"character":9}, triggerKind=1
+Completion Provider - completion # 2 - Completion result obtained from language client
+W0222 21:13:39.933248   11887 retention.go:173] Could not get offsets for range in document. range: &{{129 8} {130 9}}, error: invalid column number
+E0222 21:13:39.933454   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:13:39.933487   11887 retention.go:173] Could not get offsets for range in document. range: &{{129 8} {130 10}}, error: invalid column number
+Completion Provider - completion # 3 - New completion requested from language client at position {"line":130,"character":10}, triggerKind=1
+Completion Provider - completion # 3 - Completion result obtained from language client
+W0222 21:13:40.081267   11887 retention.go:173] Could not get offsets for range in document. range: &{{129 8} {130 10}}, error: invalid column number
+E0222 21:13:40.081460   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:13:40.081500   11887 retention.go:173] Could not get offsets for range in document. range: &{{129 8} {130 11}}, error: invalid column number
+Completion Provider - completion # 4 - New completion requested from language client at position {"line":130,"character":11}, triggerKind=1
+Completion Provider - completion # 4 - Completion result obtained from language client
+W0222 21:13:41.251495   11887 retention.go:173] Could not get offsets for range in document. range: &{{129 8} {130 11}}, error: invalid column number
+E0222 21:13:41.251720   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:13:41.251758   11887 retention.go:173] Could not get offsets for range in document. range: &{{129 8} {130 12}}, error: invalid column number
+Completion Provider - completion # 5 - New completion requested from language client at position {"line":130,"character":12}, triggerKind=1
+Completion Provider - completion # 5 - Completion result obtained from language client
+Completion Provider - completion # 6 - New completion requested from language client at position {"line":130,"character":12}, triggerKind=1
+Completion Provider - completion # 6 - Completion result obtained from language client
+W0222 21:13:41.529379   11887 retention.go:173] Could not get offsets for range in document. range: &{{129 8} {130 12}}, error: invalid column number
+E0222 21:13:41.529742   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:13:41.529794   11887 retention.go:173] Could not get offsets for range in document. range: &{{129 8} {130 13}}, error: invalid column number
+Completion Provider - completion # 7 - New completion requested from language client at position {"line":130,"character":13}, triggerKind=1
+Completion Provider - completion # 7 - Completion result obtained from language client
+W0222 21:13:41.591068   11887 retention.go:173] Could not get offsets for range in document. range: &{{129 8} {130 13}}, error: invalid column number
+E0222 21:13:41.591251   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:13:41.591287   11887 retention.go:173] Could not get offsets for range in document. range: &{{129 8} {130 14}}, error: invalid column number
+Completion Provider - completion # 8 - New completion requested from language client at position {"line":130,"character":14}, triggerKind=1
+Completion Provider - completion # 8 - Completion result obtained from language client
+W0222 21:13:43.456320   11887 retention.go:173] Could not get offsets for range in document. range: &{{129 8} {130 14}}, error: invalid column number
+E0222 21:13:43.456504   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:13:43.456549   11887 retention.go:173] Could not get offsets for range in document. range: &{{129 8} {130 15}}, error: invalid column number
+Completion Provider - completion # 9 - New completion requested from language client at position {"line":130,"character":15}, triggerKind=1
+Completion Provider - completion # 9 - Completion result obtained from language client
+W0222 21:13:43.513786   11887 retention.go:173] Could not get offsets for range in document. range: &{{129 8} {130 15}}, error: invalid column number
+E0222 21:13:43.513959   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:13:43.513995   11887 retention.go:173] Could not get offsets for range in document. range: &{{129 8} {130 16}}, error: invalid column number
+Completion Provider - completion # 10 - New completion requested from language client at position {"line":130,"character":16}, triggerKind=1
+Completion Provider - completion # 10 - Completion result obtained from language client
+Completion Provider - completion # 11 - New completion requested from language client at position {"line":130,"character":16}, triggerKind=1
+Completion Provider - completion # 11 - Completion result obtained from language client
+W0222 21:13:45.736449   11887 retention.go:173] Could not get offsets for range in document. range: &{{129 8} {130 16}}, error: invalid column number
+E0222 21:13:45.736669   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:13:45.736707   11887 retention.go:173] Could not get offsets for range in document. range: &{{129 8} {130 26}}, error: invalid column number
+Completion Provider - completion # 12 - New completion requested from language client at position {"line":130,"character":26}, triggerKind=1
+Completion Provider - completion # 12 - Completion result obtained from language client
+W0222 21:13:50.196115   11887 retention.go:173] Could not get offsets for range in document. range: &{{129 8} {130 26}}, error: invalid column number
+E0222 21:13:50.196299   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:13:50.196337   11887 retention.go:173] Could not get offsets for range in document. range: &{{129 8} {130 27}}, error: invalid column number
+Completion Provider - completion # 13 - New completion requested from language client at position {"line":130,"character":27}, triggerKind=1
+Completion Provider - completion # 13 - Completion result obtained from language client
+W0222 21:13:53.120357   11887 retention.go:173] Could not get offsets for range in document. range: &{{129 8} {130 27}}, error: invalid column number
+E0222 21:13:53.120550   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:13:53.120627   11887 retention.go:173] Could not get offsets for range in document. range: &{{129 8} {130 28}}, error: invalid column number
+Completion Provider - completion # 14 - New completion requested from language client at position {"line":130,"character":28}, triggerKind=1
+Completion Provider - completion # 14 - Completion result obtained from language client
+W0222 21:13:54.303900   11887 retention.go:173] Could not get offsets for range in document. range: &{{129 8} {130 28}}, error: invalid column number
+E0222 21:13:54.304070   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:13:54.304134   11887 retention.go:173] Could not get offsets for range in document. range: &{{129 8} {130 29}}, error: invalid column number
+Completion Provider - completion # 15 - New completion requested from language client at position {"line":130,"character":29}, triggerKind=1
+Completion Provider - completion # 15 - Completion result obtained from language client
+W0222 21:13:54.530192   11887 retention.go:173] Could not get offsets for range in document. range: &{{129 8} {130 29}}, error: invalid column number
+E0222 21:13:54.530359   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:13:54.530395   11887 retention.go:173] Could not get offsets for range in document. range: &{{129 8} {130 30}}, error: invalid column number
+Completion Provider - completion # 16 - New completion requested from language client at position {"line":130,"character":30}, triggerKind=1
+Completion Provider - completion # 16 - Completion result obtained from language client
+Completion Provider - completion # 17 - New completion requested from language client at position {"line":130,"character":30}, triggerKind=1
+Completion Provider - completion # 17 - Completion result obtained from language client
+W0222 21:13:55.972407   11887 retention.go:173] Could not get offsets for range in document. range: &{{129 8} {130 30}}, error: invalid column number
+E0222 21:13:55.972629   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:13:55.972669   11887 retention.go:173] Could not get offsets for range in document. range: &{{129 8} {130 31}}, error: invalid column number
+Completion Provider - completion # 18 - New completion requested from language client at position {"line":130,"character":31}, triggerKind=1
+Completion Provider - completion # 18 - Completion result obtained from language client
+W0222 21:13:56.081189   11887 retention.go:173] Could not get offsets for range in document. range: &{{129 8} {130 31}}, error: invalid column number
+E0222 21:13:56.081353   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:13:56.081398   11887 retention.go:173] Could not get offsets for range in document. range: &{{129 8} {130 32}}, error: invalid column number
+Completion Provider - completion # 19 - New completion requested from language client at position {"line":130,"character":32}, triggerKind=1
+Completion Provider - completion # 19 - Completion result obtained from language client
+W0222 21:13:58.217910   11887 retention.go:173] Could not get offsets for range in document. range: &{{129 8} {130 32}}, error: invalid column number
+E0222 21:13:58.218085   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:13:58.218120   11887 retention.go:173] Could not get offsets for range in document. range: &{{129 8} {130 33}}, error: invalid column number
+Completion Provider - completion # 20 - New completion requested from language client at position {"line":130,"character":29}, triggerKind=1
+Completion Provider - completion # 20 - Completion result obtained from language client
+W0222 21:13:59.975111   11887 retention.go:173] Could not get offsets for range in document. range: &{{129 8} {130 33}}, error: invalid column number
+E0222 21:13:59.975295   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:13:59.975329   11887 retention.go:173] Could not get offsets for range in document. range: &{{129 8} {130 34}}, error: invalid column number
+Completion Provider - completion # 21 - New completion requested from language client at position {"line":130,"character":34}, triggerKind=1
+Completion Provider - completion # 21 - Completion result obtained from language client
+W0222 21:14:00.222882   11887 retention.go:173] Could not get offsets for range in document. range: &{{129 8} {130 34}}, error: invalid column number
+E0222 21:14:00.223060   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:14:00.223093   11887 retention.go:173] Could not get offsets for range in document. range: &{{129 8} {131 12}}, error: invalid column number
+Completion Provider - completion # 22 - New completion requested from language client at position {"line":131,"character":12}, triggerKind=1
+Completion Provider - completion # 22 - Completion result obtained from language client
+W0222 21:14:05.193072   11887 retention.go:173] Could not get offsets for range in document. range: &{{129 8} {131 12}}, error: invalid column number
+E0222 21:14:05.193262   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:14:05.193295   11887 retention.go:173] Could not get offsets for range in document. range: &{{129 9} {131 0}}, error: invalid column number
+Completion Provider - completion # 23 - New completion requested from language client at position {"line":129,"character":1}, triggerKind=1
+Completion Provider - completion # 23 - Completion result obtained from language client
+W0222 21:14:05.440315   11887 retention.go:173] Could not get offsets for range in document. range: &{{129 9} {131 0}}, error: invalid column number
+E0222 21:14:05.440486   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:14:05.440520   11887 retention.go:173] Could not get offsets for range in document. range: &{{129 10} {131 0}}, error: invalid column number
+Completion Provider - completion # 24 - New completion requested from language client at position {"line":129,"character":2}, triggerKind=1
+Completion Provider - completion # 24 - Completion result obtained from language client
+W0222 21:14:05.616209   11887 retention.go:173] Could not get offsets for range in document. range: &{{129 10} {131 0}}, error: invalid column number
+E0222 21:14:05.616362   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:14:05.616394   11887 retention.go:173] Could not get offsets for range in document. range: &{{129 11} {131 0}}, error: invalid column number
+Completion Provider - completion # 25 - New completion requested from language client at position {"line":129,"character":3}, triggerKind=1
+Completion Provider - completion # 25 - Completion result obtained from language client
+W0222 21:14:06.112503   11887 retention.go:173] Could not get offsets for range in document. range: &{{129 11} {131 0}}, error: invalid column number
+E0222 21:14:06.112728   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:14:06.112774   11887 retention.go:173] Could not get offsets for range in document. range: &{{129 12} {131 0}}, error: invalid column number
+W0222 21:14:06.137735   11887 retention.go:173] Could not get offsets for range in document. range: &{{129 12} {131 0}}, error: invalid column number
+E0222 21:14:06.137926   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:14:06.137963   11887 retention.go:173] Could not get offsets for range in document. range: &{{129 13} {131 0}}, error: invalid column number
+W0222 21:14:06.179114   11887 retention.go:173] Could not get offsets for range in document. range: &{{129 13} {131 0}}, error: invalid column number
+E0222 21:14:06.179507   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:14:06.179545   11887 retention.go:173] Could not get offsets for range in document. range: &{{129 14} {131 0}}, error: invalid column number
+W0222 21:14:06.208323   11887 retention.go:173] Could not get offsets for range in document. range: &{{129 14} {131 0}}, error: invalid column number
+E0222 21:14:06.208493   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:14:06.208528   11887 retention.go:173] Could not get offsets for range in document. range: &{{129 15} {131 0}}, error: invalid column number
+W0222 21:14:06.222277   11887 retention.go:173] Could not get offsets for range in document. range: &{{129 15} {131 0}}, error: invalid column number
+E0222 21:14:06.222484   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:14:06.222525   11887 retention.go:173] Could not get offsets for range in document. range: &{{129 16} {131 0}}, error: invalid column number
+W0222 21:14:06.253905   11887 retention.go:173] Could not get offsets for range in document. range: &{{129 16} {131 0}}, error: invalid column number
+E0222 21:14:06.254145   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:14:06.254227   11887 retention.go:173] Could not get offsets for range in document. range: &{{129 17} {131 0}}, error: invalid column number
+Completion Provider - completion # 26 - New completion requested from language client at position {"line":129,"character":9}, triggerKind=1
+Completion Provider - completion # 26 - Completion result obtained from language client
+W0222 21:14:06.951370   11887 retention.go:173] Could not get offsets for range in document. range: &{{129 17} {131 0}}, error: invalid column number
+E0222 21:14:06.951646   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:14:06.951718   11887 retention.go:173] Could not get offsets for range in document. range: &{{129 16} {131 0}}, error: invalid column number
+Completion Provider - completion # 27 - New completion requested from language client at position {"line":129,"character":8}, triggerKind=1
+Completion Provider - completion # 27 - Completion result obtained from language client
+W0222 21:14:07.767796   11887 retention.go:173] Could not get offsets for range in document. range: &{{129 16} {131 0}}, error: invalid column number
+E0222 21:14:07.768041   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:14:07.768078   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 16} {132 0}}, error: invalid column number
+Completion Provider - completion # 28 - New completion requested from language client at position {"line":130,"character":8}, triggerKind=1
+Completion Provider - completion # 28 - Completion result obtained from language client
+I0222 21:14:23.832058   11887 life_cycle.go:297] codeReportEvery: recomputing codereport metric
+W0222 21:14:44.234586   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 16} {132 0}}, error: invalid column number
+E0222 21:14:44.234793   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:14:44.234851   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 17} {132 0}}, error: invalid column number
+Completion Provider - completion # 29 - New completion requested from language client at position {"line":130,"character":9}, triggerKind=1
+Completion Provider - completion # 29 - Completion result obtained from language client
+Completion Provider - completion # 30 - New completion requested from language client at position {"line":130,"character":9}, triggerKind=1
+Completion Provider - completion # 30 - Completion result obtained from language client
+W0222 21:14:44.502830   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 17} {132 0}}, error: invalid column number
+E0222 21:14:44.503071   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:14:44.503107   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 18} {132 0}}, error: invalid column number
+Completion Provider - completion # 31 - New completion requested from language client at position {"line":130,"character":10}, triggerKind=1
+Completion Provider - completion # 31 - Completion result obtained from language client
+W0222 21:14:44.595379   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 18} {132 0}}, error: invalid column number
+E0222 21:14:44.595603   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:14:44.595643   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 19} {132 0}}, error: invalid column number
+Completion Provider - completion # 32 - New completion requested from language client at position {"line":130,"character":11}, triggerKind=1
+Completion Provider - completion # 32 - Completion result obtained from language client
+W0222 21:14:44.785154   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 19} {132 0}}, error: invalid column number
+E0222 21:14:44.785438   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:14:44.785499   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 20} {132 0}}, error: invalid column number
+Completion Provider - completion # 33 - New completion requested from language client at position {"line":130,"character":12}, triggerKind=1
+Completion Provider - completion # 33 - Completion result obtained from language client
+W0222 21:14:45.266922   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 20} {132 0}}, error: invalid column number
+E0222 21:14:45.267117   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:14:45.267155   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 21} {132 0}}, error: invalid column number
+Completion Provider - completion # 34 - New completion requested from language client at position {"line":130,"character":13}, triggerKind=1
+Completion Provider - completion # 34 - Completion result obtained from language client
+Completion Provider - completion # 35 - New completion requested from language client at position {"line":130,"character":13}, triggerKind=1
+Completion Provider - completion # 35 - Completion result obtained from language client
+W0222 21:14:46.222461   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 21} {132 0}}, error: invalid column number
+E0222 21:14:46.222648   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:14:46.222682   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 31} {132 0}}, error: invalid column number
+Completion Provider - completion # 36 - New completion requested from language client at position {"line":130,"character":23}, triggerKind=1
+Completion Provider - completion # 36 - Completion result obtained from language client
+W0222 21:14:47.079320   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 31} {132 0}}, error: invalid column number
+E0222 21:14:47.079477   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:14:47.079506   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 32} {132 0}}, error: invalid column number
+Completion Provider - completion # 37 - New completion requested from language client at position {"line":130,"character":24}, triggerKind=1
+Completion Provider - completion # 37 - Completion result obtained from language client
+W0222 21:14:47.192407   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 32} {132 0}}, error: invalid column number
+E0222 21:14:47.192605   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:14:47.192639   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 33} {132 0}}, error: invalid column number
+Completion Provider - completion # 38 - New completion requested from language client at position {"line":130,"character":25}, triggerKind=1
+Completion Provider - completion # 38 - Completion result obtained from language client
+W0222 21:14:47.323908   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 33} {132 0}}, error: invalid column number
+E0222 21:14:47.324121   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:14:47.324157   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 34} {132 0}}, error: invalid column number
+Completion Provider - completion # 39 - New completion requested from language client at position {"line":130,"character":26}, triggerKind=1
+Completion Provider - completion # 39 - Completion result obtained from language client
+W0222 21:14:48.735261   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 34} {132 0}}, error: invalid column number
+E0222 21:14:48.735438   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:14:48.735472   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 35} {132 0}}, error: invalid column number
+Completion Provider - completion # 40 - New completion requested from language client at position {"line":130,"character":27}, triggerKind=1
+Completion Provider - completion # 40 - Completion result obtained from language client
+W0222 21:14:48.834597   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 35} {132 0}}, error: invalid column number
+E0222 21:14:48.834806   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:14:48.834872   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 36} {132 0}}, error: invalid column number
+Completion Provider - completion # 41 - New completion requested from language client at position {"line":130,"character":28}, triggerKind=1
+Completion Provider - completion # 41 - Completion result obtained from language client
+W0222 21:14:49.050463   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 36} {132 0}}, error: invalid column number
+E0222 21:14:49.050718   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:14:49.050755   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 37} {132 0}}, error: invalid column number
+Completion Provider - completion # 42 - New completion requested from language client at position {"line":130,"character":29}, triggerKind=1
+Completion Provider - completion # 42 - Completion result obtained from language client
+W0222 21:14:49.589695   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 37} {132 0}}, error: invalid column number
+E0222 21:14:49.589909   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:14:49.589944   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 39} {132 0}}, error: invalid column number
+Completion Provider - completion # 43 - New completion requested from language client at position {"line":130,"character":31}, triggerKind=1
+Completion Provider - completion # 43 - Completion result obtained from language client
+W0222 21:14:50.588439   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 39} {132 0}}, error: invalid column number
+E0222 21:14:50.588628   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:14:50.588661   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 41} {132 0}}, error: invalid column number
+Completion Provider - completion # 44 - New completion requested from language client at position {"line":130,"character":32}, triggerKind=1
+Completion Provider - completion # 44 - Completion result obtained from language client
+W0222 21:14:50.702269   11887 server.go:633] unknown method "textDocument/signatureHelp"
+W0222 21:14:51.262044   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 41} {132 0}}, error: invalid column number
+E0222 21:14:51.262211   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:14:51.262245   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 42} {132 0}}, error: invalid column number
+Completion Provider - completion # 45 - New completion requested from language client at position {"line":130,"character":33}, triggerKind=1
+Completion Provider - completion # 45 - Completion result obtained from language client
+W0222 21:14:51.373504   11887 server.go:633] unknown method "textDocument/signatureHelp"
+Completion Provider - completion # 46 - New completion requested from language client at position {"line":130,"character":33}, triggerKind=1
+Completion Provider - completion # 46 - Completion result obtained from language client
+W0222 21:14:51.533680   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 42} {132 0}}, error: invalid column number
+E0222 21:14:51.533861   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:14:51.533896   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 43} {132 0}}, error: invalid column number
+Completion Provider - completion # 47 - New completion requested from language client at position {"line":130,"character":34}, triggerKind=1
+Completion Provider - completion # 47 - Completion result obtained from language client
+W0222 21:14:51.659294   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 43} {132 0}}, error: invalid column number
+E0222 21:14:51.659486   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:14:51.659520   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 44} {132 0}}, error: invalid column number
+Completion Provider - completion # 48 - New completion requested from language client at position {"line":130,"character":35}, triggerKind=1
+Completion Provider - completion # 48 - Completion result obtained from language client
+W0222 21:14:51.764242   11887 server.go:633] unknown method "textDocument/signatureHelp"
+W0222 21:14:51.851129   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 44} {132 0}}, error: invalid column number
+E0222 21:14:51.851334   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:14:51.851394   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 45} {132 0}}, error: invalid column number
+Completion Provider - completion # 49 - New completion requested from language client at position {"line":130,"character":36}, triggerKind=1
+Completion Provider - completion # 49 - Completion result obtained from language client
+W0222 21:14:51.951345   11887 server.go:633] unknown method "textDocument/signatureHelp"
+Completion Provider - completion # 50 - New completion requested from language client at position {"line":130,"character":36}, triggerKind=1
+Completion Provider - completion # 50 - Completion result obtained from language client
+W0222 21:14:53.266646   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 45} {132 0}}, error: invalid column number
+E0222 21:14:53.266884   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:14:53.266923   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 56} {132 0}}, error: invalid column number
+Completion Provider - completion # 51 - New completion requested from language client at position {"line":130,"character":47}, triggerKind=1
+Completion Provider - completion # 51 - Completion result obtained from language client
+W0222 21:14:53.388197   11887 server.go:633] unknown method "textDocument/signatureHelp"
+W0222 21:14:54.279733   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 56} {132 0}}, error: invalid column number
+E0222 21:14:54.279927   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:14:54.279961   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 57} {132 0}}, error: invalid column number
+Completion Provider - completion # 52 - New completion requested from language client at position {"line":130,"character":48}, triggerKind=1
+Completion Provider - completion # 52 - Completion result obtained from language client
+W0222 21:14:54.395112   11887 server.go:633] unknown method "textDocument/signatureHelp"
+W0222 21:14:54.572484   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 57} {132 0}}, error: invalid column number
+E0222 21:14:54.572695   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:14:54.572733   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 58} {132 0}}, error: invalid column number
+Completion Provider - completion # 53 - New completion requested from language client at position {"line":130,"character":49}, triggerKind=1
+Completion Provider - completion # 53 - Completion result obtained from language client
+W0222 21:14:54.681134   11887 server.go:633] unknown method "textDocument/signatureHelp"
+W0222 21:14:54.912977   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 58} {132 0}}, error: invalid column number
+E0222 21:14:54.913134   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:14:54.913167   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {132 0}}, error: invalid column number
+Completion Provider - completion # 54 - New completion requested from language client at position {"line":130,"character":50}, triggerKind=1
+Completion Provider - completion # 54 - Completion result obtained from language client
+W0222 21:14:55.028659   11887 server.go:633] unknown method "textDocument/signatureHelp"
+W0222 21:14:59.119753   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {132 0}}, error: invalid column number
+E0222 21:14:59.119952   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:14:59.119996   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {133 0}}, error: invalid column number
+Completion Provider - completion # 55 - New completion requested from language client at position {"line":132,"character":12}, triggerKind=1
+Completion Provider - completion # 55 - Completion result obtained from language client
+W0222 21:15:06.395980   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {133 0}}, error: invalid column number
+E0222 21:15:06.396384   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:15:06.396467   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {131 27}}, error: invalid column number
+Completion Provider - completion # 56 - New completion requested from language client at position {"line":131,"character":27}, triggerKind=1
+Completion Provider - completion # 56 - Completion result obtained from language client
+W0222 21:15:07.345881   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {131 27}}, error: invalid column number
+E0222 21:15:07.346081   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:15:07.346119   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {133 0}}, error: invalid column number
+Completion Provider - completion # 57 - New completion requested from language client at position {"line":131,"character":28}, triggerKind=1
+Completion Provider - completion # 57 - Completion result obtained from language client
+W0222 21:15:09.345686   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {133 0}}, error: invalid column number
+E0222 21:15:09.345865   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:15:09.345898   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {133 0}}, error: invalid column number
+Completion Provider - completion # 58 - New completion requested from language client at position {"line":132,"character":1}, triggerKind=1
+Completion Provider - completion # 58 - Completion result obtained from language client
+W0222 21:15:09.849623   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {133 0}}, error: invalid column number
+E0222 21:15:09.849778   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:15:09.849812   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {133 0}}, error: invalid column number
+W0222 21:15:09.879956   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {133 0}}, error: invalid column number
+E0222 21:15:09.880150   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:15:09.880200   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {133 0}}, error: invalid column number
+W0222 21:15:09.909203   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {133 0}}, error: invalid column number
+E0222 21:15:09.909371   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:15:09.909408   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {133 0}}, error: invalid column number
+W0222 21:15:09.936898   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {133 0}}, error: invalid column number
+E0222 21:15:09.937081   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:15:09.937115   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {133 0}}, error: invalid column number
+W0222 21:15:09.956957   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {133 0}}, error: invalid column number
+E0222 21:15:09.957152   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:15:09.957185   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {133 0}}, error: invalid column number
+W0222 21:15:09.998141   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {133 0}}, error: invalid column number
+E0222 21:15:09.998300   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:15:09.998331   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {133 0}}, error: invalid column number
+W0222 21:15:10.023694   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {133 0}}, error: invalid column number
+E0222 21:15:10.023918   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:15:10.023952   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {133 0}}, error: invalid column number
+W0222 21:15:10.050628   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {133 0}}, error: invalid column number
+E0222 21:15:10.050808   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:15:10.050844   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {133 0}}, error: invalid column number
+Completion Provider - completion # 59 - New completion requested from language client at position {"line":132,"character":9}, triggerKind=1
+Completion Provider - completion # 59 - Completion result obtained from language client
+W0222 21:15:10.239935   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {133 0}}, error: invalid column number
+E0222 21:15:10.240124   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:15:10.240162   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {133 0}}, error: invalid column number
+Completion Provider - completion # 60 - New completion requested from language client at position {"line":132,"character":10}, triggerKind=1
+Completion Provider - completion # 60 - Completion result obtained from language client
+W0222 21:15:10.410673   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {133 0}}, error: invalid column number
+E0222 21:15:10.410863   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:15:10.410902   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {133 0}}, error: invalid column number
+Completion Provider - completion # 61 - New completion requested from language client at position {"line":132,"character":11}, triggerKind=1
+Completion Provider - completion # 61 - Completion result obtained from language client
+W0222 21:15:10.560285   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {133 0}}, error: invalid column number
+E0222 21:15:10.560484   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:15:10.560522   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {133 0}}, error: invalid column number
+Completion Provider - completion # 62 - New completion requested from language client at position {"line":132,"character":12}, triggerKind=1
+Completion Provider - completion # 62 - Completion result obtained from language client
+W0222 21:15:11.500032   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {133 0}}, error: invalid column number
+E0222 21:15:11.500236   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:15:11.500272   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {133 0}}, error: invalid column number
+Completion Provider - completion # 63 - New completion requested from language client at position {"line":132,"character":13}, triggerKind=1
+Completion Provider - completion # 63 - Completion result obtained from language client
+Completion Provider - completion # 64 - New completion requested from language client at position {"line":132,"character":13}, triggerKind=1
+Completion Provider - completion # 64 - Completion result obtained from language client
+W0222 21:15:11.798558   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {133 0}}, error: invalid column number
+E0222 21:15:11.798795   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:15:11.798831   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {133 0}}, error: invalid column number
+Completion Provider - completion # 65 - New completion requested from language client at position {"line":132,"character":14}, triggerKind=1
+Completion Provider - completion # 65 - Completion result obtained from language client
+W0222 21:15:11.856460   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {133 0}}, error: invalid column number
+E0222 21:15:11.856729   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:15:11.856781   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {133 0}}, error: invalid column number
+Completion Provider - completion # 66 - New completion requested from language client at position {"line":132,"character":15}, triggerKind=1
+Completion Provider - completion # 66 - Completion result obtained from language client
+W0222 21:15:12.046650   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {133 0}}, error: invalid column number
+E0222 21:15:12.047100   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:15:12.047168   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {133 0}}, error: invalid column number
+Completion Provider - completion # 67 - New completion requested from language client at position {"line":132,"character":16}, triggerKind=1
+Completion Provider - completion # 67 - Completion result obtained from language client
+W0222 21:15:12.097060   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {133 0}}, error: invalid column number
+E0222 21:15:12.097224   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:15:12.097266   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {133 0}}, error: invalid column number
+Completion Provider - completion # 68 - New completion requested from language client at position {"line":132,"character":17}, triggerKind=1
+Completion Provider - completion # 68 - Completion result obtained from language client
+W0222 21:15:12.330590   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {133 0}}, error: invalid column number
+E0222 21:15:12.330824   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:15:12.330875   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {133 0}}, error: invalid column number
+Completion Provider - completion # 69 - New completion requested from language client at position {"line":132,"character":18}, triggerKind=1
+Completion Provider - completion # 69 - Completion result obtained from language client
+W0222 21:15:12.397554   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {133 0}}, error: invalid column number
+E0222 21:15:12.397867   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:15:12.397924   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {133 0}}, error: invalid column number
+Completion Provider - completion # 70 - New completion requested from language client at position {"line":132,"character":19}, triggerKind=1
+Completion Provider - completion # 70 - Completion result obtained from language client
+W0222 21:15:14.437712   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {133 0}}, error: invalid column number
+E0222 21:15:14.437900   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:15:14.437935   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {133 0}}, error: invalid column number
+Completion Provider - completion # 71 - New completion requested from language client at position {"line":132,"character":20}, triggerKind=1
+Completion Provider - completion # 71 - Completion result obtained from language client
+W0222 21:15:14.525377   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {133 0}}, error: invalid column number
+E0222 21:15:14.525597   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:15:14.525634   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {133 0}}, error: invalid column number
+Completion Provider - completion # 72 - New completion requested from language client at position {"line":132,"character":21}, triggerKind=1
+Completion Provider - completion # 72 - Completion result obtained from language client
+W0222 21:15:15.404699   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {133 0}}, error: invalid column number
+E0222 21:15:15.404964   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:15:15.405006   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {133 0}}, error: invalid column number
+Completion Provider - completion # 73 - New completion requested from language client at position {"line":132,"character":22}, triggerKind=1
+Completion Provider - completion # 73 - Completion result obtained from language client
+W0222 21:15:15.595294   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {133 0}}, error: invalid column number
+E0222 21:15:15.595538   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:15:15.595597   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {133 0}}, error: invalid column number
+Completion Provider - completion # 74 - New completion requested from language client at position {"line":132,"character":23}, triggerKind=1
+Completion Provider - completion # 74 - Completion result obtained from language client
+W0222 21:15:15.685500   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {133 0}}, error: invalid column number
+E0222 21:15:15.685723   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:15:15.685767   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {133 0}}, error: invalid column number
+Completion Provider - completion # 75 - New completion requested from language client at position {"line":132,"character":24}, triggerKind=1
+Completion Provider - completion # 75 - Completion result obtained from language client
+W0222 21:15:16.380941   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {133 0}}, error: invalid column number
+E0222 21:15:16.381149   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:15:16.381187   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {133 0}}, error: invalid column number
+Completion Provider - completion # 76 - New completion requested from language client at position {"line":132,"character":25}, triggerKind=1
+Completion Provider - completion # 76 - Completion result obtained from language client
+Completion Provider - completion # 77 - New completion requested from language client at position {"line":132,"character":25}, triggerKind=1
+Completion Provider - completion # 77 - Completion result obtained from language client
+W0222 21:15:16.526783   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {133 0}}, error: invalid column number
+E0222 21:15:16.526998   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:15:16.527037   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {133 0}}, error: invalid column number
+Completion Provider - completion # 78 - New completion requested from language client at position {"line":132,"character":26}, triggerKind=1
+Completion Provider - completion # 78 - Completion result obtained from language client
+W0222 21:15:17.580709   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {133 0}}, error: invalid column number
+E0222 21:15:17.580915   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:15:17.580954   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {133 0}}, error: invalid column number
+Completion Provider - completion # 79 - New completion requested from language client at position {"line":132,"character":26}, triggerKind=1
+Completion Provider - completion # 79 - Completion result obtained from language client
+W0222 21:15:17.826887   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {133 0}}, error: invalid column number
+E0222 21:15:17.827105   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:15:17.827148   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {133 0}}, error: invalid column number
+Completion Provider - completion # 80 - New completion requested from language client at position {"line":132,"character":27}, triggerKind=1
+Completion Provider - completion # 80 - Completion result obtained from language client
+W0222 21:15:18.003747   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {133 0}}, error: invalid column number
+E0222 21:15:18.003984   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:15:18.004022   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {133 0}}, error: invalid column number
+Completion Provider - completion # 81 - New completion requested from language client at position {"line":132,"character":28}, triggerKind=1
+Completion Provider - completion # 81 - Completion result obtained from language client
+W0222 21:15:18.217248   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {133 0}}, error: invalid column number
+E0222 21:15:18.217498   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:15:18.217592   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {133 0}}, error: invalid column number
+Completion Provider - completion # 82 - New completion requested from language client at position {"line":132,"character":29}, triggerKind=1
+Completion Provider - completion # 82 - Completion result obtained from language client
+W0222 21:15:18.470106   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {133 0}}, error: invalid column number
+E0222 21:15:18.470293   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:15:18.470338   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {133 0}}, error: invalid column number
+Completion Provider - completion # 83 - New completion requested from language client at position {"line":132,"character":30}, triggerKind=1
+Completion Provider - completion # 83 - Completion result obtained from language client
+W0222 21:15:18.585489   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {133 0}}, error: invalid column number
+E0222 21:15:18.585706   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:15:18.585749   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {133 0}}, error: invalid column number
+Completion Provider - completion # 84 - New completion requested from language client at position {"line":132,"character":31}, triggerKind=1
+Completion Provider - completion # 84 - Completion result obtained from language client
+W0222 21:15:18.802709   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {133 0}}, error: invalid column number
+E0222 21:15:18.802908   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:15:18.802945   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {133 0}}, error: invalid column number
+Completion Provider - completion # 85 - New completion requested from language client at position {"line":132,"character":32}, triggerKind=1
+Completion Provider - completion # 85 - Completion result obtained from language client
+W0222 21:15:19.016602   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {133 0}}, error: invalid column number
+E0222 21:15:19.016857   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:15:19.016896   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {133 0}}, error: invalid column number
+Completion Provider - completion # 86 - New completion requested from language client at position {"line":132,"character":33}, triggerKind=1
+Completion Provider - completion # 86 - Completion result obtained from language client
+W0222 21:15:20.192808   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {133 0}}, error: invalid column number
+E0222 21:15:20.192999   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:15:20.193031   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {134 0}}, error: invalid column number
+Completion Provider - completion # 87 - New completion requested from language client at position {"line":133,"character":12}, triggerKind=1
+Completion Provider - completion # 87 - Completion result obtained from language client
+W0222 21:15:20.990486   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {134 0}}, error: invalid column number
+E0222 21:15:20.990831   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:15:20.990936   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {133 8}}, error: invalid column number
+Completion Provider - completion # 88 - New completion requested from language client at position {"line":133,"character":8}, triggerKind=1
+Completion Provider - completion # 88 - Completion result obtained from language client
+W0222 21:15:21.916065   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {133 8}}, error: invalid column number
+E0222 21:15:21.916275   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:15:21.916312   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {134 0}}, error: invalid column number
+Completion Provider - completion # 89 - New completion requested from language client at position {"line":133,"character":9}, triggerKind=1
+Completion Provider - completion # 89 - Completion result obtained from language client
+W0222 21:15:22.042500   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {134 0}}, error: invalid column number
+E0222 21:15:22.042728   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:15:22.042770   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {134 0}}, error: invalid column number
+Completion Provider - completion # 90 - New completion requested from language client at position {"line":133,"character":10}, triggerKind=1
+Completion Provider - completion # 90 - Completion result obtained from language client
+W0222 21:15:22.152934   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {134 0}}, error: invalid column number
+E0222 21:15:22.153191   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:15:22.153244   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {134 0}}, error: invalid column number
+Completion Provider - completion # 91 - New completion requested from language client at position {"line":133,"character":11}, triggerKind=1
+Completion Provider - completion # 91 - Completion result obtained from language client
+W0222 21:15:23.123124   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {134 0}}, error: invalid column number
+E0222 21:15:23.123404   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:15:23.123443   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {134 0}}, error: invalid column number
+Completion Provider - completion # 92 - New completion requested from language client at position {"line":133,"character":12}, triggerKind=1
+Completion Provider - completion # 92 - Completion result obtained from language client
+Completion Provider - completion # 93 - New completion requested from language client at position {"line":133,"character":12}, triggerKind=1
+Completion Provider - completion # 93 - Completion result obtained from language client
+W0222 21:15:23.381116   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {134 0}}, error: invalid column number
+E0222 21:15:23.381299   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:15:23.381332   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {134 0}}, error: invalid column number
+Completion Provider - completion # 94 - New completion requested from language client at position {"line":133,"character":13}, triggerKind=1
+Completion Provider - completion # 94 - Completion result obtained from language client
+W0222 21:15:23.478689   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {134 0}}, error: invalid column number
+E0222 21:15:23.478912   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:15:23.478951   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {134 0}}, error: invalid column number
+Completion Provider - completion # 95 - New completion requested from language client at position {"line":133,"character":14}, triggerKind=1
+Completion Provider - completion # 95 - Completion result obtained from language client
+W0222 21:15:23.648533   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {134 0}}, error: invalid column number
+E0222 21:15:23.648741   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:15:23.648794   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {134 0}}, error: invalid column number
+Completion Provider - completion # 96 - New completion requested from language client at position {"line":133,"character":15}, triggerKind=1
+Completion Provider - completion # 96 - Completion result obtained from language client
+I0222 21:15:23.832022   11887 life_cycle.go:297] codeReportEvery: recomputing codereport metric
+Completion Provider - completion # 97 - New completion requested from language client at position {"line":133,"character":15}, triggerKind=1
+Completion Provider - completion # 97 - Completion result obtained from language client
+Completion Provider - completion # 98 - New completion requested from language client at position {"line":133,"character":15}, triggerKind=1
+Completion Provider - completion # 98 - Completion result obtained from language client
+W0222 21:15:25.697683   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {134 0}}, error: invalid column number
+E0222 21:15:25.697983   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:15:25.698029   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {134 0}}, error: invalid column number
+Completion Provider - completion # 99 - New completion requested from language client at position {"line":133,"character":26}, triggerKind=1
+Completion Provider - completion # 99 - Completion result obtained from language client
+W0222 21:15:26.827652   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {134 0}}, error: invalid column number
+E0222 21:15:26.827817   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:15:26.827862   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {134 0}}, error: invalid column number
+Completion Provider - completion # 100 - New completion requested from language client at position {"line":133,"character":27}, triggerKind=1
+Completion Provider - completion # 100 - Completion result obtained from language client
+W0222 21:15:27.387280   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {134 0}}, error: invalid column number
+E0222 21:15:27.387481   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:15:27.387516   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {134 0}}, error: invalid column number
+Completion Provider - completion # 101 - New completion requested from language client at position {"line":133,"character":28}, triggerKind=1
+Completion Provider - completion # 101 - Completion result obtained from language client
+W0222 21:15:27.913616   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {134 0}}, error: invalid column number
+E0222 21:15:27.913845   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:15:27.913880   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {134 0}}, error: invalid column number
+Completion Provider - completion # 102 - New completion requested from language client at position {"line":133,"character":29}, triggerKind=1
+Completion Provider - completion # 102 - Completion result obtained from language client
+W0222 21:15:28.781897   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {134 0}}, error: invalid column number
+E0222 21:15:28.782125   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:15:28.782165   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {134 0}}, error: invalid column number
+Completion Provider - completion # 103 - New completion requested from language client at position {"line":133,"character":30}, triggerKind=1
+Completion Provider - completion # 103 - Completion result obtained from language client
+W0222 21:15:29.615618   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {134 0}}, error: invalid column number
+E0222 21:15:29.615839   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:15:29.615891   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {134 0}}, error: invalid column number
+Completion Provider - completion # 104 - New completion requested from language client at position {"line":133,"character":31}, triggerKind=1
+Completion Provider - completion # 104 - Completion result obtained from language client
+W0222 21:15:29.917094   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {134 0}}, error: invalid column number
+E0222 21:15:29.917318   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:15:29.917361   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {134 0}}, error: invalid column number
+Completion Provider - completion # 105 - New completion requested from language client at position {"line":133,"character":32}, triggerKind=1
+Completion Provider - completion # 105 - Completion result obtained from language client
+W0222 21:15:30.180256   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {134 0}}, error: invalid column number
+E0222 21:15:30.180471   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:15:30.180522   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {134 0}}, error: invalid column number
+Completion Provider - completion # 106 - New completion requested from language client at position {"line":133,"character":33}, triggerKind=1
+Completion Provider - completion # 106 - Completion result obtained from language client
+W0222 21:15:31.020401   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {134 0}}, error: invalid column number
+E0222 21:15:31.020625   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:15:31.020662   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {134 0}}, error: invalid column number
+Completion Provider - completion # 107 - New completion requested from language client at position {"line":133,"character":34}, triggerKind=1
+Completion Provider - completion # 107 - Completion result obtained from language client
+W0222 21:15:31.143169   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {134 0}}, error: invalid column number
+E0222 21:15:31.143383   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:15:31.143417   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {134 0}}, error: invalid column number
+Completion Provider - completion # 108 - New completion requested from language client at position {"line":133,"character":35}, triggerKind=1
+Completion Provider - completion # 108 - Completion result obtained from language client
+W0222 21:15:32.745210   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {134 0}}, error: invalid column number
+E0222 21:15:32.745427   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:15:32.745466   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {135 0}}, error: invalid column number
+Completion Provider - completion # 109 - New completion requested from language client at position {"line":134,"character":8}, triggerKind=1
+Completion Provider - completion # 109 - Completion result obtained from language client
+W0222 21:15:33.352491   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {135 0}}, error: invalid column number
+E0222 21:15:33.352723   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:15:33.352769   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {134 4}}, error: invalid column number
+Completion Provider - completion # 110 - New completion requested from language client at position {"line":134,"character":4}, triggerKind=1
+Completion Provider - completion # 110 - Completion result obtained from language client
+W0222 21:15:33.597373   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {134 4}}, error: invalid column number
+E0222 21:15:33.597612   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:15:33.597669   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {134 0}}, error: invalid column number
+Completion Provider - completion # 111 - New completion requested from language client at position {"line":134,"character":0}, triggerKind=1
+Completion Provider - completion # 111 - Completion result obtained from language client
+W0222 21:15:33.937947   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {134 0}}, error: invalid column number
+E0222 21:15:33.938168   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:15:33.938231   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {133 35}}, error: invalid column number
+Completion Provider - completion # 112 - New completion requested from language client at position {"line":133,"character":35}, triggerKind=1
+Completion Provider - completion # 112 - Completion result obtained from language client
+W0222 21:15:34.651899   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {133 35}}, error: invalid column number
+E0222 21:15:34.652171   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:15:34.652229   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {134 0}}, error: invalid column number
+Completion Provider - completion # 113 - New completion requested from language client at position {"line":133,"character":36}, triggerKind=1
+Completion Provider - completion # 113 - Completion result obtained from language client
+W0222 21:15:34.887041   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {134 0}}, error: invalid column number
+E0222 21:15:34.887251   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:15:34.887305   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {135 0}}, error: invalid column number
+Completion Provider - completion # 114 - New completion requested from language client at position {"line":134,"character":12}, triggerKind=1
+Completion Provider - completion # 114 - Completion result obtained from language client
+W0222 21:15:35.827934   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {135 0}}, error: invalid column number
+E0222 21:15:35.828148   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:15:35.828192   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {135 0}}, error: invalid column number
+Completion Provider - completion # 115 - New completion requested from language client at position {"line":134,"character":13}, triggerKind=1
+Completion Provider - completion # 115 - Completion result obtained from language client
+Completion Provider - completion # 116 - New completion requested from language client at position {"line":134,"character":13}, triggerKind=1
+Completion Provider - completion # 116 - Completion result obtained from language client
+W0222 21:15:36.138722   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {135 0}}, error: invalid column number
+E0222 21:15:36.139033   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:15:36.139076   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {135 0}}, error: invalid column number
+Completion Provider - completion # 117 - New completion requested from language client at position {"line":134,"character":14}, triggerKind=1
+Completion Provider - completion # 117 - Completion result obtained from language client
+W0222 21:15:36.257735   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {135 0}}, error: invalid column number
+E0222 21:15:36.257945   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:15:36.257992   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {135 0}}, error: invalid column number
+Completion Provider - completion # 118 - New completion requested from language client at position {"line":134,"character":15}, triggerKind=1
+Completion Provider - completion # 118 - Completion result obtained from language client
+W0222 21:15:36.426413   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {135 0}}, error: invalid column number
+E0222 21:15:36.426663   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:15:36.426715   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {135 0}}, error: invalid column number
+Completion Provider - completion # 119 - New completion requested from language client at position {"line":134,"character":16}, triggerKind=1
+Completion Provider - completion # 119 - Completion result obtained from language client
+W0222 21:15:36.510600   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {135 0}}, error: invalid column number
+E0222 21:15:36.510842   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:15:36.510881   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {135 0}}, error: invalid column number
+Completion Provider - completion # 120 - New completion requested from language client at position {"line":134,"character":17}, triggerKind=1
+Completion Provider - completion # 120 - Completion result obtained from language client
+W0222 21:15:36.732719   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {135 0}}, error: invalid column number
+E0222 21:15:36.732930   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:15:36.732964   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {135 0}}, error: invalid column number
+Completion Provider - completion # 121 - New completion requested from language client at position {"line":134,"character":18}, triggerKind=1
+Completion Provider - completion # 121 - Completion result obtained from language client
+W0222 21:15:37.338436   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {135 0}}, error: invalid column number
+E0222 21:15:37.338856   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:15:37.338934   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {135 0}}, error: invalid column number
+Completion Provider - completion # 122 - New completion requested from language client at position {"line":134,"character":21}, triggerKind=1
+Completion Provider - completion # 122 - Completion result obtained from language client
+W0222 21:15:38.233996   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {135 0}}, error: invalid column number
+E0222 21:15:38.234189   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:15:38.234239   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {135 0}}, error: invalid column number
+Completion Provider - completion # 123 - New completion requested from language client at position {"line":134,"character":22}, triggerKind=1
+Completion Provider - completion # 123 - Completion result obtained from language client
+W0222 21:15:38.458608   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {135 0}}, error: invalid column number
+E0222 21:15:38.458814   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:15:38.458879   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {135 0}}, error: invalid column number
+Completion Provider - completion # 124 - New completion requested from language client at position {"line":134,"character":23}, triggerKind=1
+Completion Provider - completion # 124 - Completion result obtained from language client
+W0222 21:15:38.560388   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {135 0}}, error: invalid column number
+E0222 21:15:38.560660   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:15:38.560708   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {135 0}}, error: invalid column number
+Completion Provider - completion # 125 - New completion requested from language client at position {"line":134,"character":24}, triggerKind=1
+Completion Provider - completion # 125 - Completion result obtained from language client
+W0222 21:15:39.604381   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {135 0}}, error: invalid column number
+E0222 21:15:39.604623   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:15:39.604665   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {135 0}}, error: invalid column number
+Completion Provider - completion # 126 - New completion requested from language client at position {"line":134,"character":25}, triggerKind=1
+Completion Provider - completion # 126 - Completion result obtained from language client
+Completion Provider - completion # 127 - New completion requested from language client at position {"line":134,"character":25}, triggerKind=1
+Completion Provider - completion # 127 - Completion result obtained from language client
+W0222 21:15:39.836725   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {135 0}}, error: invalid column number
+E0222 21:15:39.837050   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:15:39.837095   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {135 0}}, error: invalid column number
+Completion Provider - completion # 128 - New completion requested from language client at position {"line":134,"character":26}, triggerKind=1
+Completion Provider - completion # 128 - Completion result obtained from language client
+W0222 21:15:41.134042   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {135 0}}, error: invalid column number
+E0222 21:15:41.134230   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:15:41.134268   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {135 0}}, error: invalid column number
+Completion Provider - completion # 129 - New completion requested from language client at position {"line":134,"character":26}, triggerKind=1
+Completion Provider - completion # 129 - Completion result obtained from language client
+W0222 21:15:41.379697   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {135 0}}, error: invalid column number
+E0222 21:15:41.379937   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:15:41.379976   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {135 0}}, error: invalid column number
+Completion Provider - completion # 130 - New completion requested from language client at position {"line":134,"character":27}, triggerKind=1
+Completion Provider - completion # 130 - Completion result obtained from language client
+W0222 21:15:41.585104   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {135 0}}, error: invalid column number
+E0222 21:15:41.585329   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:15:41.585372   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {135 0}}, error: invalid column number
+Completion Provider - completion # 131 - New completion requested from language client at position {"line":134,"character":28}, triggerKind=1
+Completion Provider - completion # 131 - Completion result obtained from language client
+W0222 21:15:41.676037   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {135 0}}, error: invalid column number
+E0222 21:15:41.676263   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:15:41.676302   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {135 0}}, error: invalid column number
+Completion Provider - completion # 132 - New completion requested from language client at position {"line":134,"character":29}, triggerKind=1
+Completion Provider - completion # 132 - Completion result obtained from language client
+W0222 21:15:41.972083   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {135 0}}, error: invalid column number
+E0222 21:15:41.972347   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:15:41.972387   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {135 0}}, error: invalid column number
+Completion Provider - completion # 133 - New completion requested from language client at position {"line":134,"character":30}, triggerKind=1
+Completion Provider - completion # 133 - Completion result obtained from language client
+W0222 21:15:42.091882   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {135 0}}, error: invalid column number
+E0222 21:15:42.092099   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:15:42.092132   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {135 0}}, error: invalid column number
+Completion Provider - completion # 134 - New completion requested from language client at position {"line":134,"character":31}, triggerKind=1
+Completion Provider - completion # 134 - Completion result obtained from language client
+W0222 21:15:42.343956   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {135 0}}, error: invalid column number
+E0222 21:15:42.344171   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:15:42.344212   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {135 0}}, error: invalid column number
+Completion Provider - completion # 135 - New completion requested from language client at position {"line":134,"character":32}, triggerKind=1
+Completion Provider - completion # 135 - Completion result obtained from language client
+W0222 21:15:42.575538   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {135 0}}, error: invalid column number
+E0222 21:15:42.575785   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:15:42.575824   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {135 0}}, error: invalid column number
+Completion Provider - completion # 136 - New completion requested from language client at position {"line":134,"character":33}, triggerKind=1
+Completion Provider - completion # 136 - Completion result obtained from language client
+W0222 21:15:43.562071   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {135 0}}, error: invalid column number
+E0222 21:15:43.562292   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:15:43.562327   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {136 0}}, error: invalid column number
+Completion Provider - completion # 137 - New completion requested from language client at position {"line":135,"character":12}, triggerKind=1
+Completion Provider - completion # 137 - Completion result obtained from language client
+W0222 21:15:44.009718   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {136 0}}, error: invalid column number
+E0222 21:15:44.009966   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:15:44.010014   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {137 0}}, error: invalid column number
+W0222 21:15:44.010056   11887 document.go:267] Error computing chars added only: getting byte offset for start of change range: invalid column number
+Completion Provider - completion # 138 - New completion requested from language client at position {"line":136,"character":12}, triggerKind=1
+Completion Provider - completion # 138 - Completion result obtained from language client
+W0222 21:15:44.451928   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {137 0}}, error: invalid column number
+E0222 21:15:44.452127   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:15:44.452185   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {136 8}}, error: invalid column number
+Completion Provider - completion # 139 - New completion requested from language client at position {"line":136,"character":8}, triggerKind=1
+Completion Provider - completion # 139 - Completion result obtained from language client
+W0222 21:15:44.693718   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {136 8}}, error: invalid column number
+E0222 21:15:44.693954   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:15:44.694016   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {136 4}}, error: invalid column number
+Completion Provider - completion # 140 - New completion requested from language client at position {"line":136,"character":4}, triggerKind=1
+Completion Provider - completion # 140 - Completion result obtained from language client
+W0222 21:15:44.939723   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {136 4}}, error: invalid column number
+E0222 21:15:44.939880   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:15:44.939951   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {136 0}}, error: invalid column number
+Completion Provider - completion # 141 - New completion requested from language client at position {"line":136,"character":0}, triggerKind=1
+Completion Provider - completion # 141 - Completion result obtained from language client
+W0222 21:15:45.291905   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {136 0}}, error: invalid column number
+E0222 21:15:45.292101   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:15:45.292164   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {135 0}}, error: invalid column number
+Completion Provider - completion # 142 - New completion requested from language client at position {"line":135,"character":0}, triggerKind=1
+Completion Provider - completion # 142 - Completion result obtained from language client
+W0222 21:15:46.057125   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {135 0}}, error: invalid column number
+E0222 21:15:46.057320   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:15:46.057365   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {136 0}}, error: invalid column number
+Completion Provider - completion # 143 - New completion requested from language client at position {"line":135,"character":1}, triggerKind=1
+Completion Provider - completion # 143 - Completion result obtained from language client
+W0222 21:15:46.556460   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {136 0}}, error: invalid column number
+E0222 21:15:46.556695   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:15:46.556744   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {136 0}}, error: invalid column number
+W0222 21:15:46.591536   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {136 0}}, error: invalid column number
+E0222 21:15:46.591759   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:15:46.591821   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {136 0}}, error: invalid column number
+W0222 21:15:46.612440   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {136 0}}, error: invalid column number
+E0222 21:15:46.612666   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:15:46.612705   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {136 0}}, error: invalid column number
+Completion Provider - completion # 144 - New completion requested from language client at position {"line":135,"character":4}, triggerKind=1
+Completion Provider - completion # 144 - Completion result obtained from language client
+W0222 21:15:46.798124   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {136 0}}, error: invalid column number
+E0222 21:15:46.798327   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:15:46.798369   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {136 0}}, error: invalid column number
+Completion Provider - completion # 145 - New completion requested from language client at position {"line":135,"character":5}, triggerKind=1
+Completion Provider - completion # 145 - Completion result obtained from language client
+W0222 21:15:46.986084   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {136 0}}, error: invalid column number
+E0222 21:15:46.986293   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:15:46.986328   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {136 0}}, error: invalid column number
+Completion Provider - completion # 146 - New completion requested from language client at position {"line":135,"character":6}, triggerKind=1
+Completion Provider - completion # 146 - Completion result obtained from language client
+W0222 21:15:47.281774   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {136 0}}, error: invalid column number
+E0222 21:15:47.281974   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:15:47.282014   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {136 0}}, error: invalid column number
+Completion Provider - completion # 147 - New completion requested from language client at position {"line":135,"character":7}, triggerKind=1
+Completion Provider - completion # 147 - Completion result obtained from language client
+W0222 21:15:47.518124   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {136 0}}, error: invalid column number
+E0222 21:15:47.518331   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:15:47.518371   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {136 0}}, error: invalid column number
+Completion Provider - completion # 148 - New completion requested from language client at position {"line":135,"character":8}, triggerKind=1
+Completion Provider - completion # 148 - Completion result obtained from language client
+W0222 21:15:48.283102   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {136 0}}, error: invalid column number
+E0222 21:15:48.283286   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:15:48.283327   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {136 0}}, error: invalid column number
+Completion Provider - completion # 149 - New completion requested from language client at position {"line":135,"character":9}, triggerKind=1
+Completion Provider - completion # 149 - Completion result obtained from language client
+W0222 21:15:48.429514   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {136 0}}, error: invalid column number
+E0222 21:15:48.429744   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:15:48.429798   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {136 0}}, error: invalid column number
+Completion Provider - completion # 150 - New completion requested from language client at position {"line":135,"character":10}, triggerKind=1
+Completion Provider - completion # 150 - Completion result obtained from language client
+W0222 21:15:48.549026   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {136 0}}, error: invalid column number
+E0222 21:15:48.549223   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:15:48.549272   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {136 0}}, error: invalid column number
+Completion Provider - completion # 151 - New completion requested from language client at position {"line":135,"character":11}, triggerKind=1
+Completion Provider - completion # 151 - Completion result obtained from language client
+W0222 21:15:49.005106   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {136 0}}, error: invalid column number
+E0222 21:15:49.005364   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:15:49.005401   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {136 0}}, error: invalid column number
+Completion Provider - completion # 152 - New completion requested from language client at position {"line":135,"character":12}, triggerKind=1
+Completion Provider - completion # 152 - Completion result obtained from language client
+W0222 21:15:50.049012   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {136 0}}, error: invalid column number
+E0222 21:15:50.049215   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:15:50.049262   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {136 0}}, error: invalid column number
+Completion Provider - completion # 153 - New completion requested from language client at position {"line":135,"character":13}, triggerKind=1
+Completion Provider - completion # 153 - Completion result obtained from language client
+W0222 21:15:50.290864   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {136 0}}, error: invalid column number
+E0222 21:15:50.291072   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:15:50.291109   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {137 0}}, error: invalid column number
+Completion Provider - completion # 154 - New completion requested from language client at position {"line":136,"character":12}, triggerKind=1
+Completion Provider - completion # 154 - Completion result obtained from language client
+W0222 21:15:51.136523   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {137 0}}, error: invalid column number
+E0222 21:15:51.136744   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:15:51.136785   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {137 0}}, error: invalid column number
+Completion Provider - completion # 155 - New completion requested from language client at position {"line":136,"character":13}, triggerKind=1
+Completion Provider - completion # 155 - Completion result obtained from language client
+Completion Provider - completion # 156 - New completion requested from language client at position {"line":136,"character":13}, triggerKind=1
+Completion Provider - completion # 156 - Completion result obtained from language client
+W0222 21:15:51.417722   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {137 0}}, error: invalid column number
+E0222 21:15:51.417964   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:15:51.418007   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {137 0}}, error: invalid column number
+W0222 21:15:51.456459   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {137 0}}, error: invalid column number
+E0222 21:15:51.456706   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:15:51.456749   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {137 0}}, error: invalid column number
+Completion Provider - completion # 157 - New completion requested from language client at position {"line":136,"character":15}, triggerKind=1
+Completion Provider - completion # 157 - Completion result obtained from language client
+W0222 21:15:51.692937   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {137 0}}, error: invalid column number
+E0222 21:15:51.693141   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:15:51.693180   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {137 0}}, error: invalid column number
+Completion Provider - completion # 158 - New completion requested from language client at position {"line":136,"character":16}, triggerKind=1
+Completion Provider - completion # 158 - Completion result obtained from language client
+W0222 21:15:51.916295   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {137 0}}, error: invalid column number
+E0222 21:15:51.916504   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:15:51.916552   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {137 0}}, error: invalid column number
+Completion Provider - completion # 159 - New completion requested from language client at position {"line":136,"character":17}, triggerKind=1
+Completion Provider - completion # 159 - Completion result obtained from language client
+W0222 21:15:52.326345   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {137 0}}, error: invalid column number
+E0222 21:15:52.326615   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:15:52.326655   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {137 0}}, error: invalid column number
+Completion Provider - completion # 160 - New completion requested from language client at position {"line":136,"character":21}, triggerKind=1
+Completion Provider - completion # 160 - Completion result obtained from language client
+W0222 21:15:52.963918   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {137 0}}, error: invalid column number
+E0222 21:15:52.964174   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:15:52.964215   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {137 0}}, error: invalid column number
+Completion Provider - completion # 161 - New completion requested from language client at position {"line":136,"character":22}, triggerKind=1
+Completion Provider - completion # 161 - Completion result obtained from language client
+W0222 21:15:53.175236   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {137 0}}, error: invalid column number
+E0222 21:15:53.175526   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:15:53.175635   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {137 0}}, error: invalid column number
+Completion Provider - completion # 162 - New completion requested from language client at position {"line":136,"character":23}, triggerKind=1
+Completion Provider - completion # 162 - Completion result obtained from language client
+W0222 21:15:53.297219   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {137 0}}, error: invalid column number
+E0222 21:15:53.297434   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:15:53.297473   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {137 0}}, error: invalid column number
+Completion Provider - completion # 163 - New completion requested from language client at position {"line":136,"character":24}, triggerKind=1
+Completion Provider - completion # 163 - Completion result obtained from language client
+W0222 21:15:53.987552   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {137 0}}, error: invalid column number
+E0222 21:15:53.987784   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:15:53.987838   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {137 0}}, error: invalid column number
+Completion Provider - completion # 164 - New completion requested from language client at position {"line":136,"character":25}, triggerKind=1
+Completion Provider - completion # 164 - Completion result obtained from language client
+W0222 21:15:54.115930   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {137 0}}, error: invalid column number
+E0222 21:15:54.116126   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:15:54.116167   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {137 0}}, error: invalid column number
+Completion Provider - completion # 165 - New completion requested from language client at position {"line":136,"character":26}, triggerKind=1
+Completion Provider - completion # 165 - Completion result obtained from language client
+W0222 21:15:55.702976   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {137 0}}, error: invalid column number
+E0222 21:15:55.703198   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:15:55.703241   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {137 0}}, error: invalid column number
+Completion Provider - completion # 166 - New completion requested from language client at position {"line":136,"character":26}, triggerKind=1
+Completion Provider - completion # 166 - Completion result obtained from language client
+W0222 21:15:56.365636   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {137 0}}, error: invalid column number
+E0222 21:15:56.365837   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:15:56.365892   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {136 25}}, error: invalid column number
+Completion Provider - completion # 167 - New completion requested from language client at position {"line":136,"character":25}, triggerKind=1
+Completion Provider - completion # 167 - Completion result obtained from language client
+W0222 21:15:57.463983   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {136 25}}, error: invalid column number
+E0222 21:15:57.464178   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:15:57.464213   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {137 0}}, error: invalid column number
+Completion Provider - completion # 168 - New completion requested from language client at position {"line":136,"character":26}, triggerKind=1
+Completion Provider - completion # 168 - Completion result obtained from language client
+W0222 21:15:58.556042   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {137 0}}, error: invalid column number
+E0222 21:15:58.556257   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:15:58.556296   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {137 0}}, error: invalid column number
+Completion Provider - completion # 169 - New completion requested from language client at position {"line":136,"character":27}, triggerKind=1
+Completion Provider - completion # 169 - Completion result obtained from language client
+W0222 21:15:58.788607   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {137 0}}, error: invalid column number
+E0222 21:15:58.788806   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:15:58.788841   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {137 0}}, error: invalid column number
+Completion Provider - completion # 170 - New completion requested from language client at position {"line":136,"character":28}, triggerKind=1
+Completion Provider - completion # 170 - Completion result obtained from language client
+W0222 21:15:59.101135   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {137 0}}, error: invalid column number
+E0222 21:15:59.101348   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:15:59.101378   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {137 0}}, error: invalid column number
+Completion Provider - completion # 171 - New completion requested from language client at position {"line":136,"character":29}, triggerKind=1
+Completion Provider - completion # 171 - Completion result obtained from language client
+W0222 21:15:59.315983   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {137 0}}, error: invalid column number
+E0222 21:15:59.316200   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:15:59.316232   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {137 0}}, error: invalid column number
+Completion Provider - completion # 172 - New completion requested from language client at position {"line":136,"character":30}, triggerKind=1
+Completion Provider - completion # 172 - Completion result obtained from language client
+W0222 21:15:59.552838   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {137 0}}, error: invalid column number
+E0222 21:15:59.553051   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:15:59.553087   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {137 0}}, error: invalid column number
+Completion Provider - completion # 173 - New completion requested from language client at position {"line":136,"character":31}, triggerKind=1
+Completion Provider - completion # 173 - Completion result obtained from language client
+W0222 21:15:59.670738   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {137 0}}, error: invalid column number
+E0222 21:15:59.670962   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:15:59.670997   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {137 0}}, error: invalid column number
+Completion Provider - completion # 174 - New completion requested from language client at position {"line":136,"character":32}, triggerKind=1
+Completion Provider - completion # 174 - Completion result obtained from language client
+W0222 21:16:00.993779   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {137 0}}, error: invalid column number
+E0222 21:16:00.994090   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:16:00.994140   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {137 0}}, error: invalid column number
+Completion Provider - completion # 175 - New completion requested from language client at position {"line":136,"character":33}, triggerKind=1
+Completion Provider - completion # 175 - Completion result obtained from language client
+W0222 21:16:11.962526   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {137 0}}, error: invalid column number
+E0222 21:16:11.962742   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:16:11.962813   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {137 0}}, error: invalid column number
+Completion Provider - completion # 176 - New completion requested from language client at position {"line":139,"character":48}, triggerKind=1
+Completion Provider - completion # 176 - Completion result obtained from language client
+Completion Provider - completion # 177 - New completion requested from language client at position {"line":139,"character":48}, triggerKind=1
+Completion Provider - completion # 177 - Completion result obtained from language client
+W0222 21:16:12.225153   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {137 0}}, error: invalid column number
+E0222 21:16:12.225376   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:16:12.225438   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {137 0}}, error: invalid column number
+Completion Provider - completion # 178 - New completion requested from language client at position {"line":139,"character":49}, triggerKind=1
+Completion Provider - completion # 178 - Completion result obtained from language client
+W0222 21:16:12.323792   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {137 0}}, error: invalid column number
+E0222 21:16:12.323982   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:16:12.324044   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {137 0}}, error: invalid column number
+Completion Provider - completion # 179 - New completion requested from language client at position {"line":139,"character":50}, triggerKind=1
+Completion Provider - completion # 179 - Completion result obtained from language client
+W0222 21:16:12.487342   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {137 0}}, error: invalid column number
+E0222 21:16:12.487603   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:16:12.487738   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {137 0}}, error: invalid column number
+Completion Provider - completion # 180 - New completion requested from language client at position {"line":139,"character":51}, triggerKind=1
+Completion Provider - completion # 180 - Completion result obtained from language client
+W0222 21:16:12.631816   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {137 0}}, error: invalid column number
+E0222 21:16:12.632022   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:16:12.632089   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {137 0}}, error: invalid column number
+Completion Provider - completion # 181 - New completion requested from language client at position {"line":139,"character":52}, triggerKind=1
+Completion Provider - completion # 181 - Completion result obtained from language client
+W0222 21:16:13.229008   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {137 0}}, error: invalid column number
+E0222 21:16:13.229223   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:16:13.229287   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {137 0}}, error: invalid column number
+Completion Provider - completion # 182 - New completion requested from language client at position {"line":139,"character":56}, triggerKind=1
+Completion Provider - completion # 182 - Completion result obtained from language client
+I0222 21:16:23.831747   11887 life_cycle.go:297] codeReportEvery: recomputing codereport metric
+W0222 21:16:27.481770   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {137 0}}, error: invalid column number
+E0222 21:16:27.481964   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:16:27.482042   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {137 0}}, error: invalid column number
+Completion Provider - completion # 183 - New completion requested from language client at position {"line":170,"character":4}, triggerKind=1
+Completion Provider - completion # 183 - Completion result obtained from language client
+W0222 21:16:27.702802   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {137 0}}, error: invalid column number
+E0222 21:16:27.703011   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+E0222 21:16:27.703103   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:16:27.703145   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {137 0}}, error: invalid column number
+W0222 21:16:27.703163   11887 retention.go:173] Could not get offsets for range in document. range: &{{170 4} {171 4}}, error: invalid column number
+W0222 21:16:27.703205   11887 document.go:267] Error computing chars added only: getting byte offset for start of change range: invalid column number
+Completion Provider - completion # 184 - New completion requested from language client at position {"line":171,"character":4}, triggerKind=1
+Completion Provider - completion # 184 - Completion result obtained from language client
+W0222 21:16:28.891379   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {137 0}}, error: invalid column number
+W0222 21:16:28.891417   11887 retention.go:173] Could not get offsets for range in document. range: &{{170 4} {171 4}}, error: invalid column number
+E0222 21:16:28.891642   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+E0222 21:16:28.891719   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:16:28.891750   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {137 0}}, error: invalid column number
+W0222 21:16:28.891762   11887 retention.go:173] Could not get offsets for range in document. range: &{{170 4} {177 33}}, error: invalid column number
+Completion Provider - completion # 185 - New completion requested from language client at position {"line":177,"character":33}, triggerKind=1
+Completion Provider - completion # 185 - Completion result obtained from language client
+W0222 21:16:29.422429   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {137 0}}, error: invalid column number
+W0222 21:16:29.422473   11887 retention.go:173] Could not get offsets for range in document. range: &{{170 4} {177 33}}, error: invalid column number
+E0222 21:16:29.423545   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+E0222 21:16:29.423770   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:16:29.423860   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {137 0}}, error: invalid column number
+W0222 21:16:29.423881   11887 retention.go:173] Could not get offsets for range in document. range: &{{170 4} {178 12}}, error: invalid column number
+Completion Provider - completion # 186 - New completion requested from language client at position {"line":178,"character":12}, triggerKind=1
+Completion Provider - completion # 186 - Completion result obtained from language client
+W0222 21:16:29.831302   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {137 0}}, error: invalid column number
+W0222 21:16:29.831339   11887 retention.go:173] Could not get offsets for range in document. range: &{{170 4} {178 12}}, error: invalid column number
+E0222 21:16:29.831507   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+E0222 21:16:29.831599   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+E0222 21:16:29.831624   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:16:29.831643   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {137 0}}, error: invalid column number
+W0222 21:16:29.831653   11887 retention.go:173] Could not get offsets for range in document. range: &{{170 4} {178 0}}, error: invalid column number
+W0222 21:16:29.831662   11887 retention.go:173] Could not get offsets for range in document. range: &{{178 12} {179 12}}, error: invalid column number
+W0222 21:16:29.831700   11887 document.go:267] Error computing chars added only: getting byte offset for start of change range: invalid column number
+Completion Provider - completion # 187 - New completion requested from language client at position {"line":179,"character":12}, triggerKind=1
+Completion Provider - completion # 187 - Completion result obtained from language client
+W0222 21:16:30.854872   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {137 0}}, error: invalid column number
+W0222 21:16:30.854945   11887 retention.go:173] Could not get offsets for range in document. range: &{{170 4} {178 0}}, error: invalid column number
+W0222 21:16:30.854962   11887 retention.go:173] Could not get offsets for range in document. range: &{{178 12} {179 12}}, error: invalid column number
+E0222 21:16:30.855133   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+E0222 21:16:30.855206   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+E0222 21:16:30.855235   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:16:30.855267   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {137 0}}, error: invalid column number
+W0222 21:16:30.855282   11887 retention.go:173] Could not get offsets for range in document. range: &{{170 4} {178 0}}, error: invalid column number
+W0222 21:16:30.855290   11887 retention.go:173] Could not get offsets for range in document. range: &{{178 12} {179 8}}, error: invalid column number
+Completion Provider - completion # 188 - New completion requested from language client at position {"line":179,"character":8}, triggerKind=1
+Completion Provider - completion # 188 - Completion result obtained from language client
+W0222 21:16:31.080992   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {137 0}}, error: invalid column number
+W0222 21:16:31.081027   11887 retention.go:173] Could not get offsets for range in document. range: &{{170 4} {178 0}}, error: invalid column number
+W0222 21:16:31.081036   11887 retention.go:173] Could not get offsets for range in document. range: &{{178 12} {179 8}}, error: invalid column number
+E0222 21:16:31.081191   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+E0222 21:16:31.081262   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+E0222 21:16:31.081292   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:16:31.081325   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {137 0}}, error: invalid column number
+W0222 21:16:31.081338   11887 retention.go:173] Could not get offsets for range in document. range: &{{170 4} {178 0}}, error: invalid column number
+W0222 21:16:31.081347   11887 retention.go:173] Could not get offsets for range in document. range: &{{178 12} {179 4}}, error: invalid column number
+Completion Provider - completion # 189 - New completion requested from language client at position {"line":179,"character":4}, triggerKind=1
+Completion Provider - completion # 189 - Completion result obtained from language client
+W0222 21:16:31.329412   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {137 0}}, error: invalid column number
+W0222 21:16:31.329449   11887 retention.go:173] Could not get offsets for range in document. range: &{{170 4} {178 0}}, error: invalid column number
+W0222 21:16:31.329457   11887 retention.go:173] Could not get offsets for range in document. range: &{{178 12} {179 4}}, error: invalid column number
+E0222 21:16:31.329628   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+E0222 21:16:31.329702   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+E0222 21:16:31.329733   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:16:31.329786   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {137 0}}, error: invalid column number
+W0222 21:16:31.329802   11887 retention.go:173] Could not get offsets for range in document. range: &{{170 4} {178 0}}, error: invalid column number
+W0222 21:16:31.329810   11887 retention.go:173] Could not get offsets for range in document. range: &{{178 12} {179 0}}, error: invalid column number
+Completion Provider - completion # 190 - New completion requested from language client at position {"line":179,"character":0}, triggerKind=1
+Completion Provider - completion # 190 - Completion result obtained from language client
+W0222 21:16:31.678322   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {137 0}}, error: invalid column number
+W0222 21:16:31.678355   11887 retention.go:173] Could not get offsets for range in document. range: &{{170 4} {178 0}}, error: invalid column number
+W0222 21:16:31.678364   11887 retention.go:173] Could not get offsets for range in document. range: &{{178 12} {179 0}}, error: invalid column number
+E0222 21:16:31.678527   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+E0222 21:16:31.678624   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:16:31.678664   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {137 0}}, error: invalid column number
+W0222 21:16:31.678680   11887 retention.go:173] Could not get offsets for range in document. range: &{{170 4} {178 0}}, error: invalid column number
+Completion Provider - completion # 191 - New completion requested from language client at position {"line":178,"character":0}, triggerKind=1
+Completion Provider - completion # 191 - Completion result obtained from language client
+W0222 21:16:34.276057   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {137 0}}, error: invalid column number
+W0222 21:16:34.276093   11887 retention.go:173] Could not get offsets for range in document. range: &{{170 4} {178 0}}, error: invalid column number
+E0222 21:16:34.276271   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+E0222 21:16:34.276370   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:16:34.276453   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {137 0}}, error: invalid column number
+W0222 21:16:34.276491   11887 retention.go:173] Could not get offsets for range in document. range: &{{170 4} {171 8}}, error: invalid column number
+Completion Provider - completion # 192 - New completion requested from language client at position {"line":171,"character":8}, triggerKind=1
+Completion Provider - completion # 192 - Completion result obtained from language client
+W0222 21:16:48.925803   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {137 0}}, error: invalid column number
+W0222 21:16:48.925846   11887 retention.go:173] Could not get offsets for range in document. range: &{{170 4} {171 8}}, error: invalid column number
+E0222 21:16:48.926341   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+E0222 21:16:48.926441   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:16:48.926670   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {137 0}}, error: invalid column number
+W0222 21:16:48.926701   11887 retention.go:173] Could not get offsets for range in document. range: &{{170 4} {171 4}}, error: invalid column number
+Completion Provider - completion # 193 - New completion requested from language client at position {"line":171,"character":4}, triggerKind=1
+Completion Provider - completion # 193 - Completion result obtained from language client
+W0222 21:17:04.660503   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {137 0}}, error: invalid column number
+W0222 21:17:04.660541   11887 retention.go:173] Could not get offsets for range in document. range: &{{170 4} {171 4}}, error: invalid column number
+E0222 21:17:04.660749   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+E0222 21:17:04.660892   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:17:04.660945   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {137 0}}, error: invalid column number
+W0222 21:17:04.660959   11887 retention.go:173] Could not get offsets for range in document. range: &{{170 4} {178 0}}, error: invalid column number
+Completion Provider - completion # 194 - New completion requested from language client at position {"line":179,"character":44}, triggerKind=1
+Completion Provider - completion # 194 - Completion result obtained from language client
+Completion Provider - completion # 195 - New completion requested from language client at position {"line":179,"character":44}, triggerKind=1
+Completion Provider - completion # 195 - Completion result obtained from language client
+W0222 21:17:04.963175   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {137 0}}, error: invalid column number
+W0222 21:17:04.963210   11887 retention.go:173] Could not get offsets for range in document. range: &{{170 4} {178 0}}, error: invalid column number
+E0222 21:17:04.963366   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+E0222 21:17:04.963462   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:17:04.963512   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {137 0}}, error: invalid column number
+W0222 21:17:04.963527   11887 retention.go:173] Could not get offsets for range in document. range: &{{170 4} {178 0}}, error: invalid column number
+Completion Provider - completion # 196 - New completion requested from language client at position {"line":179,"character":45}, triggerKind=1
+Completion Provider - completion # 196 - Completion result obtained from language client
+W0222 21:17:05.067808   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {137 0}}, error: invalid column number
+W0222 21:17:05.067850   11887 retention.go:173] Could not get offsets for range in document. range: &{{170 4} {178 0}}, error: invalid column number
+E0222 21:17:05.068059   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+E0222 21:17:05.068138   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:17:05.068190   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {137 0}}, error: invalid column number
+W0222 21:17:05.068204   11887 retention.go:173] Could not get offsets for range in document. range: &{{170 4} {178 0}}, error: invalid column number
+Completion Provider - completion # 197 - New completion requested from language client at position {"line":179,"character":46}, triggerKind=1
+Completion Provider - completion # 197 - Completion result obtained from language client
+W0222 21:17:05.220112   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {137 0}}, error: invalid column number
+W0222 21:17:05.220149   11887 retention.go:173] Could not get offsets for range in document. range: &{{170 4} {178 0}}, error: invalid column number
+E0222 21:17:05.220300   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+E0222 21:17:05.220390   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:17:05.220448   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {137 0}}, error: invalid column number
+W0222 21:17:05.220462   11887 retention.go:173] Could not get offsets for range in document. range: &{{170 4} {178 0}}, error: invalid column number
+Completion Provider - completion # 198 - New completion requested from language client at position {"line":179,"character":47}, triggerKind=1
+Completion Provider - completion # 198 - Completion result obtained from language client
+W0222 21:17:05.769750   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {137 0}}, error: invalid column number
+W0222 21:17:05.769811   11887 retention.go:173] Could not get offsets for range in document. range: &{{170 4} {178 0}}, error: invalid column number
+E0222 21:17:05.769975   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+E0222 21:17:05.770099   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:17:05.770162   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {137 0}}, error: invalid column number
+W0222 21:17:05.770180   11887 retention.go:173] Could not get offsets for range in document. range: &{{170 4} {178 0}}, error: invalid column number
+Completion Provider - completion # 199 - New completion requested from language client at position {"line":179,"character":52}, triggerKind=1
+Completion Provider - completion # 199 - Completion result obtained from language client
+I0222 21:17:23.832131   11887 life_cycle.go:297] codeReportEvery: recomputing codereport metric
+W0222 21:18:05.741658   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {137 0}}, error: invalid column number
+W0222 21:18:05.741707   11887 retention.go:173] Could not get offsets for range in document. range: &{{170 4} {178 0}}, error: invalid column number
+E0222 21:18:05.741893   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+E0222 21:18:05.741970   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:18:05.742023   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {137 0}}, error: invalid column number
+W0222 21:18:05.742036   11887 retention.go:173] Could not get offsets for range in document. range: &{{170 4} {178 0}}, error: invalid column number
+Completion Provider - completion # 200 - New completion requested from language client at position {"line":179,"character":35}, triggerKind=1
+Completion Provider - completion # 200 - Completion result obtained from language client
+W0222 21:18:06.034909   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {137 0}}, error: invalid column number
+W0222 21:18:06.034946   11887 retention.go:173] Could not get offsets for range in document. range: &{{170 4} {178 0}}, error: invalid column number
+E0222 21:18:06.035083   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+E0222 21:18:06.035213   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:18:06.035288   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {137 0}}, error: invalid column number
+W0222 21:18:06.035300   11887 retention.go:173] Could not get offsets for range in document. range: &{{170 4} {178 0}}, error: invalid column number
+Completion Provider - completion # 201 - New completion requested from language client at position {"line":179,"character":34}, triggerKind=1
+Completion Provider - completion # 201 - Completion result obtained from language client
+W0222 21:18:14.208830   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {137 0}}, error: invalid column number
+W0222 21:18:14.208873   11887 retention.go:173] Could not get offsets for range in document. range: &{{170 4} {178 0}}, error: invalid column number
+E0222 21:18:14.209090   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+E0222 21:18:14.209164   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:18:14.209219   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {137 0}}, error: invalid column number
+W0222 21:18:14.209234   11887 retention.go:173] Could not get offsets for range in document. range: &{{170 4} {178 0}}, error: invalid column number
+Completion Provider - completion # 202 - New completion requested from language client at position {"line":139,"character":39}, triggerKind=1
+Completion Provider - completion # 202 - Completion result obtained from language client
+W0222 21:18:14.430984   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {137 0}}, error: invalid column number
+W0222 21:18:14.431023   11887 retention.go:173] Could not get offsets for range in document. range: &{{170 4} {178 0}}, error: invalid column number
+E0222 21:18:14.431170   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+E0222 21:18:14.431241   11887 retention.go:641] Failed to get offsets at range due to: start offset: invalid column number
+W0222 21:18:14.431291   11887 retention.go:173] Could not get offsets for range in document. range: &{{130 59} {137 0}}, error: invalid column number
+W0222 21:18:14.431305   11887 retention.go:173] Could not get offsets for range in document. range: &{{170 4} {178 0}}, error: invalid column number
+Completion Provider - completion # 203 - New completion requested from language client at position {"line":139,"character":38}, triggerKind=1
+Completion Provider - completion # 203 - Completion result obtained from language client
+I0222 21:20:23.832467   11887 life_cycle.go:261] codeReportBasicEvery: recomputing codereportbasic metric
