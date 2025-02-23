@@ -40,3 +40,10 @@ git push --set-upstream origin master
 git init
 git remote add origin https://github.com/apoorvtripathi1999/convo-ai.git
 git commit -m "initial"
+git add .
+git commit -m "initial"
+git push origin master
+git remote add origin git@github.com:apoorvtripathi1999/convo-ai.git
+git remote
+git push remote origin
+git init
