@@ -30,3 +30,13 @@ python main.py
 python main.py
 git init 
 git remote add origin https://github.com/apoorvtripathi1999/convo-ai.git
+git add .
+git commit -m "first commit"
+git config --global user.name "apoorvtripathi1999"
+git commit -m "first commit"
+ls
+git push
+git push --set-upstream origin master
+git init
+git remote add origin https://github.com/apoorvtripathi1999/convo-ai.git
+git commit -m "initial"
