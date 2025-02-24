@@ -1,3 +1,0 @@
-this is positive
-Sentiment: Neutral
-Sentiment Magnitude: 0.80

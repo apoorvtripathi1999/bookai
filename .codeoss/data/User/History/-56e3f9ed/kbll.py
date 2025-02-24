@@ -51,7 +51,7 @@ def sample_recognize(content):
 def analyze_sentiment(text):
     client = language.LanguageServiceClient()
     
-    document = language.Document(content=text, type_=language.Document.Type.PLAIN_TEXT)
+    document = language_v1.Document(content=text, type_=language_v1.Document.Type.PLAIN_TEXT)
     sentiment = client.analyze_sentiment(request={'document': document}).document_sentiment
 
     return sentiment.score, sentiment.magnitude

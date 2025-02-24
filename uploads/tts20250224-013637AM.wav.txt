@@ -1,3 +1,0 @@
-124
-Sentiment: Neutral
-Sentiment Magnitude: 0.00

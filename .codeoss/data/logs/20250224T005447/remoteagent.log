@@ -107,3 +107,4 @@
 2025-02-24 01:21:30.779 [warning] RequestStore#acceptReply was called without receiving a matching request 143
 2025-02-24 01:21:30.779 [warning] RequestStore#acceptReply was called without receiving a matching request 144
 2025-02-24 01:41:07.530 [info] [127.0.0.1][2382abcd][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+2025-02-24 02:11:03.686 [warning] [File Watcher (node.js)] Watcher shutdown because watched path got deleted

@@ -1,3 +1,0 @@
-this is good
-Sentiment: Neutral
-Sentiment Magnitude: 0.800000011920929

@@ -60,3 +60,8 @@ python main.py
 gcloud run deploy
 python main.py
 git init
+git add .
+git commit -m "fixed issues"
+git push origin master
+python main.py
+git init
