@@ -65,3 +65,7 @@ git commit -m "fixed issues"
 git push origin master
 python main.py
 git init
+git add .
+git commit -m "fixed more issues"
+git push origin master
+source /home/apoorvtripathi537/venv-translate/bin/activate

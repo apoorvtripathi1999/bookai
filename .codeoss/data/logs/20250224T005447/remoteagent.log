@@ -108,3 +108,7 @@
 2025-02-24 01:21:30.779 [warning] RequestStore#acceptReply was called without receiving a matching request 144
 2025-02-24 01:41:07.530 [info] [127.0.0.1][2382abcd][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
 2025-02-24 02:11:03.686 [warning] [File Watcher (node.js)] Watcher shutdown because watched path got deleted
+2025-02-24 02:18:31.154 [info] [127.0.0.1][70286340][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+2025-02-24 02:18:43.444 [info] [127.0.0.1][0eb661e2][ManagementConnection] New connection established.
+2025-02-24 02:18:43.510 [info] [127.0.0.1][3edd391b][ExtensionHostConnection] New connection established.
+2025-02-24 02:18:43.518 [info] [127.0.0.1][3edd391b][ExtensionHostConnection] <5974> Launched Extension Host Process.
