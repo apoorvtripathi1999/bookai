@@ -1,0 +1,3 @@
+this is sad
+Sentiment: Negative
+Sentiment Magnitude: 0.90

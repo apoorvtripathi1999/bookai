@@ -1,0 +1,3 @@
+this is good
+Sentiment: Neutral
+Sentiment Magnitude: {sentiment_magnitude:.2f}

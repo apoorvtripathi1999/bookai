@@ -47,3 +47,16 @@ git remote add origin git@github.com:apoorvtripathi1999/convo-ai.git
 git remote
 git push remote origin
 git init
+git add .
+git commit -m "initial"
+git push
+ls
+gcloud run deploy
+source /home/apoorvtripathi537/venv-translate/bin/activate
+python main.py
+pip install flask
+python main.py
+python main.py
+gcloud run deploy
+python main.py
+git init

@@ -16,3 +16,5 @@
 2025-02-23 17:27:07.929 [info] [127.0.0.1][f6783478][ExtensionHostConnection] New connection established.
 2025-02-23 17:27:07.933 [info] [127.0.0.1][f6783478][ExtensionHostConnection] <3450> Launched Extension Host Process.
 2025-02-23 17:31:00.929 [info] [127.0.0.1][7aea9595][ExtensionHostConnection] <1239> Extension Host Process exited with code: 0, signal: null.
+2025-02-23 17:32:11.561 [info] [127.0.0.1][1c06304e][ExtensionHostConnection] <2559> Extension Host Process exited with code: 0, signal: null.
+2025-02-23 17:45:30.133 [info] [127.0.0.1][76b5ae71][ManagementConnection] The client has disconnected, will wait for reconnection 3h before disposing...
