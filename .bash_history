@@ -84,3 +84,15 @@ pip install vertexai
 /home/apoorvtripathi537/venv-translate/bin/python /home/apoorvtripathi537/main.py
 source /home/apoorvtripathi537/venv-translate/bin/activate
 git init
+git add .
+git commit -m "completed project 3"
+git push origin master
+source /home/apoorvtripathi537/venv-translate/bin/activate
+ver vertexai
+_version_ vertexai
+version vertexai
+vertexai
+pip view vertexai
+pip show vertexai
+pip install vertexai
+pip show vertexai
