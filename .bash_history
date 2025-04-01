@@ -96,3 +96,7 @@ pip view vertexai
 pip show vertexai
 pip install vertexai
 pip show vertexai
+git add .
+git commit -m "added vertex ai to the requirements filr"
+clear
+git init
