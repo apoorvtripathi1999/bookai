@@ -1,0 +1,15 @@
+2025-04-01 02:34:29.319 [warning] Dir "/home/apoorvtripathi537/.pixi/envs" is not watchable (directory does not exist)
+2025-04-01 02:34:29.379 [info] Python interpreter path: ./venv-translate/bin/python
+2025-04-01 02:34:29.896 [info] > pyenv which python
+2025-04-01 02:34:29.896 [info] cwd: .
+2025-04-01 02:34:33.096 [info] Starting Jedi language server for apoorvtripathi537.
+2025-04-01 02:34:33.334 [info] Discover tests for workspace name: apoorvtripathi537 - uri: /home/apoorvtripathi537/main.py
+2025-04-01 02:34:36.483 [info] Discover tests for workspace name: apoorvtripathi537 - uri: /home/apoorvtripathi537/main.py
+2025-04-01 02:34:45.347 [info] Discover tests for workspace name: apoorvtripathi537 - uri: /home/apoorvtripathi537/main.py
+2025-04-01 02:35:04.453 [info] Discover tests for workspace name: apoorvtripathi537 - uri: /home/apoorvtripathi537/main.py
+2025-04-01 02:35:30.533 [info] Discover tests for workspace name: apoorvtripathi537 - uri: /home/apoorvtripathi537/main.py
+2025-04-01 02:35:38.339 [info] Discover tests for workspace name: apoorvtripathi537 - uri: /home/apoorvtripathi537/main.py
+2025-04-01 02:35:58.110 [info] Discover tests for workspace name: apoorvtripathi537 - uri: /home/apoorvtripathi537/main.py
+2025-04-01 02:37:47.322 [info] Discover tests for workspace name: apoorvtripathi537 - uri: /home/apoorvtripathi537/main.py
+2025-04-01 02:39:32.763 [info] Discover tests for workspace name: apoorvtripathi537 - uri: /home/apoorvtripathi537/main.py
+2025-04-01 02:39:39.113 [info] Discover tests for workspace name: apoorvtripathi537 - uri: /home/apoorvtripathi537/main.py

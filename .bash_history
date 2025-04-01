@@ -69,3 +69,18 @@ git add .
 git commit -m "fixed more issues"
 git push origin master
 source /home/apoorvtripathi537/venv-translate/bin/activate
+git add .
+git commit -m "fixed more issues"
+git push origin master
+source /home/apoorvtripathi537/venv-translate/bin/activate
+ls
+main.py
+pip main.py
+python main.py
+python main.py
+source /home/apoorvtripathi537/venv-translate/bin/activate
+/home/apoorvtripathi537/venv-translate/bin/python /home/apoorvtripathi537/main.py
+pip install vertexai
+/home/apoorvtripathi537/venv-translate/bin/python /home/apoorvtripathi537/main.py
+source /home/apoorvtripathi537/venv-translate/bin/activate
+git init

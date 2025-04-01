@@ -112,3 +112,9 @@
 2025-02-24 02:18:43.444 [info] [127.0.0.1][0eb661e2][ManagementConnection] New connection established.
 2025-02-24 02:18:43.510 [info] [127.0.0.1][3edd391b][ExtensionHostConnection] New connection established.
 2025-02-24 02:18:43.518 [info] [127.0.0.1][3edd391b][ExtensionHostConnection] <5974> Launched Extension Host Process.
+2025-02-24 02:23:43.909 [info] [127.0.0.1][39a945f1][ExtensionHostConnection] <862> Extension Host Process exited with code: 0, signal: null.
+2025-02-24 02:23:46.624 [info] [127.0.0.1][082470c2][ExtensionHostConnection] <2645> Extension Host Process exited with code: 0, signal: null.
+2025-02-24 02:51:24.643 [info] [127.0.0.1][0eb661e2][ManagementConnection] The client has disconnected, will wait for reconnection 3h before disposing...
+2025-02-24 03:23:45.162 [info] [127.0.0.1][0eb661e2][ManagementConnection] Another client has connected, will shorten the wait for reconnection 5m before disposing...
+2025-02-24 03:23:45.163 [info] [127.0.0.1][3edd391b][ExtensionHostConnection] The client has reconnected.
+2025-02-24 03:23:45.268 [info] [127.0.0.1][0eb661e2][ManagementConnection] The client has reconnected.

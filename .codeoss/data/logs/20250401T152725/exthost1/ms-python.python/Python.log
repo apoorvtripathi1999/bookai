@@ -1,0 +1,186 @@
+2025-04-01 15:27:44.387 [warning] Dir "/home/apoorvtripathi537/.pixi/envs" is not watchable (directory does not exist)
+2025-04-01 15:27:44.387 [info] Starting Environment refresh
+2025-04-01 15:27:44.387 [info] Searching for interpreters in posix paths locator
+2025-04-01 15:27:44.387 [info] Searching for pyenv environments
+2025-04-01 15:27:44.387 [info] Searching for conda environments
+2025-04-01 15:27:44.387 [info] Searching for global virtual environments
+2025-04-01 15:27:44.387 [info] Searching for custom virtual environments
+2025-04-01 15:27:44.387 [info] pyenv is not installed
+2025-04-01 15:27:44.387 [info] Finished searching for pyenv environments: 17 milliseconds
+2025-04-01 15:27:44.387 [info] Finished searching for custom virtual envs: 17 milliseconds
+2025-04-01 15:27:44.387 [info] > conda info --json
+2025-04-01 15:27:44.387 [info] > hatch env show --json
+2025-04-01 15:27:44.387 [info] cwd: .
+2025-04-01 15:27:44.387 [info] > pyenv which python
+2025-04-01 15:27:44.387 [info] cwd: .
+2025-04-01 15:27:44.387 [info] Finished searching for global virtual envs: 358 milliseconds
+2025-04-01 15:27:44.391 [info] Found: /bin/python --> /bin/python3.12
+2025-04-01 15:27:44.394 [info] Found: /bin/python3 --> /bin/python3.12
+2025-04-01 15:27:44.396 [info] Found: /bin/python3.12 --> /bin/python3.12
+2025-04-01 15:27:44.448 [info] Found: /usr/bin/python --> /usr/bin/python3.12
+2025-04-01 15:27:44.448 [info] Found: /usr/bin/python3 --> /usr/bin/python3.12
+2025-04-01 15:27:44.449 [info] Found: /usr/bin/python3.12 --> /usr/bin/python3.12
+2025-04-01 15:27:44.507 [info] > ./venv-translate/bin/python -I /google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/get_output_via_markers.py /google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/interpreterInfo.py
+2025-04-01 15:27:44.527 [info] Finished searching for interpreters in posix paths locator: 528 milliseconds
+2025-04-01 15:27:44.527 [info] > /bin/python -I /google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/get_output_via_markers.py /google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/interpreterInfo.py
+2025-04-01 15:27:44.541 [info] Environments refresh paths discovered (event): 547 milliseconds
+2025-04-01 15:27:44.541 [info] Environments refresh paths discovered: 547 milliseconds
+2025-04-01 15:27:44.593 [info] > /usr/bin/python -I /google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/get_output_via_markers.py /google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/interpreterInfo.py
+2025-04-01 15:27:44.641 [info] Environments refresh finished (event): 647 milliseconds
+2025-04-01 15:27:44.652 [info] Environment refresh took 658 milliseconds
+2025-04-01 15:27:44.657 [info] Python interpreter path: ./venv-translate/bin/python
+2025-04-01 15:27:46.363 [info] Discover tests for workspace name: undefined - uri: /User/settings.json
+2025-04-01 15:27:47.523 [info] Discover tests for workspace name: undefined - uri: /User/settings.json
+2025-04-01 15:27:51.278 [info] Starting Jedi language server for apoorvtripathi537.
+2025-04-01 15:27:51.435 [info] Discover tests for workspace name: undefined - uri: /User/settings.json
+2025-04-01 15:35:31.717 [info] Discover tests for workspace name: apoorvtripathi537 - uri: /home/apoorvtripathi537/main.py
+2025-04-01 15:35:33.237 [info] Discover tests for workspace name: apoorvtripathi537 - uri: /home/apoorvtripathi537/main.py
+2025-04-01 15:44:12.701 [info] Discover tests for workspace name: apoorvtripathi537 - uri: /home/apoorvtripathi537/main.py
+2025-04-01 15:44:15.747 [info] Discover tests for workspace name: apoorvtripathi537 - uri: /home/apoorvtripathi537/main.py
+2025-04-01 15:44:29.997 [info] Discover tests for workspace name: apoorvtripathi537 - uri: /home/apoorvtripathi537/main.py
+2025-04-01 15:44:31.528 [info] Discover tests for workspace name: apoorvtripathi537 - uri: /home/apoorvtripathi537/main.py
+2025-04-01 15:44:48.213 [info] Discover tests for workspace name: apoorvtripathi537 - uri: /home/apoorvtripathi537/main.py
+2025-04-01 15:44:50.096 [info] Discover tests for workspace name: apoorvtripathi537 - uri: /home/apoorvtripathi537/main.py
+2025-04-01 15:44:53.486 [info] Discover tests for workspace name: apoorvtripathi537 - uri: /home/apoorvtripathi537/main.py
+2025-04-01 15:45:07.049 [info] Discover tests for workspace name: apoorvtripathi537 - uri: /home/apoorvtripathi537/main.py
+2025-04-01 15:45:11.127 [info] Discover tests for workspace name: apoorvtripathi537 - uri: /home/apoorvtripathi537/main.py
+2025-04-01 15:45:17.336 [info] Discover tests for workspace name: apoorvtripathi537 - uri: /home/apoorvtripathi537/main.py
+2025-04-01 15:45:41.631 [info] Discover tests for workspace name: apoorvtripathi537 - uri: /home/apoorvtripathi537/main.py
+2025-04-01 15:45:47.745 [info] Discover tests for workspace name: apoorvtripathi537 - uri: /home/apoorvtripathi537/main.py
+2025-04-01 15:46:06.211 [info] Discover tests for workspace name: apoorvtripathi537 - uri: /home/apoorvtripathi537/main.py
+2025-04-01 15:46:19.326 [info] Discover tests for workspace name: apoorvtripathi537 - uri: /home/apoorvtripathi537/main.py
+2025-04-01 15:46:23.241 [info] Send text to terminal: source /home/apoorvtripathi537/venv-translate/bin/activate
+2025-04-01 15:46:23.599 [info] CreateEnv Trigger - Skipping for /home/apoorvtripathi537/main.py
+2025-04-01 15:46:24.292 [info] Send text to terminal: /home/apoorvtripathi537/venv-translate/bin/python /home/apoorvtripathi537/main.py
+2025-04-01 15:46:47.785 [info] Discover tests for workspace name: apoorvtripathi537 - uri: /home/apoorvtripathi537/venv-translate/lib/python3.12/site-packages/numpy/f2py/setup.cfg
+2025-04-01 15:50:23.170 [info] Discover tests for workspace name: apoorvtripathi537 - uri: /home/apoorvtripathi537/main.py
+2025-04-01 15:50:25.071 [info] Discover tests for workspace name: apoorvtripathi537 - uri: /home/apoorvtripathi537/main.py
+2025-04-01 15:50:27.763 [info] Discover tests for workspace name: apoorvtripathi537 - uri: /home/apoorvtripathi537/main.py
+2025-04-01 15:50:30.603 [info] Discover tests for workspace name: apoorvtripathi537 - uri: /home/apoorvtripathi537/main.py
+2025-04-01 15:50:39.374 [info] Discover tests for workspace name: apoorvtripathi537 - uri: /home/apoorvtripathi537/main.py
+2025-04-01 15:50:41.171 [info] Discover tests for workspace name: apoorvtripathi537 - uri: /home/apoorvtripathi537/main.py
+2025-04-01 15:50:44.609 [info] Discover tests for workspace name: apoorvtripathi537 - uri: /home/apoorvtripathi537/main.py
+2025-04-01 15:50:46.181 [info] Discover tests for workspace name: apoorvtripathi537 - uri: /home/apoorvtripathi537/main.py
+2025-04-01 15:50:49.527 [info] Discover tests for workspace name: apoorvtripathi537 - uri: /home/apoorvtripathi537/main.py
+2025-04-01 15:50:51.477 [info] Discover tests for workspace name: apoorvtripathi537 - uri: /home/apoorvtripathi537/main.py
+2025-04-01 15:50:55.591 [info] Discover tests for workspace name: apoorvtripathi537 - uri: /home/apoorvtripathi537/main.py
+2025-04-01 15:50:57.956 [info] Discover tests for workspace name: apoorvtripathi537 - uri: /home/apoorvtripathi537/main.py
+2025-04-01 15:50:59.684 [info] Discover tests for workspace name: apoorvtripathi537 - uri: /home/apoorvtripathi537/main.py
+2025-04-01 15:51:01.669 [info] Discover tests for workspace name: apoorvtripathi537 - uri: /home/apoorvtripathi537/main.py
+2025-04-01 15:51:03.612 [info] Discover tests for workspace name: apoorvtripathi537 - uri: /home/apoorvtripathi537/main.py
+2025-04-01 15:51:05.442 [info] Discover tests for workspace name: apoorvtripathi537 - uri: /home/apoorvtripathi537/main.py
+2025-04-01 15:51:10.529 [info] Discover tests for workspace name: apoorvtripathi537 - uri: /home/apoorvtripathi537/main.py
+2025-04-01 15:51:14.571 [info] Discover tests for workspace name: apoorvtripathi537 - uri: /home/apoorvtripathi537/main.py
+2025-04-01 15:51:17.114 [info] Discover tests for workspace name: apoorvtripathi537 - uri: /home/apoorvtripathi537/main.py
+2025-04-01 15:51:24.693 [info] Discover tests for workspace name: apoorvtripathi537 - uri: /home/apoorvtripathi537/main.py
+2025-04-01 15:51:26.930 [info] Discover tests for workspace name: apoorvtripathi537 - uri: /home/apoorvtripathi537/main.py
+2025-04-01 15:51:35.351 [info] Discover tests for workspace name: apoorvtripathi537 - uri: /home/apoorvtripathi537/main.py
+2025-04-01 15:51:44.329 [info] Discover tests for workspace name: apoorvtripathi537 - uri: /home/apoorvtripathi537/main.py
+2025-04-01 15:51:45.709 [info] Discover tests for workspace name: apoorvtripathi537 - uri: /home/apoorvtripathi537/main.py
+2025-04-01 15:51:48.188 [info] Discover tests for workspace name: apoorvtripathi537 - uri: /home/apoorvtripathi537/main.py
+2025-04-01 15:51:53.937 [info] Discover tests for workspace name: apoorvtripathi537 - uri: /home/apoorvtripathi537/main.py
+2025-04-01 15:51:55.842 [info] Discover tests for workspace name: apoorvtripathi537 - uri: /home/apoorvtripathi537/main.py
+2025-04-01 15:51:57.507 [info] Discover tests for workspace name: apoorvtripathi537 - uri: /home/apoorvtripathi537/main.py
+2025-04-01 15:51:59.726 [info] Discover tests for workspace name: apoorvtripathi537 - uri: /home/apoorvtripathi537/main.py
+2025-04-01 15:52:10.155 [info] Discover tests for workspace name: apoorvtripathi537 - uri: /home/apoorvtripathi537/main.py
+2025-04-01 15:52:28.228 [info] Discover tests for workspace name: apoorvtripathi537 - uri: /home/apoorvtripathi537/main.py
+2025-04-01 15:52:31.167 [info] Discover tests for workspace name: apoorvtripathi537 - uri: /home/apoorvtripathi537/main.py
+2025-04-01 15:52:33.247 [info] Discover tests for workspace name: apoorvtripathi537 - uri: /home/apoorvtripathi537/main.py
+2025-04-01 15:52:38.405 [info] Discover tests for workspace name: apoorvtripathi537 - uri: /home/apoorvtripathi537/main.py
+2025-04-01 15:52:42.547 [info] Discover tests for workspace name: apoorvtripathi537 - uri: /home/apoorvtripathi537/main.py
+2025-04-01 15:53:13.047 [info] Discover tests for workspace name: apoorvtripathi537 - uri: /home/apoorvtripathi537/main.py
+2025-04-01 15:53:18.545 [info] Discover tests for workspace name: apoorvtripathi537 - uri: /home/apoorvtripathi537/main.py
+2025-04-01 15:53:21.030 [info] Discover tests for workspace name: apoorvtripathi537 - uri: /home/apoorvtripathi537/main.py
+2025-04-01 15:53:31.573 [info] Discover tests for workspace name: apoorvtripathi537 - uri: /home/apoorvtripathi537/main.py
+2025-04-01 15:53:34.787 [info] Discover tests for workspace name: apoorvtripathi537 - uri: /home/apoorvtripathi537/main.py
+2025-04-01 15:53:37.359 [info] Discover tests for workspace name: apoorvtripathi537 - uri: /home/apoorvtripathi537/main.py
+2025-04-01 15:53:43.033 [info] Discover tests for workspace name: apoorvtripathi537 - uri: /home/apoorvtripathi537/main.py
+2025-04-01 15:53:45.229 [info] Discover tests for workspace name: apoorvtripathi537 - uri: /home/apoorvtripathi537/main.py
+2025-04-01 15:54:00.005 [info] Discover tests for workspace name: apoorvtripathi537 - uri: /home/apoorvtripathi537/main.py
+2025-04-01 15:54:01.584 [info] Discover tests for workspace name: apoorvtripathi537 - uri: /home/apoorvtripathi537/main.py
+2025-04-01 15:54:08.965 [info] Discover tests for workspace name: apoorvtripathi537 - uri: /home/apoorvtripathi537/main.py
+2025-04-01 15:54:10.978 [info] Discover tests for workspace name: apoorvtripathi537 - uri: /home/apoorvtripathi537/main.py
+2025-04-01 15:54:19.579 [info] Discover tests for workspace name: apoorvtripathi537 - uri: /home/apoorvtripathi537/main.py
+2025-04-01 15:54:28.697 [info] Discover tests for workspace name: apoorvtripathi537 - uri: /home/apoorvtripathi537/main.py
+2025-04-01 15:54:30.224 [info] Discover tests for workspace name: apoorvtripathi537 - uri: /home/apoorvtripathi537/main.py
+2025-04-01 15:58:21.988 [info] Discover tests for workspace name: apoorvtripathi537 - uri: /home/apoorvtripathi537/main.py
+2025-04-01 15:58:30.386 [info] Discover tests for workspace name: apoorvtripathi537 - uri: /home/apoorvtripathi537/main.py
+2025-04-01 15:58:38.568 [info] Discover tests for workspace name: apoorvtripathi537 - uri: /home/apoorvtripathi537/main.py
+2025-04-01 15:58:41.610 [info] Discover tests for workspace name: apoorvtripathi537 - uri: /home/apoorvtripathi537/main.py
+2025-04-01 15:58:44.746 [info] Discover tests for workspace name: apoorvtripathi537 - uri: /home/apoorvtripathi537/main.py
+2025-04-01 15:59:36.918 [info] Discover tests for workspace name: apoorvtripathi537 - uri: /home/apoorvtripathi537/main.py
+2025-04-01 15:59:51.553 [info] Discover tests for workspace name: apoorvtripathi537 - uri: /home/apoorvtripathi537/main.py
+2025-04-01 16:00:10.344 [info] Discover tests for workspace name: apoorvtripathi537 - uri: /home/apoorvtripathi537/main.py
+2025-04-01 16:01:28.165 [info] Discover tests for workspace name: apoorvtripathi537 - uri: /home/apoorvtripathi537/main.py
+2025-04-01 16:01:55.943 [info] Discover tests for workspace name: apoorvtripathi537 - uri: /home/apoorvtripathi537/main.py
+2025-04-01 16:02:03.071 [info] Discover tests for workspace name: apoorvtripathi537 - uri: /home/apoorvtripathi537/main.py
+2025-04-01 16:08:31.906 [info] Discover tests for workspace name: apoorvtripathi537 - uri: /home/apoorvtripathi537/main.py
+2025-04-01 16:08:48.696 [info] Discover tests for workspace name: apoorvtripathi537 - uri: /home/apoorvtripathi537/main.py
+2025-04-01 16:08:56.761 [info] Discover tests for workspace name: apoorvtripathi537 - uri: /home/apoorvtripathi537/main.py
+2025-04-01 16:09:01.301 [info] Discover tests for workspace name: apoorvtripathi537 - uri: /home/apoorvtripathi537/main.py
+2025-04-01 16:15:14.613 [info] Discover tests for workspace name: apoorvtripathi537 - uri: /home/apoorvtripathi537/main.py
+2025-04-01 16:18:05.197 [info] Discover tests for workspace name: apoorvtripathi537 - uri: /home/apoorvtripathi537/main.py
+2025-04-01 16:19:27.241 [info] Discover tests for workspace name: apoorvtripathi537 - uri: /home/apoorvtripathi537/main.py
+2025-04-01 16:19:29.151 [info] Discover tests for workspace name: apoorvtripathi537 - uri: /home/apoorvtripathi537/main.py
+2025-04-01 16:20:14.747 [info] Discover tests for workspace name: apoorvtripathi537 - uri: /home/apoorvtripathi537/main.py
+2025-04-01 16:20:16.662 [info] Discover tests for workspace name: apoorvtripathi537 - uri: /home/apoorvtripathi537/main.py
+2025-04-01 16:20:18.669 [info] Discover tests for workspace name: apoorvtripathi537 - uri: /home/apoorvtripathi537/main.py
+2025-04-01 16:20:43.769 [info] Discover tests for workspace name: apoorvtripathi537 - uri: /home/apoorvtripathi537/main.py
+2025-04-01 16:21:00.411 [info] Discover tests for workspace name: apoorvtripathi537 - uri: /home/apoorvtripathi537/main.py
+2025-04-01 16:21:18.267 [info] Discover tests for workspace name: apoorvtripathi537 - uri: /home/apoorvtripathi537/main.py
+2025-04-01 16:21:19.891 [info] Discover tests for workspace name: apoorvtripathi537 - uri: /home/apoorvtripathi537/main.py
+2025-04-01 16:21:32.211 [info] Discover tests for workspace name: apoorvtripathi537 - uri: /home/apoorvtripathi537/main.py
+2025-04-01 16:21:49.832 [info] Discover tests for workspace name: apoorvtripathi537 - uri: /home/apoorvtripathi537/main.py
+2025-04-01 16:22:02.279 [info] Discover tests for workspace name: apoorvtripathi537 - uri: /home/apoorvtripathi537/main.py
+2025-04-01 16:24:09.029 [info] Discover tests for workspace name: apoorvtripathi537 - uri: /home/apoorvtripathi537/main.py
+2025-04-01 16:25:14.347 [info] Discover tests for workspace name: apoorvtripathi537 - uri: /home/apoorvtripathi537/main.py
+2025-04-01 16:25:21.368 [info] Discover tests for workspace name: apoorvtripathi537 - uri: /home/apoorvtripathi537/main.py
+2025-04-01 16:26:58.419 [info] Discover tests for workspace name: apoorvtripathi537 - uri: /home/apoorvtripathi537/main.py
+2025-04-01 16:27:32.716 [info] Discover tests for workspace name: apoorvtripathi537 - uri: /home/apoorvtripathi537/main.py
+2025-04-01 16:27:36.650 [info] Discover tests for workspace name: apoorvtripathi537 - uri: /home/apoorvtripathi537/main.py
+2025-04-01 16:27:42.742 [info] Discover tests for workspace name: apoorvtripathi537 - uri: /home/apoorvtripathi537/main.py
+2025-04-01 16:27:49.506 [info] Discover tests for workspace name: apoorvtripathi537 - uri: /home/apoorvtripathi537/main.py
+2025-04-01 16:27:53.497 [info] Discover tests for workspace name: apoorvtripathi537 - uri: /home/apoorvtripathi537/main.py
+2025-04-01 16:28:04.524 [info] Discover tests for workspace name: apoorvtripathi537 - uri: /home/apoorvtripathi537/main.py
+2025-04-01 16:28:17.049 [info] Discover tests for workspace name: apoorvtripathi537 - uri: /home/apoorvtripathi537/main.py
+2025-04-01 16:28:18.870 [info] Discover tests for workspace name: apoorvtripathi537 - uri: /home/apoorvtripathi537/main.py
+2025-04-01 16:28:21.124 [info] Discover tests for workspace name: apoorvtripathi537 - uri: /home/apoorvtripathi537/main.py
+2025-04-01 16:28:26.773 [info] Discover tests for workspace name: apoorvtripathi537 - uri: /home/apoorvtripathi537/main.py
+2025-04-01 16:28:34.343 [info] Discover tests for workspace name: apoorvtripathi537 - uri: /home/apoorvtripathi537/main.py
+2025-04-01 16:28:36.768 [info] Discover tests for workspace name: apoorvtripathi537 - uri: /home/apoorvtripathi537/main.py
+2025-04-01 16:28:42.582 [info] Discover tests for workspace name: apoorvtripathi537 - uri: /home/apoorvtripathi537/main.py
+2025-04-01 16:28:44.335 [info] Discover tests for workspace name: apoorvtripathi537 - uri: /home/apoorvtripathi537/main.py
+2025-04-01 16:28:47.014 [info] Discover tests for workspace name: apoorvtripathi537 - uri: /home/apoorvtripathi537/main.py
+2025-04-01 16:28:55.426 [info] Discover tests for workspace name: apoorvtripathi537 - uri: /home/apoorvtripathi537/main.py
+2025-04-01 16:29:02.126 [info] Discover tests for workspace name: apoorvtripathi537 - uri: /home/apoorvtripathi537/main.py
+2025-04-01 16:29:05.177 [info] Discover tests for workspace name: apoorvtripathi537 - uri: /home/apoorvtripathi537/main.py
+2025-04-01 16:29:19.746 [info] Discover tests for workspace name: apoorvtripathi537 - uri: /home/apoorvtripathi537/main.py
+2025-04-01 16:29:22.258 [info] Discover tests for workspace name: apoorvtripathi537 - uri: /home/apoorvtripathi537/main.py
+2025-04-01 16:29:31.749 [info] Discover tests for workspace name: apoorvtripathi537 - uri: /home/apoorvtripathi537/main.py
+2025-04-01 16:29:33.511 [info] Discover tests for workspace name: apoorvtripathi537 - uri: /home/apoorvtripathi537/main.py
+2025-04-01 16:29:36.784 [info] Discover tests for workspace name: apoorvtripathi537 - uri: /home/apoorvtripathi537/main.py
+2025-04-01 16:29:47.344 [info] Discover tests for workspace name: apoorvtripathi537 - uri: /home/apoorvtripathi537/main.py
+2025-04-01 16:29:58.378 [info] Discover tests for workspace name: apoorvtripathi537 - uri: /home/apoorvtripathi537/main.py
+2025-04-01 16:30:12.942 [info] Discover tests for workspace name: apoorvtripathi537 - uri: /home/apoorvtripathi537/main.py
+2025-04-01 16:31:23.145 [info] Discover tests for workspace name: apoorvtripathi537 - uri: /home/apoorvtripathi537/main.py
+2025-04-01 16:31:26.670 [info] Discover tests for workspace name: apoorvtripathi537 - uri: /home/apoorvtripathi537/main.py
+2025-04-01 16:31:31.071 [info] Discover tests for workspace name: apoorvtripathi537 - uri: /home/apoorvtripathi537/main.py
+2025-04-01 16:31:43.423 [info] Discover tests for workspace name: apoorvtripathi537 - uri: /home/apoorvtripathi537/main.py
+2025-04-01 16:31:47.091 [info] Discover tests for workspace name: apoorvtripathi537 - uri: /home/apoorvtripathi537/main.py
+2025-04-01 16:31:51.809 [info] Discover tests for workspace name: apoorvtripathi537 - uri: /home/apoorvtripathi537/main.py
+2025-04-01 16:31:55.314 [info] Discover tests for workspace name: apoorvtripathi537 - uri: /home/apoorvtripathi537/main.py
+2025-04-01 16:32:01.711 [info] Discover tests for workspace name: apoorvtripathi537 - uri: /home/apoorvtripathi537/main.py
+2025-04-01 16:32:06.729 [info] Discover tests for workspace name: apoorvtripathi537 - uri: /home/apoorvtripathi537/main.py
+2025-04-01 16:32:12.849 [info] Discover tests for workspace name: apoorvtripathi537 - uri: /home/apoorvtripathi537/main.py
+2025-04-01 16:32:19.058 [info] Discover tests for workspace name: apoorvtripathi537 - uri: /home/apoorvtripathi537/main.py
+2025-04-01 16:32:22.124 [info] Discover tests for workspace name: apoorvtripathi537 - uri: /home/apoorvtripathi537/main.py
+2025-04-01 16:32:31.378 [info] Discover tests for workspace name: apoorvtripathi537 - uri: /home/apoorvtripathi537/main.py
+2025-04-01 16:33:27.426 [info] Discover tests for workspace name: apoorvtripathi537 - uri: /home/apoorvtripathi537/main.py
+2025-04-01 16:33:41.047 [info] Discover tests for workspace name: apoorvtripathi537 - uri: /home/apoorvtripathi537/main.py
+2025-04-01 16:34:01.727 [info] Discover tests for workspace name: apoorvtripathi537 - uri: /home/apoorvtripathi537/main.py
+2025-04-01 16:34:03.458 [info] Discover tests for workspace name: apoorvtripathi537 - uri: /home/apoorvtripathi537/main.py
+2025-04-01 16:34:07.414 [info] Discover tests for workspace name: apoorvtripathi537 - uri: /home/apoorvtripathi537/main.py
+2025-04-01 16:34:09.376 [info] Discover tests for workspace name: apoorvtripathi537 - uri: /home/apoorvtripathi537/main.py
+2025-04-01 16:34:22.852 [info] Discover tests for workspace name: apoorvtripathi537 - uri: /home/apoorvtripathi537/main.py
+2025-04-01 16:34:28.637 [info] Discover tests for workspace name: apoorvtripathi537 - uri: /home/apoorvtripathi537/main.py
+2025-04-01 16:34:30.513 [info] Discover tests for workspace name: apoorvtripathi537 - uri: /home/apoorvtripathi537/main.py
