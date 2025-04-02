@@ -535,3 +535,167 @@ I0401 19:45:49.185192    4558 ide_context.go:131] Unable to read file at /home/a
 file:///home/apoorvtripathi537
 I0401 19:45:49.185205    4558 conversation.go:896] Unable to retrieve excluded files for request #234: open /home/apoorvtripathi537/.aiexclude: no such file or directory
 I0401 19:45:49.185225    4558 document.go:421] NoneEditType, returning ReasonRecentlyOpened
+I0401 20:11:02.489010    4558 conversation.go:859] Starting getChatIDEContext with detected intent: 
+I0401 20:11:02.489066    4558 document.go:425] OtherEditType (DELETE), returning ReasonRecentlyEdited
+I0401 20:11:02.489121    4558 ide_context.go:131] Unable to read file at /home/apoorvtripathi537/.aiexclude
+/home/apoorvtripathi537
+file:///home/apoorvtripathi537
+I0401 20:11:02.489140    4558 conversation.go:896] Unable to retrieve excluded files for request #238: open /home/apoorvtripathi537/.aiexclude: no such file or directory
+I0401 20:11:02.489173    4558 document.go:421] NoneEditType, returning ReasonRecentlyOpened
+I0401 20:11:02.846434    4558 conversation.go:859] Starting getChatIDEContext with detected intent: 
+I0401 20:11:02.846479    4558 document.go:425] OtherEditType (DELETE), returning ReasonRecentlyEdited
+I0401 20:11:02.846523    4558 ide_context.go:131] Unable to read file at /home/apoorvtripathi537/.aiexclude
+/home/apoorvtripathi537
+file:///home/apoorvtripathi537
+I0401 20:11:02.846537    4558 conversation.go:896] Unable to retrieve excluded files for request #244: open /home/apoorvtripathi537/.aiexclude: no such file or directory
+I0401 20:11:02.846562    4558 document.go:421] NoneEditType, returning ReasonRecentlyOpened
+I0401 20:11:03.074883    4558 conversation.go:859] Starting getChatIDEContext with detected intent: 
+I0401 20:11:03.074931    4558 document.go:425] OtherEditType (DELETE), returning ReasonRecentlyEdited
+I0401 20:11:03.074978    4558 ide_context.go:131] Unable to read file at /home/apoorvtripathi537/.aiexclude
+/home/apoorvtripathi537
+file:///home/apoorvtripathi537
+I0401 20:11:03.074993    4558 conversation.go:896] Unable to retrieve excluded files for request #251: open /home/apoorvtripathi537/.aiexclude: no such file or directory
+I0401 20:11:03.075019    4558 document.go:421] NoneEditType, returning ReasonRecentlyOpened
+I0401 20:11:03.176237    4558 conversation.go:859] Starting getChatIDEContext with detected intent: 
+I0401 20:11:03.176284    4558 document.go:425] OtherEditType (DELETE), returning ReasonRecentlyEdited
+I0401 20:11:03.176325    4558 ide_context.go:131] Unable to read file at /home/apoorvtripathi537/.aiexclude
+/home/apoorvtripathi537
+file:///home/apoorvtripathi537
+I0401 20:11:03.176340    4558 conversation.go:896] Unable to retrieve excluded files for request #253: open /home/apoorvtripathi537/.aiexclude: no such file or directory
+I0401 20:11:03.176361    4558 document.go:421] NoneEditType, returning ReasonRecentlyOpened
+I0401 20:11:03.343998    4558 conversation.go:859] Starting getChatIDEContext with detected intent: 
+I0401 20:11:03.344049    4558 document.go:425] OtherEditType (DELETE), returning ReasonRecentlyEdited
+I0401 20:11:03.344087    4558 ide_context.go:131] Unable to read file at /home/apoorvtripathi537/.aiexclude
+/home/apoorvtripathi537
+file:///home/apoorvtripathi537
+I0401 20:11:03.344102    4558 conversation.go:896] Unable to retrieve excluded files for request #256: open /home/apoorvtripathi537/.aiexclude: no such file or directory
+I0401 20:11:03.344186    4558 document.go:421] NoneEditType, returning ReasonRecentlyOpened
+I0401 20:11:04.923442    4558 conversation.go:859] Starting getChatIDEContext with detected intent: 
+I0401 20:11:04.923483    4558 document.go:425] OtherEditType (DELETE), returning ReasonRecentlyEdited
+I0401 20:11:04.923524    4558 ide_context.go:131] Unable to read file at /home/apoorvtripathi537/.aiexclude
+/home/apoorvtripathi537
+file:///home/apoorvtripathi537
+I0401 20:11:04.923539    4558 conversation.go:896] Unable to retrieve excluded files for request #259: open /home/apoorvtripathi537/.aiexclude: no such file or directory
+I0401 20:11:04.923568    4558 document.go:421] NoneEditType, returning ReasonRecentlyOpened
+I0401 20:11:06.510254    4558 conversation.go:859] Starting getChatIDEContext with detected intent: 
+I0401 20:11:06.510308    4558 document.go:425] OtherEditType (DELETE), returning ReasonRecentlyEdited
+I0401 20:11:06.510345    4558 ide_context.go:131] Unable to read file at /home/apoorvtripathi537/.aiexclude
+/home/apoorvtripathi537
+file:///home/apoorvtripathi537
+I0401 20:11:06.510358    4558 conversation.go:896] Unable to retrieve excluded files for request #263: open /home/apoorvtripathi537/.aiexclude: no such file or directory
+I0401 20:11:06.510379    4558 document.go:421] NoneEditType, returning ReasonRecentlyOpened
+I0401 20:11:07.381162    4558 conversation.go:859] Starting getChatIDEContext with detected intent: 
+I0401 20:11:07.381209    4558 document.go:425] OtherEditType (DELETE), returning ReasonRecentlyEdited
+I0401 20:11:07.381252    4558 ide_context.go:131] Unable to read file at /home/apoorvtripathi537/.aiexclude
+/home/apoorvtripathi537
+file:///home/apoorvtripathi537
+I0401 20:11:07.381266    4558 conversation.go:896] Unable to retrieve excluded files for request #266: open /home/apoorvtripathi537/.aiexclude: no such file or directory
+I0401 20:11:07.381287    4558 document.go:421] NoneEditType, returning ReasonRecentlyOpened
+I0401 20:11:17.008524    4558 conversation.go:859] Starting getChatIDEContext with detected intent: 
+I0401 20:11:17.008564    4558 document.go:421] NoneEditType, returning ReasonRecentlyOpened
+I0401 20:11:17.008606    4558 ide_context.go:131] Unable to read file at /home/apoorvtripathi537/.aiexclude
+/home/apoorvtripathi537
+file:///home/apoorvtripathi537
+I0401 20:11:17.008620    4558 conversation.go:896] Unable to retrieve excluded files for request #274: open /home/apoorvtripathi537/.aiexclude: no such file or directory
+I0401 20:11:17.008656    4558 document.go:425] OtherEditType (DELETE), returning ReasonRecentlyEdited
+I0401 20:11:38.150240    4558 life_cycle.go:300] codeReportEvery: recomputing codereport metric
+I0401 20:12:17.709892    4558 conversation.go:859] Starting getChatIDEContext with detected intent: 
+I0401 20:12:17.709941    4558 document.go:425] OtherEditType (DELETE), returning ReasonRecentlyEdited
+I0401 20:12:17.709987    4558 ide_context.go:131] Unable to read file at /home/apoorvtripathi537/.aiexclude
+/home/apoorvtripathi537
+file:///home/apoorvtripathi537
+I0401 20:12:17.710002    4558 conversation.go:896] Unable to retrieve excluded files for request #279: open /home/apoorvtripathi537/.aiexclude: no such file or directory
+I0401 20:12:17.710027    4558 document.go:421] NoneEditType, returning ReasonRecentlyOpened
+I0401 20:12:19.611693    4558 conversation.go:859] Starting getChatIDEContext with detected intent: 
+I0401 20:12:19.611766    4558 document.go:425] OtherEditType (DELETE), returning ReasonRecentlyEdited
+I0401 20:12:19.611812    4558 ide_context.go:131] Unable to read file at /home/apoorvtripathi537/.aiexclude
+/home/apoorvtripathi537
+file:///home/apoorvtripathi537
+I0401 20:12:19.611827    4558 conversation.go:896] Unable to retrieve excluded files for request #282: open /home/apoorvtripathi537/.aiexclude: no such file or directory
+I0401 20:12:19.611849    4558 document.go:421] NoneEditType, returning ReasonRecentlyOpened
+I0401 20:12:20.076591    4558 conversation.go:859] Starting getChatIDEContext with detected intent: 
+I0401 20:12:20.076636    4558 document.go:425] OtherEditType (DELETE), returning ReasonRecentlyEdited
+I0401 20:12:20.076670    4558 ide_context.go:131] Unable to read file at /home/apoorvtripathi537/.aiexclude
+/home/apoorvtripathi537
+file:///home/apoorvtripathi537
+I0401 20:12:20.076684    4558 conversation.go:896] Unable to retrieve excluded files for request #291: open /home/apoorvtripathi537/.aiexclude: no such file or directory
+I0401 20:12:20.076713    4558 document.go:421] NoneEditType, returning ReasonRecentlyOpened
+I0401 20:12:20.281782    4558 conversation.go:859] Starting getChatIDEContext with detected intent: 
+I0401 20:12:20.281848    4558 document.go:425] OtherEditType (DELETE), returning ReasonRecentlyEdited
+I0401 20:12:20.281889    4558 ide_context.go:131] Unable to read file at /home/apoorvtripathi537/.aiexclude
+/home/apoorvtripathi537
+file:///home/apoorvtripathi537
+I0401 20:12:20.281904    4558 conversation.go:896] Unable to retrieve excluded files for request #294: open /home/apoorvtripathi537/.aiexclude: no such file or directory
+I0401 20:12:20.281926    4558 document.go:421] NoneEditType, returning ReasonRecentlyOpened
+I0401 20:12:21.276678    4558 conversation.go:859] Starting getChatIDEContext with detected intent: 
+I0401 20:12:21.276731    4558 document.go:425] OtherEditType (UNKNOWN_EDIT), returning ReasonRecentlyEdited
+I0401 20:12:21.276795    4558 ide_context.go:131] Unable to read file at /home/apoorvtripathi537/.aiexclude
+/home/apoorvtripathi537
+file:///home/apoorvtripathi537
+I0401 20:12:21.276811    4558 conversation.go:896] Unable to retrieve excluded files for request #297: open /home/apoorvtripathi537/.aiexclude: no such file or directory
+I0401 20:12:21.276834    4558 document.go:421] NoneEditType, returning ReasonRecentlyOpened
+I0401 20:12:38.149180    4558 life_cycle.go:300] codeReportEvery: recomputing codereport metric
+I0401 20:53:24.433892    4558 conversation.go:859] Starting getChatIDEContext with detected intent: 
+I0401 20:53:24.433977    4558 document.go:425] OtherEditType (UNKNOWN_EDIT), returning ReasonRecentlyEdited
+I0401 20:53:24.434036    4558 ide_context.go:131] Unable to read file at /home/apoorvtripathi537/.aiexclude
+/home/apoorvtripathi537
+file:///home/apoorvtripathi537
+I0401 20:53:24.434057    4558 conversation.go:896] Unable to retrieve excluded files for request #303: open /home/apoorvtripathi537/.aiexclude: no such file or directory
+I0401 20:53:24.434099    4558 document.go:421] NoneEditType, returning ReasonRecentlyOpened
+I0401 20:53:25.713011    4558 conversation.go:859] Starting getChatIDEContext with detected intent: 
+I0401 20:53:25.713060    4558 document.go:425] OtherEditType (UNKNOWN_EDIT), returning ReasonRecentlyEdited
+I0401 20:53:25.713101    4558 ide_context.go:131] Unable to read file at /home/apoorvtripathi537/.aiexclude
+/home/apoorvtripathi537
+file:///home/apoorvtripathi537
+I0401 20:53:25.713114    4558 conversation.go:896] Unable to retrieve excluded files for request #306: open /home/apoorvtripathi537/.aiexclude: no such file or directory
+I0401 20:53:25.713135    4558 document.go:421] NoneEditType, returning ReasonRecentlyOpened
+I0401 20:53:49.651534    4558 conversation.go:859] Starting getChatIDEContext with detected intent: 
+I0401 20:53:49.651579    4558 document.go:425] OtherEditType (UNKNOWN_EDIT), returning ReasonRecentlyEdited
+I0401 20:53:49.651612    4558 ide_context.go:131] Unable to read file at /home/apoorvtripathi537/.aiexclude
+/home/apoorvtripathi537
+file:///home/apoorvtripathi537
+I0401 20:53:49.651628    4558 conversation.go:896] Unable to retrieve excluded files for request #310: open /home/apoorvtripathi537/.aiexclude: no such file or directory
+I0401 20:53:49.651648    4558 document.go:421] NoneEditType, returning ReasonRecentlyOpened
+I0401 20:54:04.663907    4558 conversation.go:859] Starting getChatIDEContext with detected intent: 
+I0401 20:54:04.663954    4558 document.go:425] OtherEditType (UNKNOWN_EDIT), returning ReasonRecentlyEdited
+I0401 20:54:04.663995    4558 ide_context.go:131] Unable to read file at /home/apoorvtripathi537/.aiexclude
+/home/apoorvtripathi537
+file:///home/apoorvtripathi537
+I0401 20:54:04.664009    4558 conversation.go:896] Unable to retrieve excluded files for request #313: open /home/apoorvtripathi537/.aiexclude: no such file or directory
+I0401 20:54:04.664028    4558 document.go:421] NoneEditType, returning ReasonRecentlyOpened
+I0401 20:54:05.162994    4558 conversation.go:859] Starting getChatIDEContext with detected intent: 
+I0401 20:54:05.163042    4558 document.go:425] OtherEditType (UNKNOWN_EDIT), returning ReasonRecentlyEdited
+I0401 20:54:05.163081    4558 ide_context.go:131] Unable to read file at /home/apoorvtripathi537/.aiexclude
+/home/apoorvtripathi537
+file:///home/apoorvtripathi537
+I0401 20:54:05.163094    4558 conversation.go:896] Unable to retrieve excluded files for request #331: open /home/apoorvtripathi537/.aiexclude: no such file or directory
+I0401 20:54:05.163114    4558 document.go:421] NoneEditType, returning ReasonRecentlyOpened
+I0401 20:54:05.460370    4558 conversation.go:859] Starting getChatIDEContext with detected intent: 
+I0401 20:54:05.460416    4558 document.go:425] OtherEditType (UNKNOWN_EDIT), returning ReasonRecentlyEdited
+I0401 20:54:05.460458    4558 ide_context.go:131] Unable to read file at /home/apoorvtripathi537/.aiexclude
+/home/apoorvtripathi537
+file:///home/apoorvtripathi537
+I0401 20:54:05.460477    4558 conversation.go:896] Unable to retrieve excluded files for request #339: open /home/apoorvtripathi537/.aiexclude: no such file or directory
+I0401 20:54:05.460504    4558 document.go:421] NoneEditType, returning ReasonRecentlyOpened
+I0401 20:54:05.732796    4558 conversation.go:859] Starting getChatIDEContext with detected intent: 
+I0401 20:54:05.732834    4558 document.go:425] OtherEditType (UNKNOWN_EDIT), returning ReasonRecentlyEdited
+I0401 20:54:05.732867    4558 ide_context.go:131] Unable to read file at /home/apoorvtripathi537/.aiexclude
+/home/apoorvtripathi537
+file:///home/apoorvtripathi537
+I0401 20:54:05.732882    4558 conversation.go:896] Unable to retrieve excluded files for request #342: open /home/apoorvtripathi537/.aiexclude: no such file or directory
+I0401 20:54:05.732908    4558 document.go:421] NoneEditType, returning ReasonRecentlyOpened
+I0401 20:54:06.790195    4558 conversation.go:859] Starting getChatIDEContext with detected intent: 
+I0401 20:54:06.790236    4558 document.go:425] OtherEditType (DELETE), returning ReasonRecentlyEdited
+I0401 20:54:06.790278    4558 ide_context.go:131] Unable to read file at /home/apoorvtripathi537/.aiexclude
+/home/apoorvtripathi537
+file:///home/apoorvtripathi537
+I0401 20:54:06.790293    4558 conversation.go:896] Unable to retrieve excluded files for request #345: open /home/apoorvtripathi537/.aiexclude: no such file or directory
+I0401 20:54:06.790317    4558 document.go:421] NoneEditType, returning ReasonRecentlyOpened
+I0401 20:54:08.053844    4558 conversation.go:859] Starting getChatIDEContext with detected intent: 
+I0401 20:54:08.053890    4558 document.go:425] OtherEditType (DELETE), returning ReasonRecentlyEdited
+I0401 20:54:08.053927    4558 ide_context.go:131] Unable to read file at /home/apoorvtripathi537/.aiexclude
+/home/apoorvtripathi537
+file:///home/apoorvtripathi537
+I0401 20:54:08.053940    4558 conversation.go:896] Unable to retrieve excluded files for request #349: open /home/apoorvtripathi537/.aiexclude: no such file or directory
+I0401 20:54:08.053960    4558 document.go:421] NoneEditType, returning ReasonRecentlyOpened
+I0401 20:54:38.150176    4558 life_cycle.go:300] codeReportEvery: recomputing codereport metric

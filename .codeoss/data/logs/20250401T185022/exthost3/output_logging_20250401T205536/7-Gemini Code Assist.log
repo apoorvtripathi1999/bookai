@@ -1,0 +1,225 @@
+I0401 20:55:55.823803    8060 serve.go:43] cloudcode_cli (Mar 16 2025 10:36:32 -0700, cl:737377283 baseline:736258458)
+I0401 20:55:55.823857    8060 serve.go:44] Command line: ["/home/apoorvtripathi537/.cache/cloud-code/cloudcode_cli/cloudcode_cli/a383010/cloudcode_cli" "duet" "-logtostderr"]
+I0401 20:55:55.826272    8060 life_cycle.go:169] Initializing. Architecture: "amd64", Operating system: "linux"
+I0401 20:55:55.957696    8060 configuration.go:184] product updateChannel will be used
+I0401 20:55:55.957782    8060 configuration.go:664] language thresholds: map[]
+I0401 20:55:55.957805    8060 configuration.go:611] dataFileExtensions array: [.csv .tsv .jsonl]
+I0401 20:55:55.957850    8060 configuration.go:875] atlas codeCompletion llm options: {MaxTokens:64 Temp:0.2 Samples:4 EnablePrompt:<nil> PromptOverride: PostProcess:0xc0012849cd StopSequences:map[] DataFilePromptLines:0}
+I0401 20:55:55.957931    8060 configuration.go:875] atlas codeGeneration llm options: {MaxTokens:512 Temp:0.2 Samples:4 EnablePrompt:<nil> PromptOverride: PostProcess:0xc0012849ed StopSequences:map[*:[[eod] [EOF] [pre] [suf] [mid]]] DataFilePromptLines:5}
+I0401 20:55:55.958139    8060 configuration.go:272] Configured settings for atlasOpts: {"Addr":"","QuotaProject":"","Project":"cloudshell-gca","LogPrompt":true,"UseTypeoverCache":true,"EnablePromptEnhancementForTransform":false,"EnablePromptEnhancementForChat":false,"EnableAdminCitationBlock":false,"EnableChatStreaming":false,"Complete":{"MaxTokens":64,"Temp":0.2,"Samples":4,"EnablePrompt":null,"PromptOverride":"","PostProcess":true,"StopSequences":null,"DataFilePromptLines":0},"Generate":{"MaxTokens":512,"Temp":0.2,"Samples":4,"EnablePrompt":null,"PromptOverride":"","PostProcess":true,"StopSequences":{"*":["[eod]","[EOF]","[pre]","[suf]","[mid]"]},"DataFilePromptLines":5},"DataFileExtensions":[".csv",".tsv",".jsonl"]}
+I0401 20:55:55.958207    8060 configuration.go:280] Configured settings for cloudCodeOpts: {"Addr":"cloudcode-pa.googleapis.com:443","QuotaProject":"","Project":"cloudshell-gca","LogPrompt":true,"UseTypeoverCache":true,"EnablePromptEnhancementForTransform":false,"EnablePromptEnhancementForChat":false,"EnableAdminCitationBlock":false,"EnableChatStreaming":false}
+I0401 20:55:55.958218    8060 configuration.go:284] Configured settings for opts: &{trace:false atlasAddr:cloudaicompanion.googleapis.com:443 cloudCodeAddr:cloudcode-pa.googleapis.com:443 cloudCodeQuotaProject: autoGen:false invokeGen:true codeCacheMaxEntries:1024 completionOpts:{debounce:300000000 throttle:100000000 debouncedAfterFetching:false minScoreThreshold:-6 languageThresholds:map[] enableThresholds:true commentCompletion:false citationLengthThreshold:-1 enableRecitations:true citationLogFilePath: repeatedStringFilterThreshold:60 otherFilesGenerationLimit:20 otherFilesGenerationSizeLimit:-1 otherFilesCompletionLimit:0 multiQueryTailNSForCompletion:[] multiQueryTailNSForGeneration:[]} contextExclusionFile:.aiexclude chatOpts:{contextOrdering:fsu maxFileBytes:75000 maxHistoryBytes:500000 escapeContext:false otherFilesLimit:20 otherFilesSizeLimit:-1 userSelectedFilesSizeLimit:-1} useRest:<nil> useCloudCodeAPI:true enableChatStreaming:false enableNotebooks:false enableRAGL:false enableRAGLCompletion:false enableRAGLChat:false ragLRerankByLangBoost:0 raglCoLocated:20 raglTotalFiles:250 raglFileLimit:524288 raglIncludeDocFiles:false raglIncludeUnitTestFile:false raglMaxFileSearchDepth:1 substringsToIdentifyTestPrompts:[test] substringsToIdentifyDocPrompts:[document comment] raglTopKTestFilesToInclude:0 raglTopKDocFilesToInclude:0 raglTokenizationAlgorithm:whitespace}
+I0401 20:55:55.958287    8060 configuration.go:286] Configured settings for canCancelRequests: true
+I0401 20:55:55.958298    8060 configuration.go:288] Configured settings for contextPromptOpts: &{Endpoint:}
+I0401 20:55:56.023106    8060 experiments.go:168] Applied experiment flag "DuetAiLocalRag__enable_local_rag_chat" to enableRAGLChat with value true
+I0401 20:55:56.023149    8060 experiments.go:153] Applied experiment flag "Chat__display_prompt_recitations" to cloudCodeOpts.EnablePromptEnhancementForChat with value true
+I0401 20:55:56.023165    8060 experiments.go:172] Applied experiment flag "DuetAiLocalRag__enable_local_rag_completion" to enableRAGLCompletion with value true
+I0401 20:55:56.023184    8060 experiments.go:149] Applied experiment flag "DuetAICodeTransform__display_prompt_recitations" to cloudCodeOpts.EnablePromptEnhancementForTransform with value true
+I0401 20:55:56.023221    8060 experiments.go:164] Applied experiment flag "DuetAiLocalRag__enable_local_rag" to enableRAGL with value true
+I0401 20:55:56.023239    8060 experiments.go:212] Applied experiment flag "DuetAiLocalRag__include_unit_test_files" to includeUnitTestFile with value false
+I0401 20:55:56.023254    8060 experiments.go:157] Applied experiment flag "GcaCitationBlock__enable_citation_block" to cloudCodeOpts.EnableAdminCitationBlock with value false
+I0401 20:55:56.023271    8060 experiments.go:128] Applied experiment flag "DuetAiCloudCodeAPI__enable_cloudcode_api" to useCloudCodeAPI with value true
+I0401 20:55:56.023287    8060 experiments.go:208] Applied experiment flag "DuetAiLocalRag__include_doc_files" to includeDocFiles with value false
+I0401 20:55:56.023301    8060 experiments.go:124] Applied experiment flag "Chat__enable_chat_streaming" to chat.enableChatStreaming with value true
+I0401 20:55:56.023322    8060 experiments.go:140] Applied experiment flag "DuetAiMendelOverrides__inlineSuggestions_debounced_after_fetching" to completionOpts.debouncedAfterFetching with value false
+I0401 20:55:56.023354    8060 experiments.go:240] Applied experiment flag "DuetAiLocalRag__local_rag_tokenization_algorithm" to localRagTokenizationAlgorithm with value 
+I0401 20:55:56.023366    8060 experiments.go:112] Applied experiment flag "DuetAiGeneration__codeGeneration_context_window_size" to otherFilesGenerationSizeLimit with value 64000
+I0401 20:55:56.023378    8060 experiments.go:176] Applied experiment flag "DuetAiLocalRag__otherfiles_generation_limit" to otherFilesGenerationLimit with value 40
+I0401 20:55:56.023395    8060 experiments.go:232] Applied experiment flag "DuetAiLocalRag__top_k_test_files_to_include" to topKTestFilesToInclude with value 2
+I0401 20:55:56.023410    8060 experiments.go:116] Applied experiment flag "Chat__chat_context_window_size" to chat.contextWindowSize with value -1
+I0401 20:55:56.023421    8060 experiments.go:120] Applied experiment flag "Chat__fca_chat_context_window_size" to chat.fcaContextWindowSize with value 450000
+I0401 20:55:56.023441    8060 experiments.go:228] Applied experiment flag "DuetAiLocalRag__top_k_doc_files_to_include" to topKDocFilesToInclude with value 2
+I0401 20:55:56.023453    8060 experiments.go:136] Applied experiment flag "DuetAiMendelOverrides__inlineSuggestions_debounceMs" to completionOpts.debounce with value 300
+I0401 20:55:56.023469    8060 experiments.go:216] Applied experiment flag "DuetAiLocalRag__max_file_search_depth" to maxFileSearchDepth with value 2
+I0401 20:55:56.023483    8060 experiments.go:196] Applied experiment flag "DuetAiLocalRag__otherfiles_chat_limit" to otherFilesChatLimit with value 100
+I0401 20:55:56.023494    8060 experiments.go:192] Applied experiment flag "DuetAiLocalRag__otherfiles_completion_limit" to otherFilesCompletionLimit with value 15
+I0401 20:55:56.023507    8060 experiments.go:184] Applied experiment flag "DuetAiLocalRag__cache_file_limit" to fileLimit with value 4.1943e+06
+I0401 20:55:56.023532    8060 experiments.go:188] Applied experiment flag "DuetAiLocalRag__cache_total_files" to totalFiles with value 250
+I0401 20:55:56.023550    8060 experiments.go:236] Applied experiment flag "DuetAiLocalRag__local_rag_reranking_by_language" to localRAGRerankingByLanguageParam with value 0
+I0401 20:55:56.023561    8060 experiments.go:132] Applied experiment flag "DuetAiMendelOverrides__codeCompletion_defaultThreshold" to completionOpts.minScoreTheshold with value -100
+I0401 20:55:56.023577    8060 experiments.go:180] Applied experiment flag "DuetAiLocalRag__cache_co_located" to coLocated with value 20
+I0401 20:55:56.023590    8060 experiments.go:200] Extracted experiment flag "DuetAiRemoteRag__multi_query_tail_ns_for_completion" to multiQueryTailNS with value []
+I0401 20:55:56.023615    8060 experiments.go:204] Extracted experiment flag "DuetAiRemoteRag__multi_query_tail_ns_for_generation" to multiQueryTailNS with value []
+I0401 20:55:56.023631    8060 experiments.go:220] Applied experiment flag "DuetAiLocalRag__substrings_to_identify_doc_prompts" to substringsToIdentifyDocPrompts with value [document comment]
+I0401 20:55:56.023652    8060 experiments.go:224] Applied experiment flag "DuetAiLocalRag__substrings_to_identify_test_prompts" to substringsToIdentifyTestPrompts with value [test]
+I0401 20:55:56.023708    8060 configuration.go:479] Repopulating context cache from document cache
+W0401 20:55:56.023787    8060 tokenizer.go:274] Unknown tokenization algorithm , defaulting to whitespace
+W0401 20:55:56.024865    8060 tokenizer.go:274] Unknown tokenization algorithm , defaulting to whitespace
+W0401 20:55:56.025258    8060 tokenizer.go:274] Unknown tokenization algorithm , defaulting to whitespace
+W0401 20:55:56.025932    8060 tokenizer.go:274] Unknown tokenization algorithm , defaulting to whitespace
+I0401 20:55:56.026213    8060 tier.go:16] Received tier configuration request: {ProjectID:cloudshell-gca UserDefinedCloudaicompanionProject:true}
+I0401 20:55:56.038404    8060 configuration.go:184] product updateChannel will be used
+I0401 20:55:56.038463    8060 configuration.go:664] language thresholds: map[]
+I0401 20:55:56.038499    8060 configuration.go:611] dataFileExtensions array: [.csv .tsv .jsonl]
+I0401 20:55:56.038524    8060 configuration.go:875] atlas codeCompletion llm options: {MaxTokens:64 Temp:0.2 Samples:4 EnablePrompt:<nil> PromptOverride: PostProcess:0xc00126acbd StopSequences:map[] DataFilePromptLines:0}
+I0401 20:55:56.038556    8060 configuration.go:875] atlas codeGeneration llm options: {MaxTokens:512 Temp:0.2 Samples:4 EnablePrompt:<nil> PromptOverride: PostProcess:0xc00126acdd StopSequences:map[*:[[eod] [EOF] [pre] [suf] [mid]]] DataFilePromptLines:5}
+I0401 20:55:56.038600    8060 configuration.go:272] Configured settings for atlasOpts: {"Addr":"","QuotaProject":"","Project":"cloudshell-gca","LogPrompt":true,"UseTypeoverCache":true,"EnablePromptEnhancementForTransform":false,"EnablePromptEnhancementForChat":false,"EnableAdminCitationBlock":false,"EnableChatStreaming":false,"Complete":{"MaxTokens":64,"Temp":0.2,"Samples":4,"EnablePrompt":null,"PromptOverride":"","PostProcess":true,"StopSequences":null,"DataFilePromptLines":0},"Generate":{"MaxTokens":512,"Temp":0.2,"Samples":4,"EnablePrompt":null,"PromptOverride":"","PostProcess":true,"StopSequences":{"*":["[eod]","[EOF]","[pre]","[suf]","[mid]"]},"DataFilePromptLines":5},"DataFileExtensions":[".csv",".tsv",".jsonl"]}
+I0401 20:55:56.038620    8060 configuration.go:280] Configured settings for cloudCodeOpts: {"Addr":"cloudcode-pa.googleapis.com:443","QuotaProject":"","Project":"cloudshell-gca","LogPrompt":true,"UseTypeoverCache":true,"EnablePromptEnhancementForTransform":false,"EnablePromptEnhancementForChat":false,"EnableAdminCitationBlock":false,"EnableChatStreaming":false}
+I0401 20:55:56.038631    8060 configuration.go:284] Configured settings for opts: &{trace:false atlasAddr:cloudaicompanion.googleapis.com:443 cloudCodeAddr:cloudcode-pa.googleapis.com:443 cloudCodeQuotaProject: autoGen:false invokeGen:true codeCacheMaxEntries:1024 completionOpts:{debounce:300000000 throttle:100000000 debouncedAfterFetching:false minScoreThreshold:-6 languageThresholds:map[] enableThresholds:true commentCompletion:false citationLengthThreshold:-1 enableRecitations:true citationLogFilePath: repeatedStringFilterThreshold:60 otherFilesGenerationLimit:20 otherFilesGenerationSizeLimit:-1 otherFilesCompletionLimit:0 multiQueryTailNSForCompletion:[] multiQueryTailNSForGeneration:[]} contextExclusionFile:.aiexclude chatOpts:{contextOrdering:fsu maxFileBytes:75000 maxHistoryBytes:500000 escapeContext:false otherFilesLimit:20 otherFilesSizeLimit:-1 userSelectedFilesSizeLimit:-1} useRest:<nil> useCloudCodeAPI:true enableChatStreaming:true enableNotebooks:false enableRAGL:false enableRAGLCompletion:false enableRAGLChat:false ragLRerankByLangBoost:0 raglCoLocated:20 raglTotalFiles:250 raglFileLimit:524288 raglIncludeDocFiles:false raglIncludeUnitTestFile:false raglMaxFileSearchDepth:1 substringsToIdentifyTestPrompts:[test] substringsToIdentifyDocPrompts:[document comment] raglTopKTestFilesToInclude:0 raglTopKDocFilesToInclude:0 raglTokenizationAlgorithm:whitespace}
+I0401 20:55:56.038682    8060 configuration.go:286] Configured settings for canCancelRequests: true
+I0401 20:55:56.038691    8060 configuration.go:288] Configured settings for contextPromptOpts: &{Endpoint:}
+I0401 20:55:56.039651    8060 experiments.go:208] Applied experiment flag "DuetAiLocalRag__include_doc_files" to includeDocFiles with value false
+I0401 20:55:56.039678    8060 experiments.go:168] Applied experiment flag "DuetAiLocalRag__enable_local_rag_chat" to enableRAGLChat with value true
+I0401 20:55:56.039689    8060 experiments.go:172] Applied experiment flag "DuetAiLocalRag__enable_local_rag_completion" to enableRAGLCompletion with value true
+I0401 20:55:56.039703    8060 experiments.go:124] Applied experiment flag "Chat__enable_chat_streaming" to chat.enableChatStreaming with value true
+I0401 20:55:56.039723    8060 experiments.go:212] Applied experiment flag "DuetAiLocalRag__include_unit_test_files" to includeUnitTestFile with value false
+I0401 20:55:56.039737    8060 experiments.go:140] Applied experiment flag "DuetAiMendelOverrides__inlineSuggestions_debounced_after_fetching" to completionOpts.debouncedAfterFetching with value false
+I0401 20:55:56.039770    8060 experiments.go:164] Applied experiment flag "DuetAiLocalRag__enable_local_rag" to enableRAGL with value true
+I0401 20:55:56.039784    8060 experiments.go:149] Applied experiment flag "DuetAICodeTransform__display_prompt_recitations" to cloudCodeOpts.EnablePromptEnhancementForTransform with value true
+I0401 20:55:56.039808    8060 experiments.go:128] Applied experiment flag "DuetAiCloudCodeAPI__enable_cloudcode_api" to useCloudCodeAPI with value true
+I0401 20:55:56.039829    8060 experiments.go:153] Applied experiment flag "Chat__display_prompt_recitations" to cloudCodeOpts.EnablePromptEnhancementForChat with value true
+I0401 20:55:56.039847    8060 experiments.go:157] Applied experiment flag "GcaCitationBlock__enable_citation_block" to cloudCodeOpts.EnableAdminCitationBlock with value false
+I0401 20:55:56.039869    8060 experiments.go:240] Applied experiment flag "DuetAiLocalRag__local_rag_tokenization_algorithm" to localRagTokenizationAlgorithm with value 
+I0401 20:55:56.039883    8060 experiments.go:116] Applied experiment flag "Chat__chat_context_window_size" to chat.contextWindowSize with value -1
+I0401 20:55:56.039895    8060 experiments.go:120] Applied experiment flag "Chat__fca_chat_context_window_size" to chat.fcaContextWindowSize with value 450000
+I0401 20:55:56.039918    8060 experiments.go:228] Applied experiment flag "DuetAiLocalRag__top_k_doc_files_to_include" to topKDocFilesToInclude with value 2
+I0401 20:55:56.039933    8060 experiments.go:196] Applied experiment flag "DuetAiLocalRag__otherfiles_chat_limit" to otherFilesChatLimit with value 100
+I0401 20:55:56.039950    8060 experiments.go:232] Applied experiment flag "DuetAiLocalRag__top_k_test_files_to_include" to topKTestFilesToInclude with value 2
+I0401 20:55:56.039965    8060 experiments.go:216] Applied experiment flag "DuetAiLocalRag__max_file_search_depth" to maxFileSearchDepth with value 2
+I0401 20:55:56.039977    8060 experiments.go:192] Applied experiment flag "DuetAiLocalRag__otherfiles_completion_limit" to otherFilesCompletionLimit with value 15
+I0401 20:55:56.039988    8060 experiments.go:112] Applied experiment flag "DuetAiGeneration__codeGeneration_context_window_size" to otherFilesGenerationSizeLimit with value 64000
+I0401 20:55:56.039998    8060 experiments.go:176] Applied experiment flag "DuetAiLocalRag__otherfiles_generation_limit" to otherFilesGenerationLimit with value 40
+I0401 20:55:56.040010    8060 experiments.go:136] Applied experiment flag "DuetAiMendelOverrides__inlineSuggestions_debounceMs" to completionOpts.debounce with value 300
+I0401 20:55:56.040026    8060 experiments.go:180] Applied experiment flag "DuetAiLocalRag__cache_co_located" to coLocated with value 20
+I0401 20:55:56.040050    8060 experiments.go:184] Applied experiment flag "DuetAiLocalRag__cache_file_limit" to fileLimit with value 4.1943e+06
+I0401 20:55:56.040061    8060 experiments.go:188] Applied experiment flag "DuetAiLocalRag__cache_total_files" to totalFiles with value 250
+I0401 20:55:56.040080    8060 experiments.go:236] Applied experiment flag "DuetAiLocalRag__local_rag_reranking_by_language" to localRAGRerankingByLanguageParam with value 0
+I0401 20:55:56.040097    8060 experiments.go:132] Applied experiment flag "DuetAiMendelOverrides__codeCompletion_defaultThreshold" to completionOpts.minScoreTheshold with value -100
+I0401 20:55:56.040111    8060 experiments.go:200] Extracted experiment flag "DuetAiRemoteRag__multi_query_tail_ns_for_completion" to multiQueryTailNS with value []
+I0401 20:55:56.040127    8060 experiments.go:204] Extracted experiment flag "DuetAiRemoteRag__multi_query_tail_ns_for_generation" to multiQueryTailNS with value []
+I0401 20:55:56.040144    8060 experiments.go:220] Applied experiment flag "DuetAiLocalRag__substrings_to_identify_doc_prompts" to substringsToIdentifyDocPrompts with value [document comment]
+I0401 20:55:56.040165    8060 experiments.go:224] Applied experiment flag "DuetAiLocalRag__substrings_to_identify_test_prompts" to substringsToIdentifyTestPrompts with value [test]
+I0401 20:55:56.040208    8060 configuration.go:479] Repopulating context cache from document cache
+W0401 20:55:56.040289    8060 tokenizer.go:274] Unknown tokenization algorithm , defaulting to whitespace
+W0401 20:55:56.041315    8060 tokenizer.go:274] Unknown tokenization algorithm , defaulting to whitespace
+I0401 20:55:56.041444    8060 cloudcode.go:45] Using Cloud Code API
+W0401 20:55:56.041659    8060 tokenizer.go:274] Unknown tokenization algorithm , defaulting to whitespace
+W0401 20:55:56.042369    8060 tokenizer.go:274] Unknown tokenization algorithm , defaulting to whitespace
+I0401 20:55:56.045681    8060 client.go:432] CompleteCode request: {"enablePromptEnhancement":true,"ideContext":{"currentFile":{"segments":[{"content":"Code Assist healthcheck id: bc7567c8-1926-4ec3-b3c3-0a6d2e1f34ae\nPi = "},{"isSelected":true},{}]}},"metadata":{"ideName":"Code OSS for Cloud Shell","ideType":"CLOUD_SHELL","ideVersion":"1.94.2-cde","platform":"LINUX_AMD64","pluginType":"CLOUD_CODE","pluginVersion":"2.29.0"},"project":"cloudshell-gca","requestId":"cloudcode-737377283-7f25e38a-d522-4695-a660-fd062e2f5aff"}
+I0401 20:55:56.312316    8060 handler.go:159] cancel was requested for: 5, needs to be canceled: true
+I0401 20:55:56.327122    8060 handler.go:146] req #5 skipped: context canceled
+W0401 20:56:03.508903    8060 tokenizer.go:274] Unknown tokenization algorithm , defaulting to whitespace
+I0401 20:56:03.590171    8060 conversation.go:859] Starting getChatIDEContext with detected intent: 
+I0401 20:56:03.590223    8060 document.go:421] NoneEditType, returning ReasonRecentlyOpened
+I0401 20:56:03.590260    8060 ide_context.go:131] Unable to read file at /home/apoorvtripathi537/.aiexclude
+/home/apoorvtripathi537
+file:///home/apoorvtripathi537
+I0401 20:56:03.590276    8060 conversation.go:896] Unable to retrieve excluded files for request #12: open /home/apoorvtripathi537/.aiexclude: no such file or directory
+I0401 20:56:03.590301    8060 rag_cache.go:973] Retrieving and scoring colocated and open files
+I0401 20:56:03.590310    8060 rag_cache.go:1008] rerankByLangBoost=0
+I0401 20:56:07.435845    8060 conversation.go:859] Starting getChatIDEContext with detected intent: 
+I0401 20:56:07.435894    8060 document.go:421] NoneEditType, returning ReasonRecentlyOpened
+I0401 20:56:07.435931    8060 ide_context.go:131] Unable to read file at /home/apoorvtripathi537/.aiexclude
+/home/apoorvtripathi537
+file:///home/apoorvtripathi537
+I0401 20:56:07.435948    8060 conversation.go:896] Unable to retrieve excluded files for request #18: open /home/apoorvtripathi537/.aiexclude: no such file or directory
+I0401 20:56:07.435988    8060 rag_cache.go:973] Retrieving and scoring colocated and open files
+I0401 20:56:07.436001    8060 rag_cache.go:1008] rerankByLangBoost=0
+I0401 20:56:19.885684    8060 conversation.go:859] Starting getChatIDEContext with detected intent: 
+I0401 20:56:19.885763    8060 document.go:421] NoneEditType, returning ReasonRecentlyOpened
+I0401 20:56:19.885804    8060 ide_context.go:131] Unable to read file at /home/apoorvtripathi537/.aiexclude
+/home/apoorvtripathi537
+file:///home/apoorvtripathi537
+I0401 20:56:19.885821    8060 conversation.go:896] Unable to retrieve excluded files for request #22: open /home/apoorvtripathi537/.aiexclude: no such file or directory
+I0401 20:56:19.885863    8060 rag_cache.go:973] Retrieving and scoring colocated and open files
+I0401 20:56:19.885873    8060 rag_cache.go:1008] rerankByLangBoost=0
+W0401 21:04:36.116781    8060 tokenizer.go:274] Unknown tokenization algorithm , defaulting to whitespace
+I0401 21:04:36.215112    8060 conversation.go:859] Starting getChatIDEContext with detected intent: 
+I0401 21:04:36.215160    8060 document.go:421] NoneEditType, returning ReasonRecentlyOpened
+I0401 21:04:36.215204    8060 ide_context.go:131] Unable to read file at /home/apoorvtripathi537/.aiexclude
+/home/apoorvtripathi537
+file:///home/apoorvtripathi537
+I0401 21:04:36.215219    8060 conversation.go:896] Unable to retrieve excluded files for request #27: open /home/apoorvtripathi537/.aiexclude: no such file or directory
+I0401 21:04:36.215308    8060 rag_cache.go:973] Retrieving and scoring colocated and open files
+I0401 21:04:36.215320    8060 rag_cache.go:1008] rerankByLangBoost=0
+I0401 21:04:40.759954    8060 conversation.go:859] Starting getChatIDEContext with detected intent: 
+I0401 21:04:40.759990    8060 document.go:421] NoneEditType, returning ReasonRecentlyOpened
+I0401 21:04:40.760022    8060 ide_context.go:131] Unable to read file at /home/apoorvtripathi537/.aiexclude
+/home/apoorvtripathi537
+file:///home/apoorvtripathi537
+I0401 21:04:40.760033    8060 conversation.go:896] Unable to retrieve excluded files for request #31: open /home/apoorvtripathi537/.aiexclude: no such file or directory
+I0401 21:04:40.760061    8060 rag_cache.go:973] Retrieving and scoring colocated and open files
+I0401 21:04:40.760069    8060 rag_cache.go:1008] rerankByLangBoost=0
+W0401 21:04:47.678903    8060 tokenizer.go:274] Unknown tokenization algorithm , defaulting to whitespace
+I0401 21:04:47.778513    8060 conversation.go:859] Starting getChatIDEContext with detected intent: 
+I0401 21:04:47.778555    8060 document.go:421] NoneEditType, returning ReasonRecentlyOpened
+I0401 21:04:47.778593    8060 ide_context.go:131] Unable to read file at /home/apoorvtripathi537/.aiexclude
+/home/apoorvtripathi537
+file:///home/apoorvtripathi537
+I0401 21:04:47.778607    8060 conversation.go:896] Unable to retrieve excluded files for request #35: open /home/apoorvtripathi537/.aiexclude: no such file or directory
+I0401 21:04:47.778639    8060 rag_cache.go:973] Retrieving and scoring colocated and open files
+I0401 21:04:47.778647    8060 rag_cache.go:1008] rerankByLangBoost=0
+I0401 21:04:51.396234    8060 conversation.go:859] Starting getChatIDEContext with detected intent: 
+I0401 21:04:51.396292    8060 document.go:421] NoneEditType, returning ReasonRecentlyOpened
+I0401 21:04:51.396340    8060 ide_context.go:131] Unable to read file at /home/apoorvtripathi537/.aiexclude
+/home/apoorvtripathi537
+file:///home/apoorvtripathi537
+I0401 21:04:51.396353    8060 conversation.go:896] Unable to retrieve excluded files for request #40: open /home/apoorvtripathi537/.aiexclude: no such file or directory
+I0401 21:04:51.396394    8060 rag_cache.go:973] Retrieving and scoring colocated and open files
+I0401 21:04:51.396404    8060 rag_cache.go:1008] rerankByLangBoost=0
+W0401 21:04:56.501914    8060 tokenizer.go:274] Unknown tokenization algorithm , defaulting to whitespace
+I0401 21:04:56.593395    8060 conversation.go:859] Starting getChatIDEContext with detected intent: 
+I0401 21:04:56.593439    8060 document.go:421] NoneEditType, returning ReasonRecentlyOpened
+I0401 21:04:56.593475    8060 ide_context.go:131] Unable to read file at /home/apoorvtripathi537/.aiexclude
+/home/apoorvtripathi537
+file:///home/apoorvtripathi537
+I0401 21:04:56.593489    8060 conversation.go:896] Unable to retrieve excluded files for request #46: open /home/apoorvtripathi537/.aiexclude: no such file or directory
+I0401 21:04:56.593515    8060 rag_cache.go:973] Retrieving and scoring colocated and open files
+I0401 21:04:56.593525    8060 rag_cache.go:1008] rerankByLangBoost=0
+I0401 21:05:04.116185    8060 conversation.go:859] Starting getChatIDEContext with detected intent: 
+I0401 21:05:04.116228    8060 document.go:421] NoneEditType, returning ReasonRecentlyOpened
+I0401 21:05:04.116278    8060 ide_context.go:131] Unable to read file at /home/apoorvtripathi537/.aiexclude
+/home/apoorvtripathi537
+file:///home/apoorvtripathi537
+I0401 21:05:04.116295    8060 conversation.go:896] Unable to retrieve excluded files for request #52: open /home/apoorvtripathi537/.aiexclude: no such file or directory
+I0401 21:05:04.116334    8060 rag_cache.go:973] Retrieving and scoring colocated and open files
+I0401 21:05:04.116343    8060 rag_cache.go:1008] rerankByLangBoost=0
+W0401 21:05:45.504825    8060 tokenizer.go:274] Unknown tokenization algorithm , defaulting to whitespace
+I0401 21:05:45.593627    8060 conversation.go:859] Starting getChatIDEContext with detected intent: 
+I0401 21:05:45.593675    8060 document.go:421] NoneEditType, returning ReasonRecentlyOpened
+I0401 21:05:45.593712    8060 ide_context.go:131] Unable to read file at /home/apoorvtripathi537/.aiexclude
+/home/apoorvtripathi537
+file:///home/apoorvtripathi537
+I0401 21:05:45.593728    8060 conversation.go:896] Unable to retrieve excluded files for request #60: open /home/apoorvtripathi537/.aiexclude: no such file or directory
+I0401 21:05:45.593803    8060 rag_cache.go:973] Retrieving and scoring colocated and open files
+I0401 21:05:45.593814    8060 rag_cache.go:1008] rerankByLangBoost=0
+I0401 21:05:50.484312    8060 conversation.go:859] Starting getChatIDEContext with detected intent: 
+I0401 21:05:50.484361    8060 document.go:421] NoneEditType, returning ReasonRecentlyOpened
+I0401 21:05:50.484404    8060 ide_context.go:131] Unable to read file at /home/apoorvtripathi537/.aiexclude
+/home/apoorvtripathi537
+file:///home/apoorvtripathi537
+I0401 21:05:50.484419    8060 conversation.go:896] Unable to retrieve excluded files for request #66: open /home/apoorvtripathi537/.aiexclude: no such file or directory
+I0401 21:05:50.484456    8060 rag_cache.go:973] Retrieving and scoring colocated and open files
+I0401 21:05:50.484465    8060 rag_cache.go:1008] rerankByLangBoost=0
+I0401 21:05:53.555344    8060 conversation.go:859] Starting getChatIDEContext with detected intent: 
+I0401 21:05:53.555396    8060 document.go:421] NoneEditType, returning ReasonRecentlyOpened
+I0401 21:05:53.555436    8060 ide_context.go:131] Unable to read file at /home/apoorvtripathi537/.aiexclude
+/home/apoorvtripathi537
+file:///home/apoorvtripathi537
+I0401 21:05:53.555455    8060 conversation.go:896] Unable to retrieve excluded files for request #70: open /home/apoorvtripathi537/.aiexclude: no such file or directory
+I0401 21:05:53.555495    8060 rag_cache.go:973] Retrieving and scoring colocated and open files
+I0401 21:05:53.555507    8060 rag_cache.go:1008] rerankByLangBoost=0
+I0401 21:05:54.651252    8060 conversation.go:859] Starting getChatIDEContext with detected intent: 
+I0401 21:05:54.651319    8060 document.go:421] NoneEditType, returning ReasonRecentlyOpened
+I0401 21:05:54.651358    8060 ide_context.go:131] Unable to read file at /home/apoorvtripathi537/.aiexclude
+/home/apoorvtripathi537
+file:///home/apoorvtripathi537
+I0401 21:05:54.651372    8060 conversation.go:896] Unable to retrieve excluded files for request #73: open /home/apoorvtripathi537/.aiexclude: no such file or directory
+I0401 21:05:54.651409    8060 rag_cache.go:973] Retrieving and scoring colocated and open files
+I0401 21:05:54.651425    8060 rag_cache.go:1008] rerankByLangBoost=0
+I0401 21:07:41.275815    8060 conversation.go:859] Starting getChatIDEContext with detected intent: 
+I0401 21:07:41.275872    8060 document.go:421] NoneEditType, returning ReasonRecentlyOpened
+I0401 21:07:41.275923    8060 ide_context.go:131] Unable to read file at /home/apoorvtripathi537/.aiexclude
+/home/apoorvtripathi537
+file:///home/apoorvtripathi537
+I0401 21:07:41.275938    8060 conversation.go:896] Unable to retrieve excluded files for request #82: open /home/apoorvtripathi537/.aiexclude: no such file or directory
+I0401 21:07:41.276070    8060 rag_cache.go:973] Retrieving and scoring colocated and open files
+I0401 21:07:41.276082    8060 rag_cache.go:1008] rerankByLangBoost=0
+I0401 21:07:42.861005    8060 conversation.go:859] Starting getChatIDEContext with detected intent: 
+I0401 21:07:42.861053    8060 document.go:421] NoneEditType, returning ReasonRecentlyOpened
+I0401 21:07:42.861092    8060 ide_context.go:131] Unable to read file at /home/apoorvtripathi537/.aiexclude
+/home/apoorvtripathi537
+file:///home/apoorvtripathi537
+I0401 21:07:42.861105    8060 conversation.go:896] Unable to retrieve excluded files for request #85: open /home/apoorvtripathi537/.aiexclude: no such file or directory
+I0401 21:07:42.861145    8060 rag_cache.go:973] Retrieving and scoring colocated and open files
+I0401 21:07:42.861155    8060 rag_cache.go:1008] rerankByLangBoost=0

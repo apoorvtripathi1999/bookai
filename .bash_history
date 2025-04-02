@@ -100,3 +100,21 @@ git add .
 git commit -m "added vertex ai to the requirements filr"
 clear
 git init
+git add .
+git commit -m "fixed"
+git push origin master
+git auth
+git --help
+git push origin master
+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
+git push origin master
+source /home/apoorvtripathi537/venv-translate/bin/activate
+/home/apoorvtripathi537/venv-translate/bin/python /home/apoorvtripathi537/main.py
+python main.py
+close
+python main.py
+source /home/apoorvtripathi537/venv-translate/bin/activate
+source /home/apoorvtripathi537/venv-translate/bin/activate
+python main.py
+source /home/apoorvtripathi537/venv-translate/bin/activate
+python main.py
