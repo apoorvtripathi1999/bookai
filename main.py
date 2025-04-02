@@ -71,7 +71,7 @@ def upload_audio():
 
         print(file_path)
 
-        audio_file = Part.from_data(data, mime_type="audio/waw")
+        audio_file = Part.from_data(data, mime_type="audio/wav")
         contents = [audio_file,prompt]
         response = model.generate_content(contents)
 
