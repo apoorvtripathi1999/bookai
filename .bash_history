@@ -118,3 +118,7 @@ source /home/apoorvtripathi537/venv-translate/bin/activate
 python main.py
 source /home/apoorvtripathi537/venv-translate/bin/activate
 python main.py
+git add .
+git commit -m "fixed issues"
+git push origin master
+git pull

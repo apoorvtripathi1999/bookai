@@ -185,3 +185,23 @@ I0402 03:23:31.792049    2603 rag_cache.go:973] Retrieving and scoring colocated
 I0402 03:23:31.792058    2603 rag_cache.go:1008] rerankByLangBoost=0
 I0402 03:23:42.498338    2603 life_cycle.go:300] codeReportEvery: recomputing codereport metric
 I0402 03:24:42.498037    2603 life_cycle.go:264] codeReportBasicEvery: recomputing codereportbasic metric
+W0402 03:28:07.586096    2603 tokenizer.go:274] Unknown tokenization algorithm , defaulting to whitespace
+W0402 03:28:07.586681    2603 tokenizer.go:274] Unknown tokenization algorithm , defaulting to whitespace
+W0402 03:28:07.586952    2603 tokenizer.go:274] Unknown tokenization algorithm , defaulting to whitespace
+W0402 03:28:07.587220    2603 tokenizer.go:274] Unknown tokenization algorithm , defaulting to whitespace
+I0402 03:28:07.683325    2603 conversation.go:859] Starting getChatIDEContext with detected intent: 
+I0402 03:28:07.683367    2603 document.go:421] NoneEditType, returning ReasonRecentlyOpened
+I0402 03:28:07.683403    2603 ide_context.go:131] Unable to read file at /home/apoorvtripathi537/.aiexclude
+/home/apoorvtripathi537
+file:///home/apoorvtripathi537
+I0402 03:28:07.683415    2603 conversation.go:896] Unable to retrieve excluded files for request #68: open /home/apoorvtripathi537/.aiexclude: no such file or directory
+I0402 03:28:07.683469    2603 rag_cache.go:973] Retrieving and scoring colocated and open files
+I0402 03:28:07.683476    2603 rag_cache.go:1008] rerankByLangBoost=0
+I0402 03:28:20.631402    2603 conversation.go:859] Starting getChatIDEContext with detected intent: 
+I0402 03:28:20.631450    2603 document.go:425] OtherEditType (ADD), returning ReasonRecentlyEdited
+I0402 03:28:20.631495    2603 ide_context.go:131] Unable to read file at /home/apoorvtripathi537/.aiexclude
+/home/apoorvtripathi537
+file:///home/apoorvtripathi537
+I0402 03:28:20.631509    2603 conversation.go:896] Unable to retrieve excluded files for request #69: open /home/apoorvtripathi537/.aiexclude: no such file or directory
+I0402 03:28:20.631547    2603 rag_cache.go:973] Retrieving and scoring colocated and open files
+I0402 03:28:20.631558    2603 rag_cache.go:1008] rerankByLangBoost=0
