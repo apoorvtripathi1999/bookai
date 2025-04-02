@@ -87,10 +87,10 @@ def upload_audio():
 
     return redirect('/') #success
 
-
 @app.route('/upload/<filename>')
 def get_file(filename):
-    return send_file(filename)
+    file_path = os.path.join(app.config['UPLOAD_FOLDER'], filename)
+    return send_file(file_path)
 
 @app.route('/script.js',methods=['GET'])
 def scripts_js():
