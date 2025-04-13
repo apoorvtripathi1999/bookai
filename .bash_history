@@ -122,3 +122,135 @@ git add .
 git commit -m "fixed issues"
 git push origin master
 git pull
+git add .
+git commit -m "fixed errors"
+git push origin master
+git pull
+git config pull.rebase false
+git pull
+source /home/apoorvtripathi537/venv-translate/bin/activate
+git pull
+git add .
+source /home/apoorvtripathi537/venv-translate/bin/activate
+python main.py
+gcloud run services describe convo-ai-assignment --platform=managed --region=us-central1
+gcloud projects add-iam-policy-binding project-2-convoai   --member="serviceAccount:457912087604-compute@developer.gserviceaccount.com"   --role="roles/aiplatform.user"
+gcloud projects add-iam-policy-binding project-2-convoai   --member="serviceAccount: 457912087604-compute@developer.gserviceaccount.com"   --role="roles/aiplatform.viewer"
+gcloud run services describe convo-ai-assignment --platform=managed --region=us-central1
+gcloud projects add-iam-policy-binding project-2-convoai   --member="serviceAccount:457912087604-compute@developer.gserviceaccount.com"   --role="roles/aiplatform.viewer"
+gcloud run deploy convo-ai-assignment --region=us-central1
+source /home/apoorvtripathi537/venv-translate/bin/activate
+python main.py
+source /home/apoorvtripathi537/venv-translate/bin/activate
+/home/apoorvtripathi537/venv-translate/bin/python /home/apoorvtripathi537/main.py
+python main.py
+ls
+python main.py
+lsof -i :5000
+sudo apt install lsof
+lsof -i :5000
+kill -9 2418
+kill -9 3513
+clear
+python main.py
+clear
+python main.py
+gcloud services enable aiplatform.googleapis.com
+gcloud services enable compute.googleapis.com
+update flask
+source /home/apoorvtripathi537/venv-translate/bin/activate
+/home/apoorvtripathi537/venv-translate/bin/python /home/apoorvtripathi537/test.py
+clear
+/home/apoorvtripathi537/venv-translate/bin/python /home/apoorvtripathi537/test.py
+clear
+/home/apoorvtripathi537/venv-translate/bin/python /home/apoorvtripathi537/test.py
+source /home/apoorvtripathi537/venv-translate/bin/activate
+clear
+python main.py
+source /home/apoorvtripathi537/venv-translate/bin/activate
+/home/apoorvtripathi537/venv-translate/bin/python /home/apoorvtripathi537/test.py
+clear
+/home/apoorvtripathi537/venv-translate/bin/python /home/apoorvtripathi537/test.py
+lsof -i :5000
+kill -9 6817
+python main.py
+kill -9 8203
+clear
+python main.py
+pip install PyMuPDF
+source /home/apoorvtripathi537/venv-translate/bin/activate
+/home/apoorvtripathi537/venv-translate/bin/python /home/apoorvtripathi537/main.py
+python main.py
+lsof -i :5000
+sudo apt install lsof
+lsof -i :5000
+kill -9 6644
+kill -9 7237
+python main.py
+pip install PyMuPDF
+pip uninstall fitz  
+pip install fitz
+python main.py
+pip install PyMuPDF
+ls
+/home/apoorvtripathi537/venv-translate/bin/python /home/apoorvtripathi537/main.py
+from google.cloud import speech
+pip install --upgrade google-cloud-speech
+pip install --upgrade google-cloud-aiplatform
+pip install --upgrade pip
+python main.py
+pip install --upgrade google-cloud-texttospeech
+/home/apoorvtripathi537/venv-translate/bin/python /home/apoorvtripathi537/main.py
+clear
+python main.py
+/home/apoorvtripathi537/venv-translate/bin/python /home/apoorvtripathi537/main.py
+cler
+clEAR
+clear
+python main.py
+gcloud config get-value project
+gcloud auth application-default set-quota-project bookai-456604
+Run $ gcloud auth application-default login
+/home/apoorvtripathi537/venv-translate/bin/python /home/apoorvtripathi537/main.py
+clear
+python main.py
+gcloud config set project bookai-456604
+python main.py
+pip install PyMuPDF
+python main.py
+pip uninstall fitz
+pip install PyMuPDF
+python main.py
+pip install PyMuPDF
+python main.py
+pip install pdfplumber
+clear
+pip install pdfplumber
+clear
+python main.py
+source /home/apoorvtripathi537/venv-translate/bin/activate
+/home/apoorvtripathi537/venv-translate/bin/python /home/apoorvtripathi537/test.py
+clear
+python main.py
+clear
+python main.py
+clear
+python main.py
+clear
+python main.py
+clear
+python main.py
+clear
+python main.py
+source /home/apoorvtripathi537/venv-translate/bin/activate
+/home/apoorvtripathi537/venv-translate/bin/python /home/apoorvtripathi537/test.py
+clear
+python main.py
+clear
+python main.py
+clear
+python main.py
+clear
+git init
+git remote add https://github.com/apoorvtripathi1999/bookai.git
+git remote add master https://github.com/apoorvtripathi1999/bookai.git

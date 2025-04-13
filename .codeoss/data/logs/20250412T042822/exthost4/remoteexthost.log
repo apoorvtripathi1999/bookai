@@ -1,0 +1,44 @@
+2025-04-12 04:47:52.077 [info] Extension host with pid 5977 started
+2025-04-12 04:47:52.077 [error] Error: EEXIST: file already exists, open '/home/apoorvtripathi537/.codeoss/data/User/workspaceStorage/11d61ec4/vscode.lock'
+2025-04-12 04:47:52.120 [info] Lock '/home/apoorvtripathi537/.codeoss/data/User/workspaceStorage/11d61ec4/vscode.lock': Could not acquire lock, checking if the file is stale.
+2025-04-12 04:47:52.130 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2025-04-12 04:47:52.132 [info] ExtensionService#_doActivateExtension ms-python.python, startup: false, activationEvent: 'onLanguage:python'
+2025-04-12 04:47:52.577 [info] Lock '/home/apoorvtripathi537/.codeoss/data/User/workspaceStorage/11d61ec4/vscode.lock': The lock does not look stale, elapsed: 49 ms, giving up.
+2025-04-12 04:47:52.578 [error] Error: EEXIST: file already exists, open '/home/apoorvtripathi537/.codeoss/data/User/workspaceStorage/11d61ec4-1/vscode.lock'
+2025-04-12 04:47:52.579 [info] Lock '/home/apoorvtripathi537/.codeoss/data/User/workspaceStorage/11d61ec4-1/vscode.lock': Could not acquire lock, checking if the file is stale.
+2025-04-12 04:47:52.586 [info] Lock '/home/apoorvtripathi537/.codeoss/data/User/workspaceStorage/11d61ec4-1/vscode.lock': The lock does not look stale, elapsed: 442 ms, giving up.
+2025-04-12 04:47:52.587 [error] Error: EEXIST: file already exists, open '/home/apoorvtripathi537/.codeoss/data/User/workspaceStorage/11d61ec4-2/vscode.lock'
+2025-04-12 04:47:52.613 [info] Lock '/home/apoorvtripathi537/.codeoss/data/User/workspaceStorage/11d61ec4-2/vscode.lock': Could not acquire lock, checking if the file is stale.
+2025-04-12 04:47:52.614 [info] Lock '/home/apoorvtripathi537/.codeoss/data/User/workspaceStorage/11d61ec4-2/vscode.lock': The pid 5974 appears to be gone.
+2025-04-12 04:47:52.614 [info] Lock '/home/apoorvtripathi537/.codeoss/data/User/workspaceStorage/11d61ec4-2/vscode.lock': Deleting a stale lock.
+2025-04-12 04:47:52.620 [info] Lock '/home/apoorvtripathi537/.codeoss/data/User/workspaceStorage/11d61ec4-2/vscode.lock': Lock acquired.
+2025-04-12 04:47:52.715 [error] Error: spawn /google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python-env-tools/bin/pet ENOENT
+	at ChildProcess._handle.onexit (node:internal/child_process:286:19)
+	at onErrorNT (node:internal/child_process:484:16)
+	at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+2025-04-12 04:47:52.811 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+2025-04-12 04:47:52.859 [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+2025-04-12 04:47:52.860 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2025-04-12 04:47:53.091 [info] ExtensionService#_doActivateExtension redhat.fabric8-analytics, startup: true, activationEvent: 'workspaceContains:**/package.json,**/pom.xml,**/go.mod,**/requirements.txt,**/build.gradle,**/Dockerfile,**/Containerfile'
+2025-04-12 04:47:53.510 [info] Eager extensions activated
+2025-04-12 04:47:53.510 [info] ExtensionService#_doActivateExtension EditorConfig.EditorConfig, startup: false, activationEvent: 'onStartupFinished'
+2025-04-12 04:47:53.511 [info] ExtensionService#_doActivateExtension google.cloud-shell, startup: false, activationEvent: 'onStartupFinished'
+2025-04-12 04:47:53.511 [info] ExtensionService#_doActivateExtension google.geminicodeassist, startup: false, activationEvent: 'onStartupFinished', root cause: googlecloudtools.cloudcode
+2025-04-12 04:47:53.512 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2025-04-12 04:47:53.514 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2025-04-12 04:47:56.057 [info] ExtensionService#_doActivateExtension googlecloudtools.cloudcode, startup: false, activationEvent: 'onStartupFinished'
+2025-04-12 04:47:58.165 [info] ExtensionService#_doActivateExtension vscode.configuration-editing, startup: false, activationEvent: 'onLanguage:jsonc'
+2025-04-12 04:47:58.166 [info] ExtensionService#_doActivateExtension vscode.json-language-features, startup: false, activationEvent: 'onLanguage:jsonc'
+2025-04-12 04:47:58.166 [info] ExtensionService#_doActivateExtension vscode.typescript-language-features, startup: false, activationEvent: 'onLanguage:jsonc'
+2025-04-12 04:47:59.070 [warning] [Decorations] CAPPING events from decorations provider vscode.git 366
+2025-04-12 04:47:59.325 [info] ExtensionService#_doActivateExtension vscode.github-authentication, startup: false, activationEvent: 'onAuthenticationRequest:github'
+2025-04-12 04:47:59.518 [warning] [Decorations] CAPPING events from decorations provider vscode.git 368
+2025-04-12 04:48:01.575 [warning] [Decorations] CAPPING events from decorations provider vscode.git 370
+2025-04-12 04:48:06.685 [warning] [Decorations] CAPPING events from decorations provider vscode.git 370
+2025-04-12 04:51:41.189 [warning] [Decorations] CAPPING events from decorations provider vscode.git 373
+2025-04-12 04:52:23.941 [warning] [Decorations] CAPPING events from decorations provider vscode.git 373
+2025-04-12 04:52:24.115 [info] ExtensionService#_doActivateExtension vscode.media-preview, startup: false, activationEvent: 'onCustomEditor:vscode.audioPreview'
+2025-04-12 04:52:29.040 [warning] [Decorations] CAPPING events from decorations provider vscode.git 373
+2025-04-12 04:53:02.538 [warning] [Decorations] CAPPING events from decorations provider vscode.git 372
+2025-04-12 04:53:02.732 [info] ExtensionService#_doActivateExtension vscode.html-language-features, startup: false, activationEvent: 'onLanguage:html'
+2025-04-12 04:54:33.497 [warning] [Decorations] CAPPING events from decorations provider vscode.git 581

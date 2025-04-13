@@ -1,0 +1,5 @@
+2025-04-02 04:32:38.864 [warning] Dir "/home/apoorvtripathi537/.pixi/envs" is not watchable (directory does not exist)
+2025-04-02 04:32:38.932 [info] Python interpreter path: ./venv-translate/bin/python
+2025-04-02 04:32:39.332 [info] > pyenv which python
+2025-04-02 04:32:39.332 [info] cwd: .
+2025-04-02 04:32:40.657 [info] Starting Jedi language server for apoorvtripathi537.

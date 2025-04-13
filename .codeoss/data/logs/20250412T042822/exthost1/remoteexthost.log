@@ -1,0 +1,160 @@
+2025-04-12 04:28:26.918 [info] Extension host with pid 1262 started
+2025-04-12 04:28:26.942 [info] Lock '/home/apoorvtripathi537/.codeoss/data/User/workspaceStorage/11d61ec4/vscode.lock': Lock acquired.
+2025-04-12 04:28:26.983 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2025-04-12 04:28:26.985 [info] ExtensionService#_doActivateExtension ms-python.python, startup: false, activationEvent: 'onLanguage:python'
+2025-04-12 04:28:26.985 [info] ExtensionService#_doActivateExtension google.cloud-shell, startup: false, activationEvent: 'onTerminalProfile:cloudshell.default'
+2025-04-12 04:28:27.573 [error] Error: spawn /google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python-env-tools/bin/pet ENOENT
+	at ChildProcess._handle.onexit (node:internal/child_process:286:19)
+	at onErrorNT (node:internal/child_process:484:16)
+	at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+2025-04-12 04:28:27.610 [info] ExtensionService#_doActivateExtension vscode.configuration-editing, startup: false, activationEvent: 'onLanguage:jsonc'
+2025-04-12 04:28:27.610 [info] ExtensionService#_doActivateExtension vscode.json-language-features, startup: false, activationEvent: 'onLanguage:jsonc'
+2025-04-12 04:28:27.611 [info] ExtensionService#_doActivateExtension vscode.typescript-language-features, startup: false, activationEvent: 'onLanguage:jsonc'
+2025-04-12 04:28:27.893 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+2025-04-12 04:28:27.978 [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+2025-04-12 04:28:27.979 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2025-04-12 04:28:28.209 [info] ExtensionService#_doActivateExtension google.geminicodeassist, startup: false, activationEvent: 'onCommand:cloudcode.gemini.chatView.focus'
+2025-04-12 04:28:30.508 [info] ExtensionService#_doActivateExtension redhat.fabric8-analytics, startup: true, activationEvent: 'workspaceContains:**/package.json,**/pom.xml,**/go.mod,**/requirements.txt,**/build.gradle,**/Dockerfile,**/Containerfile'
+2025-04-12 04:28:31.057 [info] Eager extensions activated
+2025-04-12 04:28:31.058 [info] ExtensionService#_doActivateExtension EditorConfig.EditorConfig, startup: false, activationEvent: 'onStartupFinished'
+2025-04-12 04:28:31.059 [info] ExtensionService#_doActivateExtension googlecloudtools.cloudcode, startup: false, activationEvent: 'onStartupFinished'
+2025-04-12 04:28:31.059 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2025-04-12 04:28:31.060 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2025-04-12 04:28:34.507 [warning] [Decorations] CAPPING events from decorations provider vscode.git 308
+2025-04-12 04:28:34.676 [info] ExtensionService#_doActivateExtension vscode.github-authentication, startup: false, activationEvent: 'onAuthenticationRequest:github'
+2025-04-12 04:28:34.913 [warning] [Decorations] CAPPING events from decorations provider vscode.git 309
+2025-04-12 04:28:39.852 [warning] [Decorations] CAPPING events from decorations provider vscode.git 312
+2025-04-12 04:28:50.925 [warning] [Decorations] CAPPING events from decorations provider vscode.git 316
+2025-04-12 04:28:53.798 [info] ExtensionService#_doActivateExtension vscode.simple-browser, startup: false, activationEvent: 'onOpenExternalUri:https'
+2025-04-12 04:28:56.013 [warning] [Decorations] CAPPING events from decorations provider vscode.git 315
+2025-04-12 04:29:01.097 [warning] [Decorations] CAPPING events from decorations provider vscode.git 315
+2025-04-12 04:29:54.422 [warning] [Decorations] CAPPING events from decorations provider vscode.git 317
+2025-04-12 04:29:59.508 [warning] [Decorations] CAPPING events from decorations provider vscode.git 317
+2025-04-12 04:30:04.589 [warning] [Decorations] CAPPING events from decorations provider vscode.git 317
+2025-04-12 04:30:09.670 [warning] [Decorations] CAPPING events from decorations provider vscode.git 317
+2025-04-12 04:30:14.747 [warning] [Decorations] CAPPING events from decorations provider vscode.git 317
+2025-04-12 04:30:19.820 [warning] [Decorations] CAPPING events from decorations provider vscode.git 317
+2025-04-12 04:30:24.897 [warning] [Decorations] CAPPING events from decorations provider vscode.git 317
+2025-04-12 04:30:29.971 [warning] [Decorations] CAPPING events from decorations provider vscode.git 317
+2025-04-12 04:30:35.045 [warning] [Decorations] CAPPING events from decorations provider vscode.git 317
+2025-04-12 04:30:40.116 [warning] [Decorations] CAPPING events from decorations provider vscode.git 317
+2025-04-12 04:30:45.194 [warning] [Decorations] CAPPING events from decorations provider vscode.git 317
+2025-04-12 04:30:50.267 [warning] [Decorations] CAPPING events from decorations provider vscode.git 317
+2025-04-12 04:30:55.339 [warning] [Decorations] CAPPING events from decorations provider vscode.git 317
+2025-04-12 04:31:00.413 [warning] [Decorations] CAPPING events from decorations provider vscode.git 317
+2025-04-12 04:31:05.485 [warning] [Decorations] CAPPING events from decorations provider vscode.git 317
+2025-04-12 04:31:10.565 [warning] [Decorations] CAPPING events from decorations provider vscode.git 317
+2025-04-12 04:31:17.474 [warning] [Decorations] CAPPING events from decorations provider vscode.git 317
+2025-04-12 04:31:22.544 [warning] [Decorations] CAPPING events from decorations provider vscode.git 317
+2025-04-12 04:31:27.624 [warning] [Decorations] CAPPING events from decorations provider vscode.git 317
+2025-04-12 04:31:32.700 [warning] [Decorations] CAPPING events from decorations provider vscode.git 317
+2025-04-12 04:31:39.892 [warning] [Decorations] CAPPING events from decorations provider vscode.git 317
+2025-04-12 04:31:44.964 [warning] [Decorations] CAPPING events from decorations provider vscode.git 317
+2025-04-12 04:32:28.684 [warning] [Decorations] CAPPING events from decorations provider vscode.git 317
+2025-04-12 04:33:37.727 [warning] [Decorations] CAPPING events from decorations provider vscode.git 317
+2025-04-12 04:33:42.803 [warning] [Decorations] CAPPING events from decorations provider vscode.git 317
+2025-04-12 04:33:47.878 [warning] [Decorations] CAPPING events from decorations provider vscode.git 317
+2025-04-12 04:33:52.951 [warning] [Decorations] CAPPING events from decorations provider vscode.git 317
+2025-04-12 04:33:58.024 [warning] [Decorations] CAPPING events from decorations provider vscode.git 317
+2025-04-12 04:34:03.100 [warning] [Decorations] CAPPING events from decorations provider vscode.git 317
+2025-04-12 04:34:08.175 [warning] [Decorations] CAPPING events from decorations provider vscode.git 317
+2025-04-12 04:34:13.249 [warning] [Decorations] CAPPING events from decorations provider vscode.git 317
+2025-04-12 04:34:20.662 [warning] [Decorations] CAPPING events from decorations provider vscode.git 317
+2025-04-12 04:34:25.737 [warning] [Decorations] CAPPING events from decorations provider vscode.git 317
+2025-04-12 04:34:30.813 [warning] [Decorations] CAPPING events from decorations provider vscode.git 317
+2025-04-12 04:34:35.900 [warning] [Decorations] CAPPING events from decorations provider vscode.git 318
+2025-04-12 04:34:40.973 [warning] [Decorations] CAPPING events from decorations provider vscode.git 318
+2025-04-12 04:34:46.046 [warning] [Decorations] CAPPING events from decorations provider vscode.git 318
+2025-04-12 04:34:51.118 [warning] [Decorations] CAPPING events from decorations provider vscode.git 318
+2025-04-12 04:35:00.636 [warning] [Decorations] CAPPING events from decorations provider vscode.git 318
+2025-04-12 04:35:07.986 [warning] [Decorations] CAPPING events from decorations provider vscode.git 318
+2025-04-12 04:35:13.063 [warning] [Decorations] CAPPING events from decorations provider vscode.git 318
+2025-04-12 04:35:18.138 [warning] [Decorations] CAPPING events from decorations provider vscode.git 318
+2025-04-12 04:35:23.785 [warning] [Decorations] CAPPING events from decorations provider vscode.git 316
+2025-04-12 04:35:28.859 [warning] [Decorations] CAPPING events from decorations provider vscode.git 316
+2025-04-12 04:35:45.008 [warning] [Decorations] CAPPING events from decorations provider vscode.git 316
+2025-04-12 04:35:50.078 [warning] [Decorations] CAPPING events from decorations provider vscode.git 316
+2025-04-12 04:35:55.150 [warning] [Decorations] CAPPING events from decorations provider vscode.git 316
+2025-04-12 04:36:00.233 [warning] [Decorations] CAPPING events from decorations provider vscode.git 316
+2025-04-12 04:36:07.817 [warning] [Decorations] CAPPING events from decorations provider vscode.git 316
+2025-04-12 04:43:55.072 [info] Extension host terminating: renderer disconnected for too long (2)
+2025-04-12 04:43:55.073 [info] Lock '/home/apoorvtripathi537/.codeoss/data/User/workspaceStorage/11d61ec4/vscode.lock': Marking the lockfile as scheduled to be released in 6000 ms.
+2025-04-12 04:43:55.126 [error] Canceled: Canceled
+    at new eA (file:///google/devshell/editor/code-oss-for-cloud-shell/out/vs/workbench/api/node/extensionHostProcess.js:31:116752)
+    at Zb.U (file:///google/devshell/editor/code-oss-for-cloud-shell/out/vs/workbench/api/node/extensionHostProcess.js:31:121364)
+    at Proxy.s.<computed>.n.charCodeAt.s.<computed> (file:///google/devshell/editor/code-oss-for-cloud-shell/out/vs/workbench/api/node/extensionHostProcess.js:31:118858)
+    at T0.g (file:///google/devshell/editor/code-oss-for-cloud-shell/out/vs/workbench/api/node/extensionHostProcess.js:114:32325)
+    at T0.executeCommand (file:///google/devshell/editor/code-oss-for-cloud-shell/out/vs/workbench/api/node/extensionHostProcess.js:114:31826)
+    at r.registerCommand.description (file:///google/devshell/editor/code-oss-for-cloud-shell/out/vs/workbench/api/node/extensionHostProcess.js:114:31156)
+    at T0.h (file:///google/devshell/editor/code-oss-for-cloud-shell/out/vs/workbench/api/node/extensionHostProcess.js:114:32845)
+    at T0.g (file:///google/devshell/editor/code-oss-for-cloud-shell/out/vs/workbench/api/node/extensionHostProcess.js:114:31919)
+    at T0.executeCommand (file:///google/devshell/editor/code-oss-for-cloud-shell/out/vs/workbench/api/node/extensionHostProcess.js:114:31826)
+    at Object.executeCommand (file:///google/devshell/editor/code-oss-for-cloud-shell/out/vs/workbench/api/node/extensionHostProcess.js:156:37049)
+    at gh.O [as value] (/google/devshell/editor/code-oss-for-cloud-shell/extensions/git/dist/main.js:2:173696)
+    at T.B (file:///google/devshell/editor/code-oss-for-cloud-shell/out/vs/workbench/api/node/extensionHostProcess.js:29:732)
+    at T.C (file:///google/devshell/editor/code-oss-for-cloud-shell/out/vs/workbench/api/node/extensionHostProcess.js:29:802)
+    at T.fire (file:///google/devshell/editor/code-oss-for-cloud-shell/out/vs/workbench/api/node/extensionHostProcess.js:29:1019)
+    at Object.p [as dispose] (/google/devshell/editor/code-oss-for-cloud-shell/extensions/git/dist/main.js:2:194274)
+    at /google/devshell/editor/code-oss-for-cloud-shell/extensions/git/dist/main.js:2:200396
+    at Array.forEach (<anonymous>)
+    at f.dispose (/google/devshell/editor/code-oss-for-cloud-shell/extensions/git/dist/main.js:2:200382)
+    at D1.<anonymous> (file:///google/devshell/editor/code-oss-for-cloud-shell/out/vs/workbench/api/node/extensionHostProcess.js:108:19996)
+    at D1.dispose (file:///google/devshell/editor/code-oss-for-cloud-shell/out/vs/workbench/api/node/extensionHostProcess.js:108:20092)
+    at D1.<anonymous> (/google/devshell/editor/code-oss-for-cloud-shell/extensions/git/dist/main.js:2:175994)
+    at D1.dispose (file:///google/devshell/editor/code-oss-for-cloud-shell/out/vs/workbench/api/node/extensionHostProcess.js:108:20092)
+    at Si (file:///google/devshell/editor/code-oss-for-cloud-shell/out/vs/workbench/api/node/extensionHostProcess.js:24:701)
+    at file:///google/devshell/editor/code-oss-for-cloud-shell/out/vs/workbench/api/node/extensionHostProcess.js:118:14995
+    at file:///google/devshell/editor/code-oss-for-cloud-shell/out/vs/workbench/api/node/extensionHostProcess.js:24:1011
+    at Object.dispose (file:///google/devshell/editor/code-oss-for-cloud-shell/out/vs/workbench/api/node/extensionHostProcess.js:7:2146)
+    at dB.eb (file:///google/devshell/editor/code-oss-for-cloud-shell/out/vs/workbench/api/node/extensionHostProcess.js:118:11922)
+    at file:///google/devshell/editor/code-oss-for-cloud-shell/out/vs/workbench/api/node/extensionHostProcess.js:118:9877
+    at Array.map (<anonymous>)
+    at dB.$ (file:///google/devshell/editor/code-oss-for-cloud-shell/out/vs/workbench/api/node/extensionHostProcess.js:118:9865)
+    at dB.terminate (file:///google/devshell/editor/code-oss-for-cloud-shell/out/vs/workbench/api/node/extensionHostProcess.js:118:10108)
+    at M3.terminate (file:///google/devshell/editor/code-oss-for-cloud-shell/out/vs/workbench/api/node/extensionHostProcess.js:119:1424)
+    at ps (file:///google/devshell/editor/code-oss-for-cloud-shell/out/vs/workbench/api/node/extensionHostProcess.js:174:15058)
+    at H4.a (file:///google/devshell/editor/code-oss-for-cloud-shell/out/vs/workbench/api/node/extensionHostProcess.js:174:11968)
+    at H4.h (file:///google/devshell/editor/code-oss-for-cloud-shell/out/vs/workbench/api/node/extensionHostProcess.js:30:75706)
+    at listOnTimeout (node:internal/timers:581:17)
+    at processTimers (node:internal/timers:519:7) setContext undefined
+2025-04-12 04:43:55.132 [error] Canceled: Canceled
+    at new eA (file:///google/devshell/editor/code-oss-for-cloud-shell/out/vs/workbench/api/node/extensionHostProcess.js:31:116752)
+    at Zb.U (file:///google/devshell/editor/code-oss-for-cloud-shell/out/vs/workbench/api/node/extensionHostProcess.js:31:121364)
+    at Proxy.s.<computed>.n.charCodeAt.s.<computed> (file:///google/devshell/editor/code-oss-for-cloud-shell/out/vs/workbench/api/node/extensionHostProcess.js:31:118858)
+    at T0.g (file:///google/devshell/editor/code-oss-for-cloud-shell/out/vs/workbench/api/node/extensionHostProcess.js:114:32325)
+    at T0.executeCommand (file:///google/devshell/editor/code-oss-for-cloud-shell/out/vs/workbench/api/node/extensionHostProcess.js:114:31826)
+    at r.registerCommand.description (file:///google/devshell/editor/code-oss-for-cloud-shell/out/vs/workbench/api/node/extensionHostProcess.js:114:31156)
+    at T0.h (file:///google/devshell/editor/code-oss-for-cloud-shell/out/vs/workbench/api/node/extensionHostProcess.js:114:32845)
+    at T0.g (file:///google/devshell/editor/code-oss-for-cloud-shell/out/vs/workbench/api/node/extensionHostProcess.js:114:31919)
+    at T0.executeCommand (file:///google/devshell/editor/code-oss-for-cloud-shell/out/vs/workbench/api/node/extensionHostProcess.js:114:31826)
+    at Object.executeCommand (file:///google/devshell/editor/code-oss-for-cloud-shell/out/vs/workbench/api/node/extensionHostProcess.js:156:37049)
+    at a.VscodeDevShareProvider.set hasGitHubRepositories [as hasGitHubRepositories] (/google/devshell/editor/code-oss-for-cloud-shell/extensions/github/dist/extension.js:2:25682)
+    at /google/devshell/editor/code-oss-for-cloud-shell/extensions/github/dist/extension.js:2:26641
+    at gh.value (/google/devshell/editor/code-oss-for-cloud-shell/extensions/git/dist/main.js:2:282537)
+    at T.B (file:///google/devshell/editor/code-oss-for-cloud-shell/out/vs/workbench/api/node/extensionHostProcess.js:29:732)
+    at T.C (file:///google/devshell/editor/code-oss-for-cloud-shell/out/vs/workbench/api/node/extensionHostProcess.js:29:802)
+    at T.fire (file:///google/devshell/editor/code-oss-for-cloud-shell/out/vs/workbench/api/node/extensionHostProcess.js:29:1019)
+    at Object.p [as dispose] (/google/devshell/editor/code-oss-for-cloud-shell/extensions/git/dist/main.js:2:194274)
+    at /google/devshell/editor/code-oss-for-cloud-shell/extensions/git/dist/main.js:2:200396
+    at Array.forEach (<anonymous>)
+    at f.dispose (/google/devshell/editor/code-oss-for-cloud-shell/extensions/git/dist/main.js:2:200382)
+    at D1.<anonymous> (file:///google/devshell/editor/code-oss-for-cloud-shell/out/vs/workbench/api/node/extensionHostProcess.js:108:19996)
+    at D1.dispose (file:///google/devshell/editor/code-oss-for-cloud-shell/out/vs/workbench/api/node/extensionHostProcess.js:108:20092)
+    at D1.<anonymous> (/google/devshell/editor/code-oss-for-cloud-shell/extensions/git/dist/main.js:2:175994)
+    at D1.dispose (file:///google/devshell/editor/code-oss-for-cloud-shell/out/vs/workbench/api/node/extensionHostProcess.js:108:20092)
+    at Si (file:///google/devshell/editor/code-oss-for-cloud-shell/out/vs/workbench/api/node/extensionHostProcess.js:24:701)
+    at file:///google/devshell/editor/code-oss-for-cloud-shell/out/vs/workbench/api/node/extensionHostProcess.js:118:14995
+    at file:///google/devshell/editor/code-oss-for-cloud-shell/out/vs/workbench/api/node/extensionHostProcess.js:24:1011
+    at Object.dispose (file:///google/devshell/editor/code-oss-for-cloud-shell/out/vs/workbench/api/node/extensionHostProcess.js:7:2146)
+    at dB.eb (file:///google/devshell/editor/code-oss-for-cloud-shell/out/vs/workbench/api/node/extensionHostProcess.js:118:11922)
+    at file:///google/devshell/editor/code-oss-for-cloud-shell/out/vs/workbench/api/node/extensionHostProcess.js:118:9877
+    at Array.map (<anonymous>)
+    at dB.$ (file:///google/devshell/editor/code-oss-for-cloud-shell/out/vs/workbench/api/node/extensionHostProcess.js:118:9865)
+    at dB.terminate (file:///google/devshell/editor/code-oss-for-cloud-shell/out/vs/workbench/api/node/extensionHostProcess.js:118:10108)
+    at M3.terminate (file:///google/devshell/editor/code-oss-for-cloud-shell/out/vs/workbench/api/node/extensionHostProcess.js:119:1424)
+    at ps (file:///google/devshell/editor/code-oss-for-cloud-shell/out/vs/workbench/api/node/extensionHostProcess.js:174:15058)
+    at H4.a (file:///google/devshell/editor/code-oss-for-cloud-shell/out/vs/workbench/api/node/extensionHostProcess.js:174:11968)
+    at H4.h (file:///google/devshell/editor/code-oss-for-cloud-shell/out/vs/workbench/api/node/extensionHostProcess.js:30:75706)
+    at listOnTimeout (node:internal/timers:581:17)
+    at processTimers (node:internal/timers:519:7) setContext undefined
+2025-04-12 04:43:55.155 [info] Extension host with pid 1262 exiting with code 0

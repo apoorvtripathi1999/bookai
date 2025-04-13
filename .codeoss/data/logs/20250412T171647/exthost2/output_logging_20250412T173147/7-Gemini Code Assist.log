@@ -1,0 +1,871 @@
+language client is not ready, cannot initialize chat state
+I0412 17:32:06.365239    3399 serve.go:43] cloudcode_cli (Mar 25 2025 19:59:47 -0700, cl:740584268 baseline:740583863)
+I0412 17:32:06.365300    3399 serve.go:44] Command line: ["/home/apoorvtripathi537/.cache/cloud-code/cloudcode_cli/cloudcode_cli/413fde1b/cloudcode_cli" "duet" "-logtostderr"]
+I0412 17:32:06.367797    3399 life_cycle.go:182] Initializing. Architecture: "amd64", Operating system: "linux"
+I0412 17:32:06.503804    3399 configuration.go:185] product updateChannel will be used
+I0412 17:32:06.503871    3399 configuration.go:686] language thresholds: map[]
+I0412 17:32:06.503895    3399 configuration.go:630] dataFileExtensions array: [.csv .tsv .jsonl]
+I0412 17:32:06.503922    3399 configuration.go:897] atlas codeCompletion llm options: {MaxTokens:64 Temp:0.2 Samples:4 EnablePrompt:<nil> PromptOverride: PostProcess:0xc0018e897d StopSequences:map[] DataFilePromptLines:0}
+I0412 17:32:06.503964    3399 configuration.go:897] atlas codeGeneration llm options: {MaxTokens:512 Temp:0.2 Samples:4 EnablePrompt:<nil> PromptOverride: PostProcess:0xc0018e899d StopSequences:map[*:[[eod] [EOF] [pre] [suf] [mid]]] DataFilePromptLines:5}
+I0412 17:32:06.504136    3399 configuration.go:279] Configured settings for atlasOpts: {"Addr":"","QuotaProject":"","Project":"cloudshell-gca","LogPrompt":true,"UseTypeoverCache":true,"AdaptiveCacheEnabled":false,"EnableAdminCitationBlock":false,"EnableChatStreaming":false,"Complete":{"MaxTokens":64,"Temp":0.2,"Samples":4,"EnablePrompt":null,"PromptOverride":"","PostProcess":true,"StopSequences":null,"DataFilePromptLines":0},"Generate":{"MaxTokens":512,"Temp":0.2,"Samples":4,"EnablePrompt":null,"PromptOverride":"","PostProcess":true,"StopSequences":{"*":["[eod]","[EOF]","[pre]","[suf]","[mid]"]},"DataFilePromptLines":5},"DataFileExtensions":[".csv",".tsv",".jsonl"]}
+I0412 17:32:06.504177    3399 configuration.go:287] Configured settings for cloudCodeOpts: {"Addr":"cloudcode-pa.googleapis.com:443","QuotaProject":"","Project":"cloudshell-gca","LogPrompt":true,"UseTypeoverCache":true,"AdaptiveCacheEnabled":false,"EnableAdminCitationBlock":false,"EnableChatStreaming":false}
+I0412 17:32:06.504201    3399 configuration.go:291] Configured settings for opts: &{trace:false atlasAddr:cloudaicompanion.googleapis.com:443 cloudCodeAddr:cloudcode-pa.googleapis.com:443 cloudCodeQuotaProject: autoGen:false invokeGen:true codeCacheMaxEntries:1024 completionOpts:{debounce:300000000 throttle:100000000 debouncedAfterFetching:false minScoreThreshold:0 languageThresholds:map[] enableThresholds:true commentCompletion:false citationLengthThreshold:-1 enableRecitations:true citationLogFilePath: repeatedStringFilterThreshold:60 otherFilesGenerationLimit:20 otherFilesGenerationSizeLimit:-1 otherFilesCompletionLimit:0 multiQueryTailNSForCompletion:[] multiQueryTailNSForGeneration:[]} contextExclusionFile:.aiexclude chatOpts:{contextOrdering:fsu maxFileBytes:75000 maxHistoryBytes:500000 escapeContext:false otherFilesLimit:20 otherFilesSizeLimit:-1 userSelectedFilesSizeLimit:-1} useRest:<nil> useCloudCodeAPI:true enableChatStreaming:false enableNotebooks:false enableRAGL:false enableRAGLCompletion:false enableRAGLChat:false ragLRerankByLangBoost:0 raglCoLocated:20 raglTotalFiles:250 raglFileLimit:4194304 raglIncludeDocFiles:false raglIncludeUnitTestFile:false raglMaxFileSearchDepth:1 substringsToIdentifyTestPrompts:[test] substringsToIdentifyDocPrompts:[document comment] raglTopKTestFilesToInclude:0 raglTopKDocFilesToInclude:0 raglTokenizationAlgorithm:whitespace raglEnableWaldFileSelection:false raglWaldMaxFileSearchDepth:0}
+I0412 17:32:06.504243    3399 configuration.go:293] Configured settings for canCancelRequests: true
+I0412 17:32:06.504255    3399 configuration.go:295] Configured settings for contextPromptOpts: &{Endpoint:}
+I0412 17:32:06.536981    3399 handler.go:159] cancel was requested for: 1, needs to be canceled: false
+I0412 17:32:06.537002    3399 handler.go:163] cancel requested for 1 but not found
+I0412 17:32:07.233428    3399 experiments.go:196] Applied experiment flag "DuetAiLocalRag__include_doc_files" to includeDocFiles with value false
+I0412 17:32:07.233475    3399 experiments.go:160] Applied experiment flag "DuetAiLocalRag__enable_local_rag_completion" to enableRAGLCompletion with value false
+I0412 17:32:07.233491    3399 experiments.go:136] Applied experiment flag "DuetAiMendelOverrides__inlineSuggestions_debounced_after_fetching" to completionOpts.debouncedAfterFetching with value false
+I0412 17:32:07.233508    3399 experiments.go:124] Applied experiment flag "Chat__enable_chat_streaming" to chat.enableChatStreaming with value true
+I0412 17:32:07.233521    3399 experiments.go:128] Applied experiment flag "DuetAiCloudCodeAPI__enable_cloudcode_api" to useCloudCodeAPI with value true
+I0412 17:32:07.233546    3399 experiments.go:152] Applied experiment flag "DuetAiLocalRag__enable_local_rag" to enableRAGL with value false
+I0412 17:32:07.233556    3399 experiments.go:156] Applied experiment flag "DuetAiLocalRag__enable_local_rag_chat" to enableRAGLChat with value false
+I0412 17:32:07.233581    3399 experiments.go:200] Applied experiment flag "DuetAiLocalRag__include_unit_test_files" to includeUnitTestFile with value false
+I0412 17:32:07.233599    3399 experiments.go:145] Applied experiment flag "GcaCitationBlock__enable_citation_block" to cloudCodeOpts.EnableAdminCitationBlock with value false
+I0412 17:32:07.233623    3399 experiments.go:228] Applied experiment flag "DuetAiLocalRag__local_rag_tokenization_algorithm" to localRagTokenizationAlgorithm with value whitespace
+I0412 17:32:07.233637    3399 experiments.go:116] Applied experiment flag "Chat__chat_context_window_size" to chat.contextWindowSize with value -1
+I0412 17:32:07.233653    3399 experiments.go:112] Applied experiment flag "DuetAiGeneration__codeGeneration_context_window_size" to otherFilesGenerationSizeLimit with value 64000
+I0412 17:32:07.233676    3399 experiments.go:220] Applied experiment flag "DuetAiLocalRag__top_k_test_files_to_include" to topKTestFilesToInclude with value 2
+I0412 17:32:07.233691    3399 experiments.go:132] Applied experiment flag "DuetAiMendelOverrides__inlineSuggestions_debounceMs" to completionOpts.debounce with value 300
+I0412 17:32:07.233709    3399 experiments.go:180] Applied experiment flag "DuetAiLocalRag__otherfiles_completion_limit" to otherFilesCompletionLimit with value 15
+I0412 17:32:07.233721    3399 experiments.go:164] Applied experiment flag "DuetAiLocalRag__otherfiles_generation_limit" to otherFilesGenerationLimit with value 40
+I0412 17:32:07.233800    3399 experiments.go:216] Applied experiment flag "DuetAiLocalRag__top_k_doc_files_to_include" to topKDocFilesToInclude with value 2
+I0412 17:32:07.233823    3399 experiments.go:204] Applied experiment flag "DuetAiLocalRag__max_file_search_depth" to maxFileSearchDepth with value 2
+I0412 17:32:07.233842    3399 experiments.go:184] Applied experiment flag "DuetAiLocalRag__otherfiles_chat_limit" to otherFilesChatLimit with value 100
+I0412 17:32:07.233858    3399 experiments.go:120] Applied experiment flag "Chat__fca_chat_context_window_size" to chat.fcaContextWindowSize with value 2100000
+I0412 17:32:07.233874    3399 experiments.go:168] Applied experiment flag "DuetAiLocalRag__cache_co_located" to coLocated with value 20
+I0412 17:32:07.233886    3399 experiments.go:172] Applied experiment flag "DuetAiLocalRag__cache_file_limit" to fileLimit with value 4.1943e+06
+I0412 17:32:07.233898    3399 experiments.go:176] Applied experiment flag "DuetAiLocalRag__cache_total_files" to totalFiles with value 250
+I0412 17:32:07.233919    3399 experiments.go:224] Applied experiment flag "DuetAiLocalRag__local_rag_reranking_by_language" to localRAGRerankingByLanguageParam with value 0
+I0412 17:32:07.233937    3399 experiments.go:192] Extracted experiment flag "DuetAiRemoteRag__multi_query_tail_ns_for_generation" to multiQueryTailNS with value []
+I0412 17:32:07.233984    3399 experiments.go:188] Extracted experiment flag "DuetAiRemoteRag__multi_query_tail_ns_for_completion" to multiQueryTailNS with value []
+I0412 17:32:07.234007    3399 experiments.go:208] Applied experiment flag "DuetAiLocalRag__substrings_to_identify_doc_prompts" to substringsToIdentifyDocPrompts with value [document comment]
+I0412 17:32:07.234034    3399 experiments.go:212] Applied experiment flag "DuetAiLocalRag__substrings_to_identify_test_prompts" to substringsToIdentifyTestPrompts with value [test]
+I0412 17:32:07.234412    3399 experiments.go:196] Applied experiment flag "DuetAiLocalRag__include_doc_files" to includeDocFiles with value false
+I0412 17:32:07.234434    3399 experiments.go:160] Applied experiment flag "DuetAiLocalRag__enable_local_rag_completion" to enableRAGLCompletion with value false
+I0412 17:32:07.234447    3399 experiments.go:136] Applied experiment flag "DuetAiMendelOverrides__inlineSuggestions_debounced_after_fetching" to completionOpts.debouncedAfterFetching with value false
+I0412 17:32:07.234463    3399 experiments.go:124] Applied experiment flag "Chat__enable_chat_streaming" to chat.enableChatStreaming with value true
+I0412 17:32:07.234478    3399 experiments.go:128] Applied experiment flag "DuetAiCloudCodeAPI__enable_cloudcode_api" to useCloudCodeAPI with value true
+I0412 17:32:07.234505    3399 experiments.go:152] Applied experiment flag "DuetAiLocalRag__enable_local_rag" to enableRAGL with value false
+I0412 17:32:07.234516    3399 experiments.go:156] Applied experiment flag "DuetAiLocalRag__enable_local_rag_chat" to enableRAGLChat with value false
+I0412 17:32:07.234625    3399 experiments.go:200] Applied experiment flag "DuetAiLocalRag__include_unit_test_files" to includeUnitTestFile with value false
+I0412 17:32:07.234660    3399 experiments.go:145] Applied experiment flag "GcaCitationBlock__enable_citation_block" to cloudCodeOpts.EnableAdminCitationBlock with value false
+I0412 17:32:07.234745    3399 experiments.go:228] Applied experiment flag "DuetAiLocalRag__local_rag_tokenization_algorithm" to localRagTokenizationAlgorithm with value whitespace
+I0412 17:32:07.234781    3399 experiments.go:116] Applied experiment flag "Chat__chat_context_window_size" to chat.contextWindowSize with value -1
+I0412 17:32:07.234796    3399 experiments.go:112] Applied experiment flag "DuetAiGeneration__codeGeneration_context_window_size" to otherFilesGenerationSizeLimit with value 64000
+I0412 17:32:07.234821    3399 experiments.go:220] Applied experiment flag "DuetAiLocalRag__top_k_test_files_to_include" to topKTestFilesToInclude with value 2
+I0412 17:32:07.234833    3399 experiments.go:132] Applied experiment flag "DuetAiMendelOverrides__inlineSuggestions_debounceMs" to completionOpts.debounce with value 300
+I0412 17:32:07.234852    3399 experiments.go:180] Applied experiment flag "DuetAiLocalRag__otherfiles_completion_limit" to otherFilesCompletionLimit with value 15
+I0412 17:32:07.234866    3399 experiments.go:164] Applied experiment flag "DuetAiLocalRag__otherfiles_generation_limit" to otherFilesGenerationLimit with value 40
+I0412 17:32:07.234893    3399 experiments.go:216] Applied experiment flag "DuetAiLocalRag__top_k_doc_files_to_include" to topKDocFilesToInclude with value 2
+I0412 17:32:07.234914    3399 experiments.go:204] Applied experiment flag "DuetAiLocalRag__max_file_search_depth" to maxFileSearchDepth with value 2
+I0412 17:32:07.234928    3399 experiments.go:184] Applied experiment flag "DuetAiLocalRag__otherfiles_chat_limit" to otherFilesChatLimit with value 100
+I0412 17:32:07.234940    3399 experiments.go:120] Applied experiment flag "Chat__fca_chat_context_window_size" to chat.fcaContextWindowSize with value 2100000
+I0412 17:32:07.234959    3399 experiments.go:168] Applied experiment flag "DuetAiLocalRag__cache_co_located" to coLocated with value 20
+I0412 17:32:07.234978    3399 experiments.go:172] Applied experiment flag "DuetAiLocalRag__cache_file_limit" to fileLimit with value 4.1943e+06
+I0412 17:32:07.234992    3399 experiments.go:176] Applied experiment flag "DuetAiLocalRag__cache_total_files" to totalFiles with value 250
+I0412 17:32:07.235011    3399 experiments.go:224] Applied experiment flag "DuetAiLocalRag__local_rag_reranking_by_language" to localRAGRerankingByLanguageParam with value 0
+I0412 17:32:07.235026    3399 experiments.go:192] Extracted experiment flag "DuetAiRemoteRag__multi_query_tail_ns_for_generation" to multiQueryTailNS with value []
+I0412 17:32:07.235044    3399 experiments.go:188] Extracted experiment flag "DuetAiRemoteRag__multi_query_tail_ns_for_completion" to multiQueryTailNS with value []
+I0412 17:32:07.235071    3399 experiments.go:208] Applied experiment flag "DuetAiLocalRag__substrings_to_identify_doc_prompts" to substringsToIdentifyDocPrompts with value [document comment]
+I0412 17:32:07.235095    3399 experiments.go:212] Applied experiment flag "DuetAiLocalRag__substrings_to_identify_test_prompts" to substringsToIdentifyTestPrompts with value [test]
+I0412 17:32:07.235211    3399 tier.go:17] Received tier configuration request: {ProjectID:cloudshell-gca UserDefinedCloudaicompanionProject:true}
+I0412 17:32:07.242234    3399 configuration.go:185] product updateChannel will be used
+I0412 17:32:07.242291    3399 configuration.go:686] language thresholds: map[]
+I0412 17:32:07.242307    3399 configuration.go:630] dataFileExtensions array: [.csv .tsv .jsonl]
+I0412 17:32:07.242325    3399 configuration.go:897] atlas codeCompletion llm options: {MaxTokens:64 Temp:0.2 Samples:4 EnablePrompt:<nil> PromptOverride: PostProcess:0xc00164659d StopSequences:map[] DataFilePromptLines:0}
+I0412 17:32:07.242368    3399 configuration.go:897] atlas codeGeneration llm options: {MaxTokens:512 Temp:0.2 Samples:4 EnablePrompt:<nil> PromptOverride: PostProcess:0xc0016465bd StopSequences:map[*:[[eod] [EOF] [pre] [suf] [mid]]] DataFilePromptLines:5}
+I0412 17:32:07.242435    3399 configuration.go:279] Configured settings for atlasOpts: {"Addr":"","QuotaProject":"","Project":"cloudshell-gca","LogPrompt":true,"UseTypeoverCache":true,"AdaptiveCacheEnabled":false,"EnableAdminCitationBlock":false,"EnableChatStreaming":false,"Complete":{"MaxTokens":64,"Temp":0.2,"Samples":4,"EnablePrompt":null,"PromptOverride":"","PostProcess":true,"StopSequences":null,"DataFilePromptLines":0},"Generate":{"MaxTokens":512,"Temp":0.2,"Samples":4,"EnablePrompt":null,"PromptOverride":"","PostProcess":true,"StopSequences":{"*":["[eod]","[EOF]","[pre]","[suf]","[mid]"]},"DataFilePromptLines":5},"DataFileExtensions":[".csv",".tsv",".jsonl"]}
+I0412 17:32:07.242447    3399 configuration.go:287] Configured settings for cloudCodeOpts: {"Addr":"cloudcode-pa.googleapis.com:443","QuotaProject":"","Project":"cloudshell-gca","LogPrompt":true,"UseTypeoverCache":true,"AdaptiveCacheEnabled":false,"EnableAdminCitationBlock":false,"EnableChatStreaming":false}
+I0412 17:32:07.242455    3399 configuration.go:291] Configured settings for opts: &{trace:false atlasAddr:cloudaicompanion.googleapis.com:443 cloudCodeAddr:cloudcode-pa.googleapis.com:443 cloudCodeQuotaProject: autoGen:false invokeGen:true codeCacheMaxEntries:1024 completionOpts:{debounce:300000000 throttle:100000000 debouncedAfterFetching:false minScoreThreshold:0 languageThresholds:map[] enableThresholds:true commentCompletion:false citationLengthThreshold:-1 enableRecitations:true citationLogFilePath: repeatedStringFilterThreshold:60 otherFilesGenerationLimit:20 otherFilesGenerationSizeLimit:-1 otherFilesCompletionLimit:0 multiQueryTailNSForCompletion:[] multiQueryTailNSForGeneration:[]} contextExclusionFile:.aiexclude chatOpts:{contextOrdering:fsu maxFileBytes:75000 maxHistoryBytes:500000 escapeContext:false otherFilesLimit:20 otherFilesSizeLimit:-1 userSelectedFilesSizeLimit:-1} useRest:<nil> useCloudCodeAPI:true enableChatStreaming:true enableNotebooks:false enableRAGL:false enableRAGLCompletion:false enableRAGLChat:false ragLRerankByLangBoost:0 raglCoLocated:20 raglTotalFiles:250 raglFileLimit:4194304 raglIncludeDocFiles:false raglIncludeUnitTestFile:false raglMaxFileSearchDepth:1 substringsToIdentifyTestPrompts:[test] substringsToIdentifyDocPrompts:[document comment] raglTopKTestFilesToInclude:0 raglTopKDocFilesToInclude:0 raglTokenizationAlgorithm:whitespace raglEnableWaldFileSelection:false raglWaldMaxFileSearchDepth:0}
+I0412 17:32:07.242488    3399 configuration.go:293] Configured settings for canCancelRequests: true
+I0412 17:32:07.242497    3399 configuration.go:295] Configured settings for contextPromptOpts: &{Endpoint:}
+I0412 17:32:07.243488    3399 experiments.go:196] Applied experiment flag "DuetAiLocalRag__include_doc_files" to includeDocFiles with value false
+I0412 17:32:07.243521    3399 experiments.go:160] Applied experiment flag "DuetAiLocalRag__enable_local_rag_completion" to enableRAGLCompletion with value false
+I0412 17:32:07.243537    3399 experiments.go:136] Applied experiment flag "DuetAiMendelOverrides__inlineSuggestions_debounced_after_fetching" to completionOpts.debouncedAfterFetching with value false
+I0412 17:32:07.243553    3399 experiments.go:124] Applied experiment flag "Chat__enable_chat_streaming" to chat.enableChatStreaming with value true
+I0412 17:32:07.243566    3399 experiments.go:128] Applied experiment flag "DuetAiCloudCodeAPI__enable_cloudcode_api" to useCloudCodeAPI with value true
+I0412 17:32:07.243589    3399 experiments.go:152] Applied experiment flag "DuetAiLocalRag__enable_local_rag" to enableRAGL with value false
+I0412 17:32:07.243598    3399 experiments.go:156] Applied experiment flag "DuetAiLocalRag__enable_local_rag_chat" to enableRAGLChat with value false
+I0412 17:32:07.243620    3399 experiments.go:200] Applied experiment flag "DuetAiLocalRag__include_unit_test_files" to includeUnitTestFile with value false
+I0412 17:32:07.243635    3399 experiments.go:145] Applied experiment flag "GcaCitationBlock__enable_citation_block" to cloudCodeOpts.EnableAdminCitationBlock with value false
+I0412 17:32:07.243660    3399 experiments.go:228] Applied experiment flag "DuetAiLocalRag__local_rag_tokenization_algorithm" to localRagTokenizationAlgorithm with value whitespace
+I0412 17:32:07.243676    3399 experiments.go:116] Applied experiment flag "Chat__chat_context_window_size" to chat.contextWindowSize with value -1
+I0412 17:32:07.243686    3399 experiments.go:112] Applied experiment flag "DuetAiGeneration__codeGeneration_context_window_size" to otherFilesGenerationSizeLimit with value 64000
+I0412 17:32:07.243704    3399 experiments.go:220] Applied experiment flag "DuetAiLocalRag__top_k_test_files_to_include" to topKTestFilesToInclude with value 2
+I0412 17:32:07.243716    3399 experiments.go:132] Applied experiment flag "DuetAiMendelOverrides__inlineSuggestions_debounceMs" to completionOpts.debounce with value 300
+I0412 17:32:07.243732    3399 experiments.go:180] Applied experiment flag "DuetAiLocalRag__otherfiles_completion_limit" to otherFilesCompletionLimit with value 15
+I0412 17:32:07.243742    3399 experiments.go:164] Applied experiment flag "DuetAiLocalRag__otherfiles_generation_limit" to otherFilesGenerationLimit with value 40
+I0412 17:32:07.243759    3399 experiments.go:216] Applied experiment flag "DuetAiLocalRag__top_k_doc_files_to_include" to topKDocFilesToInclude with value 2
+I0412 17:32:07.243780    3399 experiments.go:204] Applied experiment flag "DuetAiLocalRag__max_file_search_depth" to maxFileSearchDepth with value 2
+I0412 17:32:07.243794    3399 experiments.go:184] Applied experiment flag "DuetAiLocalRag__otherfiles_chat_limit" to otherFilesChatLimit with value 100
+I0412 17:32:07.243807    3399 experiments.go:120] Applied experiment flag "Chat__fca_chat_context_window_size" to chat.fcaContextWindowSize with value 2100000
+I0412 17:32:07.243822    3399 experiments.go:168] Applied experiment flag "DuetAiLocalRag__cache_co_located" to coLocated with value 20
+I0412 17:32:07.243833    3399 experiments.go:172] Applied experiment flag "DuetAiLocalRag__cache_file_limit" to fileLimit with value 4.1943e+06
+I0412 17:32:07.243845    3399 experiments.go:176] Applied experiment flag "DuetAiLocalRag__cache_total_files" to totalFiles with value 250
+I0412 17:32:07.243865    3399 experiments.go:224] Applied experiment flag "DuetAiLocalRag__local_rag_reranking_by_language" to localRAGRerankingByLanguageParam with value 0
+I0412 17:32:07.243895    3399 experiments.go:192] Extracted experiment flag "DuetAiRemoteRag__multi_query_tail_ns_for_generation" to multiQueryTailNS with value []
+I0412 17:32:07.243911    3399 experiments.go:188] Extracted experiment flag "DuetAiRemoteRag__multi_query_tail_ns_for_completion" to multiQueryTailNS with value []
+I0412 17:32:07.243929    3399 experiments.go:208] Applied experiment flag "DuetAiLocalRag__substrings_to_identify_doc_prompts" to substringsToIdentifyDocPrompts with value [document comment]
+I0412 17:32:07.243952    3399 experiments.go:212] Applied experiment flag "DuetAiLocalRag__substrings_to_identify_test_prompts" to substringsToIdentifyTestPrompts with value [test]
+I0412 17:32:07.245854    3399 cloudcode.go:45] Using Cloud Code API
+I0412 17:32:07.248808    3399 client.go:442] CompleteCode request: {"enablePromptEnhancement":true,"ideContext":{"currentFile":{"segments":[{"content":"Code Assist healthcheck id: 03af0f77-cffa-48fb-9a56-5805de2a173d\nPi = "},{"isSelected":true},{}]}},"metadata":{"ideName":"Code OSS for Cloud Shell","ideType":"CLOUD_SHELL","ideVersion":"1.94.2-cde","platform":"LINUX_AMD64","pluginType":"CLOUD_CODE","pluginVersion":"2.30.0"},"project":"cloudshell-gca","requestId":"cloudcode-740584268-73481880-970a-4ced-881c-f0b06e49c9a6"}
+I0412 17:32:14.977905    3399 conversation.go:905] Starting getChatIDEContext with detected intent: 
+I0412 17:32:14.977948    3399 document.go:444] NoneEditType, returning ReasonRecentlyOpened
+I0412 17:32:14.977995    3399 ide_context.go:117] Unable to read file at /home/apoorvtripathi537/.aiexclude
+/home/apoorvtripathi537
+file:///home/apoorvtripathi537
+I0412 17:32:14.978007    3399 conversation.go:950] Unable to retrieve excluded files for request #10: open /home/apoorvtripathi537/.aiexclude: no such file or directory
+I0412 17:32:15.994421    3399 conversation.go:905] Starting getChatIDEContext with detected intent: 
+I0412 17:32:15.994473    3399 document.go:444] NoneEditType, returning ReasonRecentlyOpened
+I0412 17:32:15.994519    3399 ide_context.go:117] Unable to read file at /home/apoorvtripathi537/.aiexclude
+/home/apoorvtripathi537
+file:///home/apoorvtripathi537
+I0412 17:32:15.994535    3399 conversation.go:950] Unable to retrieve excluded files for request #14: open /home/apoorvtripathi537/.aiexclude: no such file or directory
+I0412 17:32:17.009945    3399 conversation.go:905] Starting getChatIDEContext with detected intent: 
+I0412 17:32:17.009995    3399 document.go:444] NoneEditType, returning ReasonRecentlyOpened
+I0412 17:32:17.010029    3399 ide_context.go:117] Unable to read file at /home/apoorvtripathi537/.aiexclude
+/home/apoorvtripathi537
+file:///home/apoorvtripathi537
+I0412 17:32:17.010045    3399 conversation.go:950] Unable to retrieve excluded files for request #27: open /home/apoorvtripathi537/.aiexclude: no such file or directory
+I0412 17:32:17.260258    3399 conversation.go:905] Starting getChatIDEContext with detected intent: 
+I0412 17:32:17.260302    3399 document.go:444] NoneEditType, returning ReasonRecentlyOpened
+I0412 17:32:17.260341    3399 ide_context.go:117] Unable to read file at /home/apoorvtripathi537/.aiexclude
+/home/apoorvtripathi537
+file:///home/apoorvtripathi537
+I0412 17:32:17.260356    3399 conversation.go:950] Unable to retrieve excluded files for request #30: open /home/apoorvtripathi537/.aiexclude: no such file or directory
+W0412 17:32:18.757870    3399 document.go:268] Error computing chars added only: getting byte offset for end of change range: invalid column number
+I0412 17:32:18.858472    3399 conversation.go:905] Starting getChatIDEContext with detected intent: 
+I0412 17:32:18.858532    3399 document.go:448] OtherEditType (UNKNOWN_EDIT), returning ReasonRecentlyEdited
+I0412 17:32:18.858577    3399 ide_context.go:117] Unable to read file at /home/apoorvtripathi537/.aiexclude
+/home/apoorvtripathi537
+file:///home/apoorvtripathi537
+I0412 17:32:18.858587    3399 conversation.go:950] Unable to retrieve excluded files for request #34: open /home/apoorvtripathi537/.aiexclude: no such file or directory
+I0412 17:32:19.964776    3399 conversation.go:905] Starting getChatIDEContext with detected intent: 
+I0412 17:32:19.964827    3399 document.go:448] OtherEditType (UNKNOWN_EDIT), returning ReasonRecentlyEdited
+I0412 17:32:19.964868    3399 ide_context.go:117] Unable to read file at /home/apoorvtripathi537/.aiexclude
+/home/apoorvtripathi537
+file:///home/apoorvtripathi537
+I0412 17:32:19.964880    3399 conversation.go:950] Unable to retrieve excluded files for request #38: open /home/apoorvtripathi537/.aiexclude: no such file or directory
+I0412 17:32:24.951662    3399 conversation.go:905] Starting getChatIDEContext with detected intent: 
+I0412 17:32:24.951736    3399 document.go:448] OtherEditType (UNKNOWN_EDIT), returning ReasonRecentlyEdited
+I0412 17:32:24.951781    3399 ide_context.go:117] Unable to read file at /home/apoorvtripathi537/.aiexclude
+/home/apoorvtripathi537
+file:///home/apoorvtripathi537
+I0412 17:32:24.951797    3399 conversation.go:950] Unable to retrieve excluded files for request #40: open /home/apoorvtripathi537/.aiexclude: no such file or directory
+I0412 17:32:55.373666    3399 handler.go:159] cancel was requested for: 42, needs to be canceled: false
+I0412 17:32:55.373687    3399 handler.go:163] cancel requested for 42 but not found
+I0412 17:32:55.373864    3399 handler.go:159] cancel was requested for: 43, needs to be canceled: false
+I0412 17:32:55.374104    3399 handler.go:163] cancel requested for 43 but not found
+I0412 17:32:55.374144    3399 handler.go:159] cancel was requested for: 45, needs to be canceled: false
+I0412 17:32:55.374152    3399 handler.go:163] cancel requested for 45 but not found
+I0412 17:32:55.466065    3399 conversation.go:905] Starting getChatIDEContext with detected intent: 
+I0412 17:32:55.466161    3399 document.go:448] OtherEditType (UNKNOWN_EDIT), returning ReasonRecentlyEdited
+I0412 17:32:55.466207    3399 ide_context.go:117] Unable to read file at /home/apoorvtripathi537/.aiexclude
+/home/apoorvtripathi537
+file:///home/apoorvtripathi537
+I0412 17:32:55.466224    3399 conversation.go:950] Unable to retrieve excluded files for request #47: open /home/apoorvtripathi537/.aiexclude: no such file or directory
+I0412 17:33:06.510275    3399 life_cycle.go:313] codeReportEvery: recomputing codereport metric
+I0412 17:45:28.534122    3399 handler.go:159] cancel was requested for: 52, needs to be canceled: false
+I0412 17:45:28.534150    3399 handler.go:163] cancel requested for 52 but not found
+I0412 17:45:29.011566    3399 conversation.go:905] Starting getChatIDEContext with detected intent: 
+I0412 17:45:29.011622    3399 document.go:448] OtherEditType (UNKNOWN_EDIT), returning ReasonRecentlyEdited
+I0412 17:45:29.011664    3399 ide_context.go:117] Unable to read file at /home/apoorvtripathi537/.aiexclude
+/home/apoorvtripathi537
+file:///home/apoorvtripathi537
+I0412 17:45:29.011674    3399 conversation.go:950] Unable to retrieve excluded files for request #55: open /home/apoorvtripathi537/.aiexclude: no such file or directory
+I0412 17:45:29.408649    3399 conversation.go:905] Starting getChatIDEContext with detected intent: 
+I0412 17:45:29.408697    3399 document.go:448] OtherEditType (UNKNOWN_EDIT), returning ReasonRecentlyEdited
+I0412 17:45:29.408744    3399 ide_context.go:117] Unable to read file at /home/apoorvtripathi537/.aiexclude
+/home/apoorvtripathi537
+file:///home/apoorvtripathi537
+I0412 17:45:29.408758    3399 conversation.go:950] Unable to retrieve excluded files for request #63: open /home/apoorvtripathi537/.aiexclude: no such file or directory
+I0412 17:45:29.657033    3399 conversation.go:905] Starting getChatIDEContext with detected intent: 
+I0412 17:45:29.657079    3399 document.go:448] OtherEditType (UNKNOWN_EDIT), returning ReasonRecentlyEdited
+I0412 17:45:29.657130    3399 ide_context.go:117] Unable to read file at /home/apoorvtripathi537/.aiexclude
+/home/apoorvtripathi537
+file:///home/apoorvtripathi537
+I0412 17:45:29.657145    3399 conversation.go:950] Unable to retrieve excluded files for request #65: open /home/apoorvtripathi537/.aiexclude: no such file or directory
+I0412 17:45:29.780033    3399 conversation.go:905] Starting getChatIDEContext with detected intent: 
+I0412 17:45:29.780080    3399 document.go:448] OtherEditType (UNKNOWN_EDIT), returning ReasonRecentlyEdited
+I0412 17:45:29.780133    3399 ide_context.go:117] Unable to read file at /home/apoorvtripathi537/.aiexclude
+/home/apoorvtripathi537
+file:///home/apoorvtripathi537
+I0412 17:45:29.780148    3399 conversation.go:950] Unable to retrieve excluded files for request #67: open /home/apoorvtripathi537/.aiexclude: no such file or directory
+I0412 17:45:29.893431    3399 conversation.go:905] Starting getChatIDEContext with detected intent: 
+I0412 17:45:29.893480    3399 document.go:448] OtherEditType (UNKNOWN_EDIT), returning ReasonRecentlyEdited
+I0412 17:45:29.893526    3399 ide_context.go:117] Unable to read file at /home/apoorvtripathi537/.aiexclude
+/home/apoorvtripathi537
+file:///home/apoorvtripathi537
+I0412 17:45:29.893541    3399 conversation.go:950] Unable to retrieve excluded files for request #69: open /home/apoorvtripathi537/.aiexclude: no such file or directory
+I0412 17:45:30.142853    3399 conversation.go:905] Starting getChatIDEContext with detected intent: 
+I0412 17:45:30.142908    3399 document.go:448] OtherEditType (UNKNOWN_EDIT), returning ReasonRecentlyEdited
+I0412 17:45:30.142955    3399 ide_context.go:117] Unable to read file at /home/apoorvtripathi537/.aiexclude
+/home/apoorvtripathi537
+file:///home/apoorvtripathi537
+I0412 17:45:30.142969    3399 conversation.go:950] Unable to retrieve excluded files for request #71: open /home/apoorvtripathi537/.aiexclude: no such file or directory
+I0412 17:45:30.345980    3399 conversation.go:905] Starting getChatIDEContext with detected intent: 
+I0412 17:45:30.346025    3399 document.go:448] OtherEditType (UNKNOWN_EDIT), returning ReasonRecentlyEdited
+I0412 17:45:30.346069    3399 ide_context.go:117] Unable to read file at /home/apoorvtripathi537/.aiexclude
+/home/apoorvtripathi537
+file:///home/apoorvtripathi537
+I0412 17:45:30.346084    3399 conversation.go:950] Unable to retrieve excluded files for request #73: open /home/apoorvtripathi537/.aiexclude: no such file or directory
+I0412 17:45:32.077575    3399 conversation.go:905] Starting getChatIDEContext with detected intent: 
+I0412 17:45:32.077631    3399 document.go:448] OtherEditType (UNKNOWN_EDIT), returning ReasonRecentlyEdited
+I0412 17:45:32.077672    3399 ide_context.go:117] Unable to read file at /home/apoorvtripathi537/.aiexclude
+/home/apoorvtripathi537
+file:///home/apoorvtripathi537
+I0412 17:45:32.077700    3399 conversation.go:950] Unable to retrieve excluded files for request #76: open /home/apoorvtripathi537/.aiexclude: no such file or directory
+W0412 17:45:33.809179    3399 document.go:268] Error computing chars added only: getting byte offset for end of change range: invalid column number
+I0412 17:45:33.909727    3399 conversation.go:905] Starting getChatIDEContext with detected intent: 
+I0412 17:45:33.909821    3399 document.go:448] OtherEditType (UNKNOWN_EDIT), returning ReasonRecentlyEdited
+I0412 17:45:33.909859    3399 ide_context.go:117] Unable to read file at /home/apoorvtripathi537/.aiexclude
+/home/apoorvtripathi537
+file:///home/apoorvtripathi537
+I0412 17:45:33.909872    3399 conversation.go:950] Unable to retrieve excluded files for request #80: open /home/apoorvtripathi537/.aiexclude: no such file or directory
+I0412 17:45:49.445193    3399 conversation.go:905] Starting getChatIDEContext with detected intent: 
+I0412 17:45:49.445250    3399 document.go:444] NoneEditType, returning ReasonRecentlyOpened
+I0412 17:45:49.445294    3399 ide_context.go:117] Unable to read file at /home/apoorvtripathi537/.aiexclude
+/home/apoorvtripathi537
+file:///home/apoorvtripathi537
+I0412 17:45:49.445309    3399 conversation.go:950] Unable to retrieve excluded files for request #87: open /home/apoorvtripathi537/.aiexclude: no such file or directory
+I0412 17:45:49.445337    3399 document.go:448] OtherEditType (UNKNOWN_EDIT), returning ReasonRecentlyEdited
+I0412 17:45:57.682032    3399 conversation.go:905] Starting getChatIDEContext with detected intent: 
+I0412 17:45:57.682085    3399 document.go:448] OtherEditType (UNKNOWN_EDIT), returning ReasonRecentlyEdited
+I0412 17:45:57.682138    3399 ide_context.go:117] Unable to read file at /home/apoorvtripathi537/.aiexclude
+/home/apoorvtripathi537
+file:///home/apoorvtripathi537
+I0412 17:45:57.682152    3399 conversation.go:950] Unable to retrieve excluded files for request #91: open /home/apoorvtripathi537/.aiexclude: no such file or directory
+I0412 17:45:58.908026    3399 conversation.go:905] Starting getChatIDEContext with detected intent: 
+I0412 17:45:58.908078    3399 document.go:448] OtherEditType (UNKNOWN_EDIT), returning ReasonRecentlyEdited
+I0412 17:45:58.908127    3399 ide_context.go:117] Unable to read file at /home/apoorvtripathi537/.aiexclude
+/home/apoorvtripathi537
+file:///home/apoorvtripathi537
+I0412 17:45:58.908142    3399 conversation.go:950] Unable to retrieve excluded files for request #94: open /home/apoorvtripathi537/.aiexclude: no such file or directory
+I0412 17:46:00.095976    3399 conversation.go:905] Starting getChatIDEContext with detected intent: 
+I0412 17:46:00.096020    3399 document.go:448] OtherEditType (UNKNOWN_EDIT), returning ReasonRecentlyEdited
+I0412 17:46:00.096065    3399 ide_context.go:117] Unable to read file at /home/apoorvtripathi537/.aiexclude
+/home/apoorvtripathi537
+file:///home/apoorvtripathi537
+I0412 17:46:00.096079    3399 conversation.go:950] Unable to retrieve excluded files for request #97: open /home/apoorvtripathi537/.aiexclude: no such file or directory
+I0412 17:46:01.741232    3399 conversation.go:905] Starting getChatIDEContext with detected intent: 
+I0412 17:46:01.741281    3399 document.go:448] OtherEditType (UNKNOWN_EDIT), returning ReasonRecentlyEdited
+I0412 17:46:01.741321    3399 ide_context.go:117] Unable to read file at /home/apoorvtripathi537/.aiexclude
+/home/apoorvtripathi537
+file:///home/apoorvtripathi537
+I0412 17:46:01.741338    3399 conversation.go:950] Unable to retrieve excluded files for request #100: open /home/apoorvtripathi537/.aiexclude: no such file or directory
+I0412 17:46:06.510409    3399 life_cycle.go:313] codeReportEvery: recomputing codereport metric
+I0412 17:46:41.824175    3399 conversation.go:905] Starting getChatIDEContext with detected intent: 
+I0412 17:46:41.824301    3399 document.go:448] OtherEditType (UNKNOWN_EDIT), returning ReasonRecentlyEdited
+I0412 17:46:41.824374    3399 ide_context.go:117] Unable to read file at /home/apoorvtripathi537/.aiexclude
+/home/apoorvtripathi537
+file:///home/apoorvtripathi537
+I0412 17:46:41.824418    3399 conversation.go:950] Unable to retrieve excluded files for request #103: open /home/apoorvtripathi537/.aiexclude: no such file or directory
+I0412 17:57:22.590458    3399 conversation.go:905] Starting getChatIDEContext with detected intent: 
+I0412 17:57:22.590530    3399 document.go:444] NoneEditType, returning ReasonRecentlyOpened
+I0412 17:57:22.590578    3399 ide_context.go:117] Unable to read file at /home/apoorvtripathi537/.aiexclude
+/home/apoorvtripathi537
+file:///home/apoorvtripathi537
+I0412 17:57:22.590593    3399 conversation.go:950] Unable to retrieve excluded files for request #106: open /home/apoorvtripathi537/.aiexclude: no such file or directory
+I0412 17:57:22.590637    3399 document.go:448] OtherEditType (UNKNOWN_EDIT), returning ReasonRecentlyEdited
+I0412 17:57:27.589420    3399 conversation.go:905] Starting getChatIDEContext with detected intent: 
+I0412 17:57:27.589471    3399 document.go:448] OtherEditType (UNKNOWN_EDIT), returning ReasonRecentlyEdited
+I0412 17:57:27.589525    3399 ide_context.go:117] Unable to read file at /home/apoorvtripathi537/.aiexclude
+/home/apoorvtripathi537
+file:///home/apoorvtripathi537
+I0412 17:57:27.589543    3399 conversation.go:950] Unable to retrieve excluded files for request #109: open /home/apoorvtripathi537/.aiexclude: no such file or directory
+I0412 17:57:27.589563    3399 document.go:448] OtherEditType (UNKNOWN_EDIT), returning ReasonRecentlyEdited
+I0412 17:58:27.147430    3399 conversation.go:905] Starting getChatIDEContext with detected intent: 
+I0412 17:58:27.147479    3399 document.go:444] NoneEditType, returning ReasonRecentlyOpened
+I0412 17:58:27.147519    3399 ide_context.go:117] Unable to read file at /home/apoorvtripathi537/.aiexclude
+/home/apoorvtripathi537
+file:///home/apoorvtripathi537
+I0412 17:58:27.147534    3399 conversation.go:950] Unable to retrieve excluded files for request #115: open /home/apoorvtripathi537/.aiexclude: no such file or directory
+I0412 17:58:27.147558    3399 document.go:448] OtherEditType (UNKNOWN_EDIT), returning ReasonRecentlyEdited
+I0412 17:58:27.147569    3399 document.go:448] OtherEditType (UNKNOWN_EDIT), returning ReasonRecentlyEdited
+I0412 17:58:35.435867    3399 conversation.go:905] Starting getChatIDEContext with detected intent: 
+I0412 17:58:35.435910    3399 document.go:444] NoneEditType, returning ReasonRecentlyOpened
+I0412 17:58:35.435956    3399 ide_context.go:117] Unable to read file at /home/apoorvtripathi537/.aiexclude
+/home/apoorvtripathi537
+file:///home/apoorvtripathi537
+I0412 17:58:35.435970    3399 conversation.go:950] Unable to retrieve excluded files for request #119: open /home/apoorvtripathi537/.aiexclude: no such file or directory
+I0412 17:58:35.435989    3399 document.go:448] OtherEditType (UNKNOWN_EDIT), returning ReasonRecentlyEdited
+I0412 17:58:35.436000    3399 document.go:448] OtherEditType (UNKNOWN_EDIT), returning ReasonRecentlyEdited
+I0412 17:58:36.419219    3399 conversation.go:905] Starting getChatIDEContext with detected intent: 
+I0412 17:58:36.419270    3399 document.go:448] OtherEditType (ADD), returning ReasonRecentlyEdited
+I0412 17:58:36.419319    3399 ide_context.go:117] Unable to read file at /home/apoorvtripathi537/.aiexclude
+/home/apoorvtripathi537
+file:///home/apoorvtripathi537
+I0412 17:58:36.419336    3399 conversation.go:950] Unable to retrieve excluded files for request #123: open /home/apoorvtripathi537/.aiexclude: no such file or directory
+I0412 17:58:36.419619    3399 document.go:448] OtherEditType (UNKNOWN_EDIT), returning ReasonRecentlyEdited
+I0412 17:58:36.419642    3399 document.go:448] OtherEditType (UNKNOWN_EDIT), returning ReasonRecentlyEdited
+I0412 17:58:37.508445    3399 conversation.go:905] Starting getChatIDEContext with detected intent: 
+I0412 17:58:37.508502    3399 document.go:448] OtherEditType (ADD), returning ReasonRecentlyEdited
+I0412 17:58:37.508545    3399 ide_context.go:117] Unable to read file at /home/apoorvtripathi537/.aiexclude
+/home/apoorvtripathi537
+file:///home/apoorvtripathi537
+I0412 17:58:37.508560    3399 conversation.go:950] Unable to retrieve excluded files for request #127: open /home/apoorvtripathi537/.aiexclude: no such file or directory
+I0412 17:58:37.508587    3399 document.go:448] OtherEditType (UNKNOWN_EDIT), returning ReasonRecentlyEdited
+I0412 17:58:37.508597    3399 document.go:448] OtherEditType (UNKNOWN_EDIT), returning ReasonRecentlyEdited
+I0412 17:58:38.278779    3399 conversation.go:905] Starting getChatIDEContext with detected intent: 
+I0412 17:58:38.278824    3399 document.go:448] OtherEditType (DELETE), returning ReasonRecentlyEdited
+I0412 17:58:38.278866    3399 ide_context.go:117] Unable to read file at /home/apoorvtripathi537/.aiexclude
+/home/apoorvtripathi537
+file:///home/apoorvtripathi537
+I0412 17:58:38.278880    3399 conversation.go:950] Unable to retrieve excluded files for request #131: open /home/apoorvtripathi537/.aiexclude: no such file or directory
+I0412 17:58:38.278908    3399 document.go:448] OtherEditType (UNKNOWN_EDIT), returning ReasonRecentlyEdited
+I0412 17:58:38.278918    3399 document.go:448] OtherEditType (UNKNOWN_EDIT), returning ReasonRecentlyEdited
+I0412 17:58:38.541171    3399 conversation.go:905] Starting getChatIDEContext with detected intent: 
+I0412 17:58:38.541228    3399 document.go:448] OtherEditType (ADD), returning ReasonRecentlyEdited
+I0412 17:58:38.541277    3399 ide_context.go:117] Unable to read file at /home/apoorvtripathi537/.aiexclude
+/home/apoorvtripathi537
+file:///home/apoorvtripathi537
+I0412 17:58:38.541294    3399 conversation.go:950] Unable to retrieve excluded files for request #134: open /home/apoorvtripathi537/.aiexclude: no such file or directory
+I0412 17:58:38.541317    3399 document.go:448] OtherEditType (UNKNOWN_EDIT), returning ReasonRecentlyEdited
+I0412 17:58:38.541327    3399 document.go:448] OtherEditType (UNKNOWN_EDIT), returning ReasonRecentlyEdited
+I0412 17:58:39.640699    3399 conversation.go:905] Starting getChatIDEContext with detected intent: 
+I0412 17:58:39.641680    3399 document.go:448] OtherEditType (ADD), returning ReasonRecentlyEdited
+I0412 17:58:39.641739    3399 ide_context.go:117] Unable to read file at /home/apoorvtripathi537/.aiexclude
+/home/apoorvtripathi537
+file:///home/apoorvtripathi537
+I0412 17:58:39.641759    3399 conversation.go:950] Unable to retrieve excluded files for request #138: open /home/apoorvtripathi537/.aiexclude: no such file or directory
+I0412 17:58:39.641784    3399 document.go:448] OtherEditType (UNKNOWN_EDIT), returning ReasonRecentlyEdited
+I0412 17:58:39.641794    3399 document.go:448] OtherEditType (UNKNOWN_EDIT), returning ReasonRecentlyEdited
+I0412 17:58:44.453294    3399 conversation.go:905] Starting getChatIDEContext with detected intent: 
+I0412 17:58:44.453332    3399 document.go:448] OtherEditType (UNKNOWN_EDIT), returning ReasonRecentlyEdited
+I0412 17:58:44.453407    3399 ide_context.go:117] Unable to read file at /home/apoorvtripathi537/.aiexclude
+/home/apoorvtripathi537
+file:///home/apoorvtripathi537
+I0412 17:58:44.453424    3399 conversation.go:950] Unable to retrieve excluded files for request #142: open /home/apoorvtripathi537/.aiexclude: no such file or directory
+I0412 17:58:44.453451    3399 document.go:448] OtherEditType (ADD), returning ReasonRecentlyEdited
+I0412 17:58:44.453463    3399 document.go:448] OtherEditType (UNKNOWN_EDIT), returning ReasonRecentlyEdited
+I0412 17:59:06.510231    3399 life_cycle.go:313] codeReportEvery: recomputing codereport metric
+I0412 18:02:06.510787    3399 life_cycle.go:277] codeReportBasicEvery: recomputing codereportbasic metric
+I0412 18:02:17.023912    3399 conversation.go:905] Starting getChatIDEContext with detected intent: 
+I0412 18:02:17.023985    3399 document.go:448] OtherEditType (UNKNOWN_EDIT), returning ReasonRecentlyEdited
+I0412 18:02:17.024031    3399 ide_context.go:117] Unable to read file at /home/apoorvtripathi537/.aiexclude
+/home/apoorvtripathi537
+file:///home/apoorvtripathi537
+I0412 18:02:17.024047    3399 conversation.go:950] Unable to retrieve excluded files for request #149: open /home/apoorvtripathi537/.aiexclude: no such file or directory
+I0412 18:02:17.024091    3399 document.go:448] OtherEditType (ADD), returning ReasonRecentlyEdited
+I0412 18:02:17.024101    3399 document.go:448] OtherEditType (UNKNOWN_EDIT), returning ReasonRecentlyEdited
+I0412 18:02:17.393775    3399 conversation.go:905] Starting getChatIDEContext with detected intent: 
+I0412 18:02:17.393861    3399 document.go:448] OtherEditType (UNKNOWN_EDIT), returning ReasonRecentlyEdited
+I0412 18:02:17.393902    3399 ide_context.go:117] Unable to read file at /home/apoorvtripathi537/.aiexclude
+/home/apoorvtripathi537
+file:///home/apoorvtripathi537
+I0412 18:02:17.393940    3399 conversation.go:950] Unable to retrieve excluded files for request #157: open /home/apoorvtripathi537/.aiexclude: no such file or directory
+I0412 18:02:17.393965    3399 document.go:448] OtherEditType (ADD), returning ReasonRecentlyEdited
+I0412 18:02:17.393975    3399 document.go:448] OtherEditType (UNKNOWN_EDIT), returning ReasonRecentlyEdited
+I0412 18:02:27.166244    3399 conversation.go:905] Starting getChatIDEContext with detected intent: 
+I0412 18:02:27.166305    3399 document.go:448] OtherEditType (UNKNOWN_EDIT), returning ReasonRecentlyEdited
+I0412 18:02:27.166350    3399 ide_context.go:117] Unable to read file at /home/apoorvtripathi537/.aiexclude
+/home/apoorvtripathi537
+file:///home/apoorvtripathi537
+I0412 18:02:27.166367    3399 conversation.go:950] Unable to retrieve excluded files for request #162: open /home/apoorvtripathi537/.aiexclude: no such file or directory
+I0412 18:02:27.166435    3399 document.go:448] OtherEditType (ADD), returning ReasonRecentlyEdited
+I0412 18:02:27.166446    3399 document.go:448] OtherEditType (UNKNOWN_EDIT), returning ReasonRecentlyEdited
+I0412 18:02:28.797605    3399 conversation.go:905] Starting getChatIDEContext with detected intent: 
+I0412 18:02:28.797653    3399 document.go:448] OtherEditType (UNKNOWN_EDIT), returning ReasonRecentlyEdited
+I0412 18:02:28.797698    3399 ide_context.go:117] Unable to read file at /home/apoorvtripathi537/.aiexclude
+/home/apoorvtripathi537
+file:///home/apoorvtripathi537
+I0412 18:02:28.797712    3399 conversation.go:950] Unable to retrieve excluded files for request #170: open /home/apoorvtripathi537/.aiexclude: no such file or directory
+I0412 18:02:28.797735    3399 document.go:448] OtherEditType (ADD), returning ReasonRecentlyEdited
+I0412 18:02:28.797743    3399 document.go:448] OtherEditType (UNKNOWN_EDIT), returning ReasonRecentlyEdited
+I0412 18:02:29.297271    3399 conversation.go:905] Starting getChatIDEContext with detected intent: 
+I0412 18:02:29.297361    3399 document.go:448] OtherEditType (UNKNOWN_EDIT), returning ReasonRecentlyEdited
+I0412 18:02:29.297428    3399 ide_context.go:117] Unable to read file at /home/apoorvtripathi537/.aiexclude
+/home/apoorvtripathi537
+file:///home/apoorvtripathi537
+I0412 18:02:29.297447    3399 conversation.go:950] Unable to retrieve excluded files for request #173: open /home/apoorvtripathi537/.aiexclude: no such file or directory
+I0412 18:02:29.297472    3399 document.go:448] OtherEditType (ADD), returning ReasonRecentlyEdited
+I0412 18:02:29.297483    3399 document.go:448] OtherEditType (UNKNOWN_EDIT), returning ReasonRecentlyEdited
+I0412 18:02:30.810504    3399 conversation.go:905] Starting getChatIDEContext with detected intent: 
+I0412 18:02:30.810560    3399 document.go:448] OtherEditType (UNKNOWN_EDIT), returning ReasonRecentlyEdited
+I0412 18:02:30.810607    3399 ide_context.go:117] Unable to read file at /home/apoorvtripathi537/.aiexclude
+/home/apoorvtripathi537
+file:///home/apoorvtripathi537
+I0412 18:02:30.810621    3399 conversation.go:950] Unable to retrieve excluded files for request #177: open /home/apoorvtripathi537/.aiexclude: no such file or directory
+I0412 18:02:30.810650    3399 document.go:448] OtherEditType (ADD), returning ReasonRecentlyEdited
+I0412 18:02:30.810667    3399 document.go:448] OtherEditType (UNKNOWN_EDIT), returning ReasonRecentlyEdited
+I0412 18:02:32.473916    3399 conversation.go:905] Starting getChatIDEContext with detected intent: 
+I0412 18:02:32.473968    3399 document.go:448] OtherEditType (UNKNOWN_EDIT), returning ReasonRecentlyEdited
+I0412 18:02:32.474014    3399 ide_context.go:117] Unable to read file at /home/apoorvtripathi537/.aiexclude
+/home/apoorvtripathi537
+file:///home/apoorvtripathi537
+I0412 18:02:32.474028    3399 conversation.go:950] Unable to retrieve excluded files for request #182: open /home/apoorvtripathi537/.aiexclude: no such file or directory
+I0412 18:02:32.474053    3399 document.go:448] OtherEditType (ADD), returning ReasonRecentlyEdited
+I0412 18:02:32.474063    3399 document.go:448] OtherEditType (UNKNOWN_EDIT), returning ReasonRecentlyEdited
+I0412 18:03:06.510369    3399 life_cycle.go:313] codeReportEvery: recomputing codereport metric
+I0412 18:07:26.499261    3399 conversation.go:905] Starting getChatIDEContext with detected intent: 
+I0412 18:07:26.499319    3399 document.go:448] OtherEditType (UNKNOWN_EDIT), returning ReasonRecentlyEdited
+I0412 18:07:26.499366    3399 ide_context.go:117] Unable to read file at /home/apoorvtripathi537/.aiexclude
+/home/apoorvtripathi537
+file:///home/apoorvtripathi537
+I0412 18:07:26.499416    3399 conversation.go:950] Unable to retrieve excluded files for request #186: open /home/apoorvtripathi537/.aiexclude: no such file or directory
+I0412 18:07:26.499446    3399 document.go:448] OtherEditType (ADD), returning ReasonRecentlyEdited
+I0412 18:07:26.499457    3399 document.go:448] OtherEditType (UNKNOWN_EDIT), returning ReasonRecentlyEdited
+I0412 18:07:26.869318    3399 conversation.go:905] Starting getChatIDEContext with detected intent: 
+I0412 18:07:26.869362    3399 document.go:448] OtherEditType (UNKNOWN_EDIT), returning ReasonRecentlyEdited
+I0412 18:07:26.869483    3399 ide_context.go:117] Unable to read file at /home/apoorvtripathi537/.aiexclude
+/home/apoorvtripathi537
+file:///home/apoorvtripathi537
+I0412 18:07:26.869502    3399 conversation.go:950] Unable to retrieve excluded files for request #190: open /home/apoorvtripathi537/.aiexclude: no such file or directory
+I0412 18:07:26.869530    3399 document.go:448] OtherEditType (ADD), returning ReasonRecentlyEdited
+I0412 18:07:26.869544    3399 document.go:448] OtherEditType (UNKNOWN_EDIT), returning ReasonRecentlyEdited
+I0412 18:07:27.208963    3399 conversation.go:905] Starting getChatIDEContext with detected intent: 
+I0412 18:07:27.209010    3399 document.go:448] OtherEditType (UNKNOWN_EDIT), returning ReasonRecentlyEdited
+I0412 18:07:27.209051    3399 ide_context.go:117] Unable to read file at /home/apoorvtripathi537/.aiexclude
+/home/apoorvtripathi537
+file:///home/apoorvtripathi537
+I0412 18:07:27.209067    3399 conversation.go:950] Unable to retrieve excluded files for request #193: open /home/apoorvtripathi537/.aiexclude: no such file or directory
+I0412 18:07:27.209092    3399 document.go:448] OtherEditType (ADD), returning ReasonRecentlyEdited
+I0412 18:07:27.209100    3399 document.go:448] OtherEditType (UNKNOWN_EDIT), returning ReasonRecentlyEdited
+I0412 18:07:27.403467    3399 conversation.go:905] Starting getChatIDEContext with detected intent: 
+I0412 18:07:27.403504    3399 document.go:448] OtherEditType (UNKNOWN_EDIT), returning ReasonRecentlyEdited
+I0412 18:07:27.403550    3399 ide_context.go:117] Unable to read file at /home/apoorvtripathi537/.aiexclude
+/home/apoorvtripathi537
+file:///home/apoorvtripathi537
+I0412 18:07:27.403566    3399 conversation.go:950] Unable to retrieve excluded files for request #195: open /home/apoorvtripathi537/.aiexclude: no such file or directory
+I0412 18:07:27.403585    3399 document.go:448] OtherEditType (ADD), returning ReasonRecentlyEdited
+I0412 18:07:27.403591    3399 document.go:448] OtherEditType (UNKNOWN_EDIT), returning ReasonRecentlyEdited
+I0412 18:07:27.769445    3399 conversation.go:905] Starting getChatIDEContext with detected intent: 
+I0412 18:07:27.769497    3399 document.go:448] OtherEditType (UNKNOWN_EDIT), returning ReasonRecentlyEdited
+I0412 18:07:27.769543    3399 ide_context.go:117] Unable to read file at /home/apoorvtripathi537/.aiexclude
+/home/apoorvtripathi537
+file:///home/apoorvtripathi537
+I0412 18:07:27.769558    3399 conversation.go:950] Unable to retrieve excluded files for request #198: open /home/apoorvtripathi537/.aiexclude: no such file or directory
+I0412 18:07:27.769581    3399 document.go:448] OtherEditType (ADD), returning ReasonRecentlyEdited
+I0412 18:07:27.769592    3399 document.go:448] OtherEditType (UNKNOWN_EDIT), returning ReasonRecentlyEdited
+I0412 18:07:30.648421    3399 conversation.go:905] Starting getChatIDEContext with detected intent: 
+I0412 18:07:30.648463    3399 document.go:448] OtherEditType (UNKNOWN_EDIT), returning ReasonRecentlyEdited
+I0412 18:07:30.648560    3399 ide_context.go:117] Unable to read file at /home/apoorvtripathi537/.aiexclude
+/home/apoorvtripathi537
+file:///home/apoorvtripathi537
+I0412 18:07:30.648580    3399 conversation.go:950] Unable to retrieve excluded files for request #203: open /home/apoorvtripathi537/.aiexclude: no such file or directory
+I0412 18:07:30.648607    3399 document.go:448] OtherEditType (ADD), returning ReasonRecentlyEdited
+I0412 18:07:30.648619    3399 document.go:448] OtherEditType (UNKNOWN_EDIT), returning ReasonRecentlyEdited
+I0412 18:07:32.280419    3399 conversation.go:905] Starting getChatIDEContext with detected intent: 
+I0412 18:07:32.280468    3399 document.go:448] OtherEditType (UNKNOWN_EDIT), returning ReasonRecentlyEdited
+I0412 18:07:32.280517    3399 ide_context.go:117] Unable to read file at /home/apoorvtripathi537/.aiexclude
+/home/apoorvtripathi537
+file:///home/apoorvtripathi537
+I0412 18:07:32.280533    3399 conversation.go:950] Unable to retrieve excluded files for request #209: open /home/apoorvtripathi537/.aiexclude: no such file or directory
+I0412 18:07:32.280556    3399 document.go:448] OtherEditType (ADD), returning ReasonRecentlyEdited
+I0412 18:07:32.280567    3399 document.go:448] OtherEditType (UNKNOWN_EDIT), returning ReasonRecentlyEdited
+I0412 18:07:32.785536    3399 conversation.go:905] Starting getChatIDEContext with detected intent: 
+I0412 18:07:32.785574    3399 document.go:448] OtherEditType (UNKNOWN_EDIT), returning ReasonRecentlyEdited
+I0412 18:07:32.785616    3399 ide_context.go:117] Unable to read file at /home/apoorvtripathi537/.aiexclude
+/home/apoorvtripathi537
+file:///home/apoorvtripathi537
+I0412 18:07:32.785634    3399 conversation.go:950] Unable to retrieve excluded files for request #218: open /home/apoorvtripathi537/.aiexclude: no such file or directory
+I0412 18:07:32.785658    3399 document.go:448] OtherEditType (ADD), returning ReasonRecentlyEdited
+I0412 18:07:32.785665    3399 document.go:448] OtherEditType (UNKNOWN_EDIT), returning ReasonRecentlyEdited
+I0412 18:07:32.920052    3399 conversation.go:905] Starting getChatIDEContext with detected intent: 
+I0412 18:07:32.920100    3399 document.go:448] OtherEditType (UNKNOWN_EDIT), returning ReasonRecentlyEdited
+I0412 18:07:32.920144    3399 ide_context.go:117] Unable to read file at /home/apoorvtripathi537/.aiexclude
+/home/apoorvtripathi537
+file:///home/apoorvtripathi537
+I0412 18:07:32.920168    3399 conversation.go:950] Unable to retrieve excluded files for request #220: open /home/apoorvtripathi537/.aiexclude: no such file or directory
+I0412 18:07:32.920192    3399 document.go:448] OtherEditType (ADD), returning ReasonRecentlyEdited
+I0412 18:07:32.920202    3399 document.go:448] OtherEditType (UNKNOWN_EDIT), returning ReasonRecentlyEdited
+I0412 18:07:33.150534    3399 conversation.go:905] Starting getChatIDEContext with detected intent: 
+I0412 18:07:33.150590    3399 document.go:448] OtherEditType (UNKNOWN_EDIT), returning ReasonRecentlyEdited
+I0412 18:07:33.150633    3399 ide_context.go:117] Unable to read file at /home/apoorvtripathi537/.aiexclude
+/home/apoorvtripathi537
+file:///home/apoorvtripathi537
+I0412 18:07:33.150650    3399 conversation.go:950] Unable to retrieve excluded files for request #223: open /home/apoorvtripathi537/.aiexclude: no such file or directory
+I0412 18:07:33.150673    3399 document.go:448] OtherEditType (ADD), returning ReasonRecentlyEdited
+I0412 18:07:33.150682    3399 document.go:448] OtherEditType (UNKNOWN_EDIT), returning ReasonRecentlyEdited
+W0412 18:07:34.196311    3399 document.go:268] Error computing chars added only: getting byte offset for end of change range: invalid column number
+Completion Provider - completion # 0 - New completion requested from language client at position {"line":6,"character":36}, triggerKind=1
+I0412 18:07:34.218007    3399 document.go:448] OtherEditType (ADD), returning ReasonRecentlyEdited
+I0412 18:07:34.296598    3399 conversation.go:905] Starting getChatIDEContext with detected intent: 
+I0412 18:07:34.296658    3399 document.go:448] OtherEditType (ADD), returning ReasonRecentlyEdited
+I0412 18:07:34.296705    3399 ide_context.go:117] Unable to read file at /home/apoorvtripathi537/.aiexclude
+/home/apoorvtripathi537
+file:///home/apoorvtripathi537
+I0412 18:07:34.296728    3399 conversation.go:950] Unable to retrieve excluded files for request #228: open /home/apoorvtripathi537/.aiexclude: no such file or directory
+I0412 18:07:34.296753    3399 document.go:448] OtherEditType (ADD), returning ReasonRecentlyEdited
+I0412 18:07:34.296764    3399 document.go:448] OtherEditType (UNKNOWN_EDIT), returning ReasonRecentlyEdited
+I0412 18:07:34.419188    3399 handler.go:159] cancel was requested for: 227, needs to be canceled: true
+Completion Provider - completion # 1 - New completion requested from language client at position {"line":6,"character":37}, triggerKind=1
+I0412 18:07:34.447890    3399 document.go:448] OtherEditType (ADD), returning ReasonRecentlyEdited
+I0412 18:07:34.517950    3399 conversation.go:905] Starting getChatIDEContext with detected intent: 
+I0412 18:07:34.517999    3399 document.go:448] OtherEditType (ADD), returning ReasonRecentlyEdited
+I0412 18:07:34.518043    3399 ide_context.go:117] Unable to read file at /home/apoorvtripathi537/.aiexclude
+/home/apoorvtripathi537
+file:///home/apoorvtripathi537
+I0412 18:07:34.518061    3399 conversation.go:950] Unable to retrieve excluded files for request #231: open /home/apoorvtripathi537/.aiexclude: no such file or directory
+I0412 18:07:34.518083    3399 document.go:448] OtherEditType (ADD), returning ReasonRecentlyEdited
+I0412 18:07:34.518092    3399 document.go:448] OtherEditType (UNKNOWN_EDIT), returning ReasonRecentlyEdited
+I0412 18:07:34.560839    3399 handler.go:159] cancel was requested for: 230, needs to be canceled: true
+Completion Provider - completion # 2 - New completion requested from language client at position {"line":6,"character":38}, triggerKind=1
+I0412 18:07:34.592672    3399 document.go:448] OtherEditType (ADD), returning ReasonRecentlyEdited
+I0412 18:07:34.662047    3399 handler.go:159] cancel was requested for: 233, needs to be canceled: true
+Completion Provider - completion # 3 - New completion requested from language client at position {"line":6,"character":39}, triggerKind=1
+I0412 18:07:34.696127    3399 document.go:448] OtherEditType (ADD), returning ReasonRecentlyEdited
+I0412 18:07:34.760472    3399 conversation.go:905] Starting getChatIDEContext with detected intent: 
+I0412 18:07:34.760524    3399 document.go:448] OtherEditType (ADD), returning ReasonRecentlyEdited
+I0412 18:07:34.760568    3399 ide_context.go:117] Unable to read file at /home/apoorvtripathi537/.aiexclude
+/home/apoorvtripathi537
+file:///home/apoorvtripathi537
+I0412 18:07:34.760582    3399 conversation.go:950] Unable to retrieve excluded files for request #236: open /home/apoorvtripathi537/.aiexclude: no such file or directory
+I0412 18:07:34.760605    3399 document.go:448] OtherEditType (ADD), returning ReasonRecentlyEdited
+I0412 18:07:34.760615    3399 document.go:448] OtherEditType (UNKNOWN_EDIT), returning ReasonRecentlyEdited
+I0412 18:07:34.996361    3399 completion.go:236] Inline suggestion requested (request #235): {TextDocumentPositionParams:{TextDocument:{URI:file:///home/apoorvtripathi537/test.py} Position:{Line:6 Character:39}} TriggerMode:0 IDESessionIndex:20250412_12 CompletionIndex:3}
+I0412 18:07:34.996805    3399 document.go:448] OtherEditType (ADD), returning ReasonRecentlyEdited
+I0412 18:07:34.996828    3399 document.go:448] OtherEditType (UNKNOWN_EDIT), returning ReasonRecentlyEdited
+I0412 18:07:34.997196    3399 client.go:442] CompleteCode request: {"enablePromptEnhancement":true,"ideContext":{"currentFile":{"codeLanguage":"python","filePath":"/home/apoorvtripathi537/test.py","includedReason":"CURRENTLY_OPEN","lastEdit":["UNKNOWN_EDIT","ADD","ADD","ADD","ADD"],"segments":[{"content":"from vertexai.preview.generative_models import GenerativeModel\nimport vertexai\n\nvertexai.init(project=\"bookai-456604\", location=\"us-central1\")\n\nmodel = GenerativeModel(\"text-bison\")\nresponse = model.generate_content(\"how "},{"isSelected":true},{"content":"\")\nprint(response.text)"}]},"otherFiles":[{"codeLanguage":"pip-requirements","filePath":"/home/apoorvtripathi537/requirements.txt","includedReason":"RECENTLY_EDITED","segments":[{"content":"Flask==3.1.0\r\ngoogle-cloud-speech==2.27.0\r\ngoogle-cloud-texttospeech==2.17.2\r\ngoogle-cloud-language==2.17.0\r\nvertexai==1.71.1\r\ngunicorn==22.0.0\r\n"}]},{"codeLanguage":"python","filePath":"/home/apoorvtripathi537/main.py","includedReason":"RECENTLY_EDITED","segments":[{"content":"from datetime import datetime\r\n\r\nfrom flask import Flask, render_template, request, redirect, url_for, send_file, send_from_directory\r\nfrom werkzeug.utils import secure_filename\r\n\r\nimport os\r\nimport vertexai\r\n\r\nfrom google.protobuf import wrappers_pb2\r\nfrom vertexai.generative_models import GenerativeModel, Part\r\n\r\nproject_id = \"bookai-456604\"\r\nvertexai.init(project=project_id, location=\"us-central1\")\r\nmodel = GenerativeModel(\"gemini-pro\")\r\nprompt = \"\"\"\r\nProvide the exact transcript of the audio along with the sentiment analysis:\r\nFormat should be like this: \r\nText: -- the transcript of the audio--\r\nSentiment analysis: --Sentiment of the text either positive, negative or neutral--\r\n\"\"\"\r\n\r\napp = Flask(__name__)\r\n\r\n\r\n# Configure upload folder\r\nUPLOAD_FOLDER = 'uploads'\r\nALLOWED_EXTENSIONS = {'wav'}\r\napp.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER\r\n\r\nos.makedirs(UPLOAD_FOLDER, exist_ok=True)\r\n\r\ndef allowed_file(filename):\r\n    return '.' in filename and \\\r\n           filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS\r\n\r\n\r\ndef get_files():\r\n    files = []\r\n    for filename in os.listdir(UPLOAD_FOLDER):\r\n        if allowed_file(filename):\r\n            files.append(filename)\r\n            print(filename)\r\n    files.sort(reverse=True)\r\n    return files\r\n\r\n\r\n@app.route('/')\r\ndef index():\r\n    files = get_files()\r\n    return render_template('index.html', files=files)\r\n\r\n\r\n@app.route('/upload', methods=['POST'])\r\ndef upload_audio():\r\n    if 'audio_data' not in request.files:\r\n        flash('No audio data')\r\n        return redirect(request.url)\r\n    file = request.files['audio_data']\r\n    if file.filename == '':\r\n        flash('No selected file')\r\n        return redirect(request.url)\r\n    if file:\r\n        filename = datetime.now().strftime(\"%Y%m%d-%I%M%S%p\") + '.wav'\r\n        file_path = os.path.join(app.config['UPLOAD_FOLDER'], filename)\r\n        file.save(file_path)\r\n       \r\n        filename = file_path\r\n        f = open(file_path,'rb')\r\n        data = f.read()\r\n        f.close()\r\n\r\n        print(file_path)\r\n\r\n        audio_file = Part.from_data(data, mime_type=\"audio/wav\")\r\n        contents = [audio_file,prompt]\r\n        response = model.generate_content(contents)\r\n\r\n        text = response.text\r\n       \r\n\r\n        print(text)\r\n\r\n        with open(filename + '.txt', 'w') as f:\r\n          f.write(text)\r\n          f.close()\r\n\r\n\r\n    return redirect('/') #success\r\n\r\n\r\n@app.route('/upload/\u003cfilename\u003e')\r\ndef get_file(filename):\r\n    file_path = os.path.join(app.config['UPLOAD_FOLDER'], filename)\r\n    return send_file(file_path)\r\n\r\n@app.route('/script.js',methods=['GET'])\r\ndef scripts_js():\r\n    return send_file('./script.js')\r\n\r\n\r\n@app.route('/uploads/\u003cfilename\u003e')\r\ndef uploaded_file(filename):\r\n    return send_from_directory(app.config['UPLOAD_FOLDER'], filename)\r\n\r\n\r\nif __name__ == '__main__':\r\n    app.run(debug=True)\r\n\r\n"}]}]},"metadata":{"ideName":"Code OSS for Cloud Shell","ideType":"CLOUD_SHELL","ideVersion":"1.94.2-cde","platform":"LINUX_AMD64","pluginType":"CLOUD_CODE","pluginVersion":"2.30.0"},"project":"cloudshell-gca","requestId":"cloudcode-740584268-67466d95-84c4-4f1c-ad92-b58bdb39a6c9"}
+I0412 18:07:35.086321    3399 handler.go:159] cancel was requested for: 235, needs to be canceled: true
+Completion Provider - completion # 4 - New completion requested from language client at position {"line":6,"character":40}, triggerKind=1
+I0412 18:07:35.116349    3399 document.go:448] OtherEditType (ADD), returning ReasonRecentlyEdited
+I0412 18:07:35.188822    3399 conversation.go:905] Starting getChatIDEContext with detected intent: 
+I0412 18:07:35.188868    3399 document.go:448] OtherEditType (ADD), returning ReasonRecentlyEdited
+I0412 18:07:35.188913    3399 ide_context.go:117] Unable to read file at /home/apoorvtripathi537/.aiexclude
+/home/apoorvtripathi537
+file:///home/apoorvtripathi537
+I0412 18:07:35.188928    3399 conversation.go:950] Unable to retrieve excluded files for request #240: open /home/apoorvtripathi537/.aiexclude: no such file or directory
+I0412 18:07:35.188954    3399 document.go:448] OtherEditType (ADD), returning ReasonRecentlyEdited
+I0412 18:07:35.188963    3399 document.go:448] OtherEditType (UNKNOWN_EDIT), returning ReasonRecentlyEdited
+I0412 18:07:35.416988    3399 completion.go:236] Inline suggestion requested (request #239): {TextDocumentPositionParams:{TextDocument:{URI:file:///home/apoorvtripathi537/test.py} Position:{Line:6 Character:40}} TriggerMode:0 IDESessionIndex:20250412_12 CompletionIndex:4}
+I0412 18:07:35.417332    3399 document.go:448] OtherEditType (ADD), returning ReasonRecentlyEdited
+I0412 18:07:35.417351    3399 document.go:448] OtherEditType (UNKNOWN_EDIT), returning ReasonRecentlyEdited
+I0412 18:07:35.417686    3399 client.go:442] CompleteCode request: {"enablePromptEnhancement":true,"ideContext":{"currentFile":{"codeLanguage":"python","filePath":"/home/apoorvtripathi537/test.py","includedReason":"CURRENTLY_OPEN","lastEdit":["ADD","ADD","ADD","ADD","ADD"],"segments":[{"content":"from vertexai.preview.generative_models import GenerativeModel\nimport vertexai\n\nvertexai.init(project=\"bookai-456604\", location=\"us-central1\")\n\nmodel = GenerativeModel(\"text-bison\")\nresponse = model.generate_content(\"how s"},{"isSelected":true},{"content":"\")\nprint(response.text)"}]},"otherFiles":[{"codeLanguage":"pip-requirements","filePath":"/home/apoorvtripathi537/requirements.txt","includedReason":"RECENTLY_EDITED","segments":[{"content":"Flask==3.1.0\r\ngoogle-cloud-speech==2.27.0\r\ngoogle-cloud-texttospeech==2.17.2\r\ngoogle-cloud-language==2.17.0\r\nvertexai==1.71.1\r\ngunicorn==22.0.0\r\n"}]},{"codeLanguage":"python","filePath":"/home/apoorvtripathi537/main.py","includedReason":"RECENTLY_EDITED","segments":[{"content":"from datetime import datetime\r\n\r\nfrom flask import Flask, render_template, request, redirect, url_for, send_file, send_from_directory\r\nfrom werkzeug.utils import secure_filename\r\n\r\nimport os\r\nimport vertexai\r\n\r\nfrom google.protobuf import wrappers_pb2\r\nfrom vertexai.generative_models import GenerativeModel, Part\r\n\r\nproject_id = \"bookai-456604\"\r\nvertexai.init(project=project_id, location=\"us-central1\")\r\nmodel = GenerativeModel(\"gemini-pro\")\r\nprompt = \"\"\"\r\nProvide the exact transcript of the audio along with the sentiment analysis:\r\nFormat should be like this: \r\nText: -- the transcript of the audio--\r\nSentiment analysis: --Sentiment of the text either positive, negative or neutral--\r\n\"\"\"\r\n\r\napp = Flask(__name__)\r\n\r\n\r\n# Configure upload folder\r\nUPLOAD_FOLDER = 'uploads'\r\nALLOWED_EXTENSIONS = {'wav'}\r\napp.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER\r\n\r\nos.makedirs(UPLOAD_FOLDER, exist_ok=True)\r\n\r\ndef allowed_file(filename):\r\n    return '.' in filename and \\\r\n           filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS\r\n\r\n\r\ndef get_files():\r\n    files = []\r\n    for filename in os.listdir(UPLOAD_FOLDER):\r\n        if allowed_file(filename):\r\n            files.append(filename)\r\n            print(filename)\r\n    files.sort(reverse=True)\r\n    return files\r\n\r\n\r\n@app.route('/')\r\ndef index():\r\n    files = get_files()\r\n    return render_template('index.html', files=files)\r\n\r\n\r\n@app.route('/upload', methods=['POST'])\r\ndef upload_audio():\r\n    if 'audio_data' not in request.files:\r\n        flash('No audio data')\r\n        return redirect(request.url)\r\n    file = request.files['audio_data']\r\n    if file.filename == '':\r\n        flash('No selected file')\r\n        return redirect(request.url)\r\n    if file:\r\n        filename = datetime.now().strftime(\"%Y%m%d-%I%M%S%p\") + '.wav'\r\n        file_path = os.path.join(app.config['UPLOAD_FOLDER'], filename)\r\n        file.save(file_path)\r\n       \r\n        filename = file_path\r\n        f = open(file_path,'rb')\r\n        data = f.read()\r\n        f.close()\r\n\r\n        print(file_path)\r\n\r\n        audio_file = Part.from_data(data, mime_type=\"audio/wav\")\r\n        contents = [audio_file,prompt]\r\n        response = model.generate_content(contents)\r\n\r\n        text = response.text\r\n       \r\n\r\n        print(text)\r\n\r\n        with open(filename + '.txt', 'w') as f:\r\n          f.write(text)\r\n          f.close()\r\n\r\n\r\n    return redirect('/') #success\r\n\r\n\r\n@app.route('/upload/\u003cfilename\u003e')\r\ndef get_file(filename):\r\n    file_path = os.path.join(app.config['UPLOAD_FOLDER'], filename)\r\n    return send_file(file_path)\r\n\r\n@app.route('/script.js',methods=['GET'])\r\ndef scripts_js():\r\n    return send_file('./script.js')\r\n\r\n\r\n@app.route('/uploads/\u003cfilename\u003e')\r\ndef uploaded_file(filename):\r\n    return send_from_directory(app.config['UPLOAD_FOLDER'], filename)\r\n\r\n\r\nif __name__ == '__main__':\r\n    app.run(debug=True)\r\n\r\n"}]}]},"metadata":{"ideName":"Code OSS for Cloud Shell","ideType":"CLOUD_SHELL","ideVersion":"1.94.2-cde","platform":"LINUX_AMD64","pluginType":"CLOUD_CODE","pluginVersion":"2.30.0"},"project":"cloudshell-gca","requestId":"cloudcode-740584268-7d1ab57e-81f2-477a-8871-afd3f40d325b"}
+I0412 18:07:35.583755    3399 handler.go:159] cancel was requested for: 239, needs to be canceled: true
+Completion Provider - completion # 5 - New completion requested from language client at position {"line":6,"character":39}, triggerKind=1
+I0412 18:07:35.605455    3399 document.go:448] OtherEditType (DELETE), returning ReasonRecentlyEdited
+I0412 18:07:35.683067    3399 conversation.go:905] Starting getChatIDEContext with detected intent: 
+I0412 18:07:35.683114    3399 document.go:448] OtherEditType (DELETE), returning ReasonRecentlyEdited
+I0412 18:07:35.683158    3399 ide_context.go:117] Unable to read file at /home/apoorvtripathi537/.aiexclude
+/home/apoorvtripathi537
+file:///home/apoorvtripathi537
+I0412 18:07:35.683175    3399 conversation.go:950] Unable to retrieve excluded files for request #244: open /home/apoorvtripathi537/.aiexclude: no such file or directory
+I0412 18:07:35.683197    3399 document.go:448] OtherEditType (ADD), returning ReasonRecentlyEdited
+I0412 18:07:35.683206    3399 document.go:448] OtherEditType (UNKNOWN_EDIT), returning ReasonRecentlyEdited
+I0412 18:07:35.906106    3399 completion.go:236] Inline suggestion requested (request #243): {TextDocumentPositionParams:{TextDocument:{URI:file:///home/apoorvtripathi537/test.py} Position:{Line:6 Character:39}} TriggerMode:0 IDESessionIndex:20250412_12 CompletionIndex:5}
+Completion Provider - completion # 5 - Completion result obtained from language client
+Completion Provider - completion # 6 - New completion requested from language client at position {"line":6,"character":40}, triggerKind=1
+I0412 18:07:36.174744    3399 document.go:448] OtherEditType (ADD), returning ReasonRecentlyEdited
+I0412 18:07:36.220354    3399 conversation.go:905] Starting getChatIDEContext with detected intent: 
+I0412 18:07:36.220416    3399 document.go:448] OtherEditType (ADD), returning ReasonRecentlyEdited
+I0412 18:07:36.220463    3399 ide_context.go:117] Unable to read file at /home/apoorvtripathi537/.aiexclude
+/home/apoorvtripathi537
+file:///home/apoorvtripathi537
+I0412 18:07:36.220481    3399 conversation.go:950] Unable to retrieve excluded files for request #248: open /home/apoorvtripathi537/.aiexclude: no such file or directory
+I0412 18:07:36.220508    3399 document.go:448] OtherEditType (ADD), returning ReasonRecentlyEdited
+I0412 18:07:36.220517    3399 document.go:448] OtherEditType (UNKNOWN_EDIT), returning ReasonRecentlyEdited
+I0412 18:07:36.224473    3399 handler.go:159] cancel was requested for: 247, needs to be canceled: true
+Completion Provider - completion # 7 - New completion requested from language client at position {"line":6,"character":41}, triggerKind=1
+I0412 18:07:36.258130    3399 document.go:448] OtherEditType (ADD), returning ReasonRecentlyEdited
+I0412 18:07:36.323358    3399 conversation.go:905] Starting getChatIDEContext with detected intent: 
+I0412 18:07:36.323588    3399 document.go:448] OtherEditType (ADD), returning ReasonRecentlyEdited
+I0412 18:07:36.323657    3399 ide_context.go:117] Unable to read file at /home/apoorvtripathi537/.aiexclude
+/home/apoorvtripathi537
+file:///home/apoorvtripathi537
+I0412 18:07:36.323676    3399 conversation.go:950] Unable to retrieve excluded files for request #251: open /home/apoorvtripathi537/.aiexclude: no such file or directory
+I0412 18:07:36.323702    3399 document.go:448] OtherEditType (ADD), returning ReasonRecentlyEdited
+I0412 18:07:36.323712    3399 document.go:448] OtherEditType (UNKNOWN_EDIT), returning ReasonRecentlyEdited
+I0412 18:07:36.353801    3399 handler.go:159] cancel was requested for: 250, needs to be canceled: true
+Completion Provider - completion # 8 - New completion requested from language client at position {"line":6,"character":42}, triggerKind=1
+I0412 18:07:36.379737    3399 document.go:448] OtherEditType (ADD), returning ReasonRecentlyEdited
+I0412 18:07:36.453511    3399 conversation.go:905] Starting getChatIDEContext with detected intent: 
+I0412 18:07:36.453561    3399 document.go:448] OtherEditType (ADD), returning ReasonRecentlyEdited
+I0412 18:07:36.453618    3399 ide_context.go:117] Unable to read file at /home/apoorvtripathi537/.aiexclude
+/home/apoorvtripathi537
+file:///home/apoorvtripathi537
+I0412 18:07:36.453632    3399 conversation.go:950] Unable to retrieve excluded files for request #254: open /home/apoorvtripathi537/.aiexclude: no such file or directory
+I0412 18:07:36.453655    3399 document.go:448] OtherEditType (ADD), returning ReasonRecentlyEdited
+I0412 18:07:36.453667    3399 document.go:448] OtherEditType (UNKNOWN_EDIT), returning ReasonRecentlyEdited
+I0412 18:07:36.620887    3399 handler.go:159] cancel was requested for: 253, needs to be canceled: true
+Completion Provider - completion # 9 - New completion requested from language client at position {"line":6,"character":43}, triggerKind=1
+I0412 18:07:36.646898    3399 document.go:448] OtherEditType (ADD), returning ReasonRecentlyEdited
+I0412 18:07:36.720277    3399 conversation.go:905] Starting getChatIDEContext with detected intent: 
+I0412 18:07:36.720329    3399 document.go:448] OtherEditType (ADD), returning ReasonRecentlyEdited
+I0412 18:07:36.720394    3399 ide_context.go:117] Unable to read file at /home/apoorvtripathi537/.aiexclude
+/home/apoorvtripathi537
+file:///home/apoorvtripathi537
+I0412 18:07:36.720412    3399 conversation.go:950] Unable to retrieve excluded files for request #258: open /home/apoorvtripathi537/.aiexclude: no such file or directory
+I0412 18:07:36.720445    3399 document.go:448] OtherEditType (ADD), returning ReasonRecentlyEdited
+I0412 18:07:36.720455    3399 document.go:448] OtherEditType (UNKNOWN_EDIT), returning ReasonRecentlyEdited
+I0412 18:07:36.727237    3399 handler.go:159] cancel was requested for: 257, needs to be canceled: true
+Completion Provider - completion # 10 - New completion requested from language client at position {"line":6,"character":44}, triggerKind=1
+I0412 18:07:36.780156    3399 document.go:448] OtherEditType (ADD), returning ReasonRecentlyEdited
+I0412 18:07:36.827272    3399 conversation.go:905] Starting getChatIDEContext with detected intent: 
+I0412 18:07:36.827327    3399 document.go:448] OtherEditType (ADD), returning ReasonRecentlyEdited
+I0412 18:07:36.827407    3399 ide_context.go:117] Unable to read file at /home/apoorvtripathi537/.aiexclude
+/home/apoorvtripathi537
+file:///home/apoorvtripathi537
+I0412 18:07:36.827426    3399 conversation.go:950] Unable to retrieve excluded files for request #261: open /home/apoorvtripathi537/.aiexclude: no such file or directory
+I0412 18:07:36.827453    3399 document.go:448] OtherEditType (ADD), returning ReasonRecentlyEdited
+I0412 18:07:36.827463    3399 document.go:448] OtherEditType (UNKNOWN_EDIT), returning ReasonRecentlyEdited
+I0412 18:07:36.889890    3399 handler.go:159] cancel was requested for: 260, needs to be canceled: true
+Completion Provider - completion # 11 - New completion requested from language client at position {"line":6,"character":45}, triggerKind=1
+I0412 18:07:36.912634    3399 document.go:448] OtherEditType (ADD), returning ReasonRecentlyEdited
+I0412 18:07:36.953419    3399 handler.go:159] cancel was requested for: 263, needs to be canceled: true
+Completion Provider - completion # 12 - New completion requested from language client at position {"line":6,"character":46}, triggerKind=1
+I0412 18:07:36.989525    3399 document.go:448] OtherEditType (ADD), returning ReasonRecentlyEdited
+I0412 18:07:37.052863    3399 conversation.go:905] Starting getChatIDEContext with detected intent: 
+I0412 18:07:37.052907    3399 document.go:448] OtherEditType (ADD), returning ReasonRecentlyEdited
+I0412 18:07:37.052948    3399 ide_context.go:117] Unable to read file at /home/apoorvtripathi537/.aiexclude
+/home/apoorvtripathi537
+file:///home/apoorvtripathi537
+I0412 18:07:37.052969    3399 conversation.go:950] Unable to retrieve excluded files for request #266: open /home/apoorvtripathi537/.aiexclude: no such file or directory
+I0412 18:07:37.052993    3399 document.go:448] OtherEditType (ADD), returning ReasonRecentlyEdited
+I0412 18:07:37.053000    3399 document.go:448] OtherEditType (UNKNOWN_EDIT), returning ReasonRecentlyEdited
+I0412 18:07:37.290581    3399 completion.go:236] Inline suggestion requested (request #265): {TextDocumentPositionParams:{TextDocument:{URI:file:///home/apoorvtripathi537/test.py} Position:{Line:6 Character:46}} TriggerMode:0 IDESessionIndex:20250412_12 CompletionIndex:12}
+I0412 18:07:37.290974    3399 document.go:448] OtherEditType (ADD), returning ReasonRecentlyEdited
+I0412 18:07:37.290998    3399 document.go:448] OtherEditType (UNKNOWN_EDIT), returning ReasonRecentlyEdited
+I0412 18:07:37.291303    3399 client.go:442] CompleteCode request: {"enablePromptEnhancement":true,"ideContext":{"currentFile":{"codeLanguage":"python","filePath":"/home/apoorvtripathi537/test.py","includedReason":"CURRENTLY_OPEN","lastEdit":["ADD","ADD","ADD","ADD","ADD"],"segments":[{"content":"from vertexai.preview.generative_models import GenerativeModel\nimport vertexai\n\nvertexai.init(project=\"bookai-456604\", location=\"us-central1\")\n\nmodel = GenerativeModel(\"text-bison\")\nresponse = model.generate_content(\"how is the "},{"isSelected":true},{"content":"\")\nprint(response.text)"}]},"otherFiles":[{"codeLanguage":"pip-requirements","filePath":"/home/apoorvtripathi537/requirements.txt","includedReason":"RECENTLY_EDITED","segments":[{"content":"Flask==3.1.0\r\ngoogle-cloud-speech==2.27.0\r\ngoogle-cloud-texttospeech==2.17.2\r\ngoogle-cloud-language==2.17.0\r\nvertexai==1.71.1\r\ngunicorn==22.0.0\r\n"}]},{"codeLanguage":"python","filePath":"/home/apoorvtripathi537/main.py","includedReason":"RECENTLY_EDITED","segments":[{"content":"from datetime import datetime\r\n\r\nfrom flask import Flask, render_template, request, redirect, url_for, send_file, send_from_directory\r\nfrom werkzeug.utils import secure_filename\r\n\r\nimport os\r\nimport vertexai\r\n\r\nfrom google.protobuf import wrappers_pb2\r\nfrom vertexai.generative_models import GenerativeModel, Part\r\n\r\nproject_id = \"bookai-456604\"\r\nvertexai.init(project=project_id, location=\"us-central1\")\r\nmodel = GenerativeModel(\"gemini-pro\")\r\nprompt = \"\"\"\r\nProvide the exact transcript of the audio along with the sentiment analysis:\r\nFormat should be like this: \r\nText: -- the transcript of the audio--\r\nSentiment analysis: --Sentiment of the text either positive, negative or neutral--\r\n\"\"\"\r\n\r\napp = Flask(__name__)\r\n\r\n\r\n# Configure upload folder\r\nUPLOAD_FOLDER = 'uploads'\r\nALLOWED_EXTENSIONS = {'wav'}\r\napp.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER\r\n\r\nos.makedirs(UPLOAD_FOLDER, exist_ok=True)\r\n\r\ndef allowed_file(filename):\r\n    return '.' in filename and \\\r\n           filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS\r\n\r\n\r\ndef get_files():\r\n    files = []\r\n    for filename in os.listdir(UPLOAD_FOLDER):\r\n        if allowed_file(filename):\r\n            files.append(filename)\r\n            print(filename)\r\n    files.sort(reverse=True)\r\n    return files\r\n\r\n\r\n@app.route('/')\r\ndef index():\r\n    files = get_files()\r\n    return render_template('index.html', files=files)\r\n\r\n\r\n@app.route('/upload', methods=['POST'])\r\ndef upload_audio():\r\n    if 'audio_data' not in request.files:\r\n        flash('No audio data')\r\n        return redirect(request.url)\r\n    file = request.files['audio_data']\r\n    if file.filename == '':\r\n        flash('No selected file')\r\n        return redirect(request.url)\r\n    if file:\r\n        filename = datetime.now().strftime(\"%Y%m%d-%I%M%S%p\") + '.wav'\r\n        file_path = os.path.join(app.config['UPLOAD_FOLDER'], filename)\r\n        file.save(file_path)\r\n       \r\n        filename = file_path\r\n        f = open(file_path,'rb')\r\n        data = f.read()\r\n        f.close()\r\n\r\n        print(file_path)\r\n\r\n        audio_file = Part.from_data(data, mime_type=\"audio/wav\")\r\n        contents = [audio_file,prompt]\r\n        response = model.generate_content(contents)\r\n\r\n        text = response.text\r\n       \r\n\r\n        print(text)\r\n\r\n        with open(filename + '.txt', 'w') as f:\r\n          f.write(text)\r\n          f.close()\r\n\r\n\r\n    return redirect('/') #success\r\n\r\n\r\n@app.route('/upload/\u003cfilename\u003e')\r\ndef get_file(filename):\r\n    file_path = os.path.join(app.config['UPLOAD_FOLDER'], filename)\r\n    return send_file(file_path)\r\n\r\n@app.route('/script.js',methods=['GET'])\r\ndef scripts_js():\r\n    return send_file('./script.js')\r\n\r\n\r\n@app.route('/uploads/\u003cfilename\u003e')\r\ndef uploaded_file(filename):\r\n    return send_from_directory(app.config['UPLOAD_FOLDER'], filename)\r\n\r\n\r\nif __name__ == '__main__':\r\n    app.run(debug=True)\r\n\r\n"}]}]},"metadata":{"ideName":"Code OSS for Cloud Shell","ideType":"CLOUD_SHELL","ideVersion":"1.94.2-cde","platform":"LINUX_AMD64","pluginType":"CLOUD_CODE","pluginVersion":"2.30.0"},"project":"cloudshell-gca","requestId":"cloudcode-740584268-a2f66ed3-dc46-47b3-bd68-22cd994002b9"}
+I0412 18:07:37.487992    3399 handler.go:159] cancel was requested for: 265, needs to be canceled: true
+Completion Provider - completion # 13 - New completion requested from language client at position {"line":6,"character":47}, triggerKind=1
+I0412 18:07:37.511581    3399 document.go:448] OtherEditType (ADD), returning ReasonRecentlyEdited
+I0412 18:07:37.588134    3399 conversation.go:905] Starting getChatIDEContext with detected intent: 
+I0412 18:07:37.588193    3399 document.go:448] OtherEditType (ADD), returning ReasonRecentlyEdited
+I0412 18:07:37.588238    3399 ide_context.go:117] Unable to read file at /home/apoorvtripathi537/.aiexclude
+/home/apoorvtripathi537
+file:///home/apoorvtripathi537
+I0412 18:07:37.588255    3399 conversation.go:950] Unable to retrieve excluded files for request #270: open /home/apoorvtripathi537/.aiexclude: no such file or directory
+I0412 18:07:37.588279    3399 document.go:448] OtherEditType (ADD), returning ReasonRecentlyEdited
+I0412 18:07:37.588290    3399 document.go:448] OtherEditType (UNKNOWN_EDIT), returning ReasonRecentlyEdited
+I0412 18:07:37.726050    3399 handler.go:159] cancel was requested for: 269, needs to be canceled: true
+Completion Provider - completion # 14 - New completion requested from language client at position {"line":6,"character":48}, triggerKind=1
+I0412 18:07:37.761516    3399 document.go:448] OtherEditType (ADD), returning ReasonRecentlyEdited
+I0412 18:07:37.825517    3399 conversation.go:905] Starting getChatIDEContext with detected intent: 
+I0412 18:07:37.825566    3399 document.go:448] OtherEditType (ADD), returning ReasonRecentlyEdited
+I0412 18:07:37.825613    3399 ide_context.go:117] Unable to read file at /home/apoorvtripathi537/.aiexclude
+/home/apoorvtripathi537
+file:///home/apoorvtripathi537
+I0412 18:07:37.825626    3399 conversation.go:950] Unable to retrieve excluded files for request #273: open /home/apoorvtripathi537/.aiexclude: no such file or directory
+I0412 18:07:37.825648    3399 document.go:448] OtherEditType (ADD), returning ReasonRecentlyEdited
+I0412 18:07:37.825659    3399 document.go:448] OtherEditType (UNKNOWN_EDIT), returning ReasonRecentlyEdited
+I0412 18:07:37.920499    3399 handler.go:159] cancel was requested for: 272, needs to be canceled: true
+Completion Provider - completion # 15 - New completion requested from language client at position {"line":6,"character":49}, triggerKind=1
+I0412 18:07:37.945722    3399 document.go:448] OtherEditType (ADD), returning ReasonRecentlyEdited
+I0412 18:07:38.020158    3399 conversation.go:905] Starting getChatIDEContext with detected intent: 
+I0412 18:07:38.020200    3399 document.go:448] OtherEditType (ADD), returning ReasonRecentlyEdited
+I0412 18:07:38.020241    3399 ide_context.go:117] Unable to read file at /home/apoorvtripathi537/.aiexclude
+/home/apoorvtripathi537
+file:///home/apoorvtripathi537
+I0412 18:07:38.020258    3399 conversation.go:950] Unable to retrieve excluded files for request #276: open /home/apoorvtripathi537/.aiexclude: no such file or directory
+I0412 18:07:38.020283    3399 document.go:448] OtherEditType (ADD), returning ReasonRecentlyEdited
+I0412 18:07:38.020293    3399 document.go:448] OtherEditType (UNKNOWN_EDIT), returning ReasonRecentlyEdited
+I0412 18:07:38.220228    3399 handler.go:159] cancel was requested for: 275, needs to be canceled: true
+Completion Provider - completion # 16 - New completion requested from language client at position {"line":6,"character":50}, triggerKind=1
+I0412 18:07:38.250100    3399 document.go:448] OtherEditType (ADD), returning ReasonRecentlyEdited
+I0412 18:07:38.319354    3399 conversation.go:905] Starting getChatIDEContext with detected intent: 
+I0412 18:07:38.319421    3399 document.go:448] OtherEditType (ADD), returning ReasonRecentlyEdited
+I0412 18:07:38.319473    3399 ide_context.go:117] Unable to read file at /home/apoorvtripathi537/.aiexclude
+/home/apoorvtripathi537
+file:///home/apoorvtripathi537
+I0412 18:07:38.319489    3399 conversation.go:950] Unable to retrieve excluded files for request #280: open /home/apoorvtripathi537/.aiexclude: no such file or directory
+I0412 18:07:38.319511    3399 document.go:448] OtherEditType (ADD), returning ReasonRecentlyEdited
+I0412 18:07:38.319518    3399 document.go:448] OtherEditType (UNKNOWN_EDIT), returning ReasonRecentlyEdited
+I0412 18:07:38.354524    3399 handler.go:159] cancel was requested for: 279, needs to be canceled: true
+Completion Provider - completion # 17 - New completion requested from language client at position {"line":6,"character":51}, triggerKind=1
+I0412 18:07:38.379765    3399 document.go:448] OtherEditType (ADD), returning ReasonRecentlyEdited
+I0412 18:07:38.453692    3399 conversation.go:905] Starting getChatIDEContext with detected intent: 
+I0412 18:07:38.453730    3399 document.go:448] OtherEditType (ADD), returning ReasonRecentlyEdited
+I0412 18:07:38.453781    3399 ide_context.go:117] Unable to read file at /home/apoorvtripathi537/.aiexclude
+/home/apoorvtripathi537
+file:///home/apoorvtripathi537
+I0412 18:07:38.453795    3399 conversation.go:950] Unable to retrieve excluded files for request #283: open /home/apoorvtripathi537/.aiexclude: no such file or directory
+I0412 18:07:38.453936    3399 document.go:448] OtherEditType (ADD), returning ReasonRecentlyEdited
+I0412 18:07:38.453951    3399 document.go:448] OtherEditType (UNKNOWN_EDIT), returning ReasonRecentlyEdited
+I0412 18:07:38.587928    3399 handler.go:159] cancel was requested for: 282, needs to be canceled: true
+Completion Provider - completion # 18 - New completion requested from language client at position {"line":6,"character":52}, triggerKind=1
+I0412 18:07:38.611948    3399 document.go:448] OtherEditType (ADD), returning ReasonRecentlyEdited
+I0412 18:07:38.687642    3399 conversation.go:905] Starting getChatIDEContext with detected intent: 
+I0412 18:07:38.687683    3399 document.go:448] OtherEditType (ADD), returning ReasonRecentlyEdited
+I0412 18:07:38.687753    3399 ide_context.go:117] Unable to read file at /home/apoorvtripathi537/.aiexclude
+/home/apoorvtripathi537
+file:///home/apoorvtripathi537
+I0412 18:07:38.687766    3399 conversation.go:950] Unable to retrieve excluded files for request #286: open /home/apoorvtripathi537/.aiexclude: no such file or directory
+I0412 18:07:38.687795    3399 document.go:448] OtherEditType (ADD), returning ReasonRecentlyEdited
+I0412 18:07:38.687807    3399 document.go:448] OtherEditType (UNKNOWN_EDIT), returning ReasonRecentlyEdited
+I0412 18:07:38.785236    3399 handler.go:159] cancel was requested for: 285, needs to be canceled: true
+Completion Provider - completion # 19 - New completion requested from language client at position {"line":6,"character":53}, triggerKind=1
+I0412 18:07:38.811816    3399 document.go:448] OtherEditType (ADD), returning ReasonRecentlyEdited
+I0412 18:07:38.884808    3399 conversation.go:905] Starting getChatIDEContext with detected intent: 
+I0412 18:07:38.884860    3399 document.go:448] OtherEditType (ADD), returning ReasonRecentlyEdited
+I0412 18:07:38.884904    3399 ide_context.go:117] Unable to read file at /home/apoorvtripathi537/.aiexclude
+/home/apoorvtripathi537
+file:///home/apoorvtripathi537
+I0412 18:07:38.884920    3399 conversation.go:950] Unable to retrieve excluded files for request #289: open /home/apoorvtripathi537/.aiexclude: no such file or directory
+I0412 18:07:38.884942    3399 document.go:448] OtherEditType (ADD), returning ReasonRecentlyEdited
+I0412 18:07:38.884953    3399 document.go:448] OtherEditType (UNKNOWN_EDIT), returning ReasonRecentlyEdited
+I0412 18:07:38.910492    3399 handler.go:159] cancel was requested for: 288, needs to be canceled: true
+Completion Provider - completion # 20 - New completion requested from language client at position {"line":6,"character":54}, triggerKind=1
+I0412 18:07:38.946693    3399 document.go:448] OtherEditType (ADD), returning ReasonRecentlyEdited
+I0412 18:07:39.010148    3399 conversation.go:905] Starting getChatIDEContext with detected intent: 
+I0412 18:07:39.010203    3399 document.go:448] OtherEditType (ADD), returning ReasonRecentlyEdited
+I0412 18:07:39.010248    3399 ide_context.go:117] Unable to read file at /home/apoorvtripathi537/.aiexclude
+/home/apoorvtripathi537
+file:///home/apoorvtripathi537
+I0412 18:07:39.010264    3399 conversation.go:950] Unable to retrieve excluded files for request #292: open /home/apoorvtripathi537/.aiexclude: no such file or directory
+I0412 18:07:39.010287    3399 document.go:448] OtherEditType (ADD), returning ReasonRecentlyEdited
+I0412 18:07:39.010299    3399 document.go:448] OtherEditType (UNKNOWN_EDIT), returning ReasonRecentlyEdited
+I0412 18:07:39.247355    3399 completion.go:236] Inline suggestion requested (request #291): {TextDocumentPositionParams:{TextDocument:{URI:file:///home/apoorvtripathi537/test.py} Position:{Line:6 Character:54}} TriggerMode:0 IDESessionIndex:20250412_12 CompletionIndex:20}
+I0412 18:07:39.247801    3399 document.go:448] OtherEditType (ADD), returning ReasonRecentlyEdited
+I0412 18:07:39.247833    3399 document.go:448] OtherEditType (UNKNOWN_EDIT), returning ReasonRecentlyEdited
+I0412 18:07:39.248164    3399 client.go:442] CompleteCode request: {"enablePromptEnhancement":true,"ideContext":{"currentFile":{"codeLanguage":"python","filePath":"/home/apoorvtripathi537/test.py","includedReason":"CURRENTLY_OPEN","lastEdit":["ADD","ADD","ADD","ADD","ADD"],"segments":[{"content":"from vertexai.preview.generative_models import GenerativeModel\nimport vertexai\n\nvertexai.init(project=\"bookai-456604\", location=\"us-central1\")\n\nmodel = GenerativeModel(\"text-bison\")\nresponse = model.generate_content(\"how is the weather "},{"isSelected":true},{"content":"\")\nprint(response.text)"}]},"otherFiles":[{"codeLanguage":"pip-requirements","filePath":"/home/apoorvtripathi537/requirements.txt","includedReason":"RECENTLY_EDITED","segments":[{"content":"Flask==3.1.0\r\ngoogle-cloud-speech==2.27.0\r\ngoogle-cloud-texttospeech==2.17.2\r\ngoogle-cloud-language==2.17.0\r\nvertexai==1.71.1\r\ngunicorn==22.0.0\r\n"}]},{"codeLanguage":"python","filePath":"/home/apoorvtripathi537/main.py","includedReason":"RECENTLY_EDITED","segments":[{"content":"from datetime import datetime\r\n\r\nfrom flask import Flask, render_template, request, redirect, url_for, send_file, send_from_directory\r\nfrom werkzeug.utils import secure_filename\r\n\r\nimport os\r\nimport vertexai\r\n\r\nfrom google.protobuf import wrappers_pb2\r\nfrom vertexai.generative_models import GenerativeModel, Part\r\n\r\nproject_id = \"bookai-456604\"\r\nvertexai.init(project=project_id, location=\"us-central1\")\r\nmodel = GenerativeModel(\"gemini-pro\")\r\nprompt = \"\"\"\r\nProvide the exact transcript of the audio along with the sentiment analysis:\r\nFormat should be like this: \r\nText: -- the transcript of the audio--\r\nSentiment analysis: --Sentiment of the text either positive, negative or neutral--\r\n\"\"\"\r\n\r\napp = Flask(__name__)\r\n\r\n\r\n# Configure upload folder\r\nUPLOAD_FOLDER = 'uploads'\r\nALLOWED_EXTENSIONS = {'wav'}\r\napp.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER\r\n\r\nos.makedirs(UPLOAD_FOLDER, exist_ok=True)\r\n\r\ndef allowed_file(filename):\r\n    return '.' in filename and \\\r\n           filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS\r\n\r\n\r\ndef get_files():\r\n    files = []\r\n    for filename in os.listdir(UPLOAD_FOLDER):\r\n        if allowed_file(filename):\r\n            files.append(filename)\r\n            print(filename)\r\n    files.sort(reverse=True)\r\n    return files\r\n\r\n\r\n@app.route('/')\r\ndef index():\r\n    files = get_files()\r\n    return render_template('index.html', files=files)\r\n\r\n\r\n@app.route('/upload', methods=['POST'])\r\ndef upload_audio():\r\n    if 'audio_data' not in request.files:\r\n        flash('No audio data')\r\n        return redirect(request.url)\r\n    file = request.files['audio_data']\r\n    if file.filename == '':\r\n        flash('No selected file')\r\n        return redirect(request.url)\r\n    if file:\r\n        filename = datetime.now().strftime(\"%Y%m%d-%I%M%S%p\") + '.wav'\r\n        file_path = os.path.join(app.config['UPLOAD_FOLDER'], filename)\r\n        file.save(file_path)\r\n       \r\n        filename = file_path\r\n        f = open(file_path,'rb')\r\n        data = f.read()\r\n        f.close()\r\n\r\n        print(file_path)\r\n\r\n        audio_file = Part.from_data(data, mime_type=\"audio/wav\")\r\n        contents = [audio_file,prompt]\r\n        response = model.generate_content(contents)\r\n\r\n        text = response.text\r\n       \r\n\r\n        print(text)\r\n\r\n        with open(filename + '.txt', 'w') as f:\r\n          f.write(text)\r\n          f.close()\r\n\r\n\r\n    return redirect('/') #success\r\n\r\n\r\n@app.route('/upload/\u003cfilename\u003e')\r\ndef get_file(filename):\r\n    file_path = os.path.join(app.config['UPLOAD_FOLDER'], filename)\r\n    return send_file(file_path)\r\n\r\n@app.route('/script.js',methods=['GET'])\r\ndef scripts_js():\r\n    return send_file('./script.js')\r\n\r\n\r\n@app.route('/uploads/\u003cfilename\u003e')\r\ndef uploaded_file(filename):\r\n    return send_from_directory(app.config['UPLOAD_FOLDER'], filename)\r\n\r\n\r\nif __name__ == '__main__':\r\n    app.run(debug=True)\r\n\r\n"}]}]},"metadata":{"ideName":"Code OSS for Cloud Shell","ideType":"CLOUD_SHELL","ideVersion":"1.94.2-cde","platform":"LINUX_AMD64","pluginType":"CLOUD_CODE","pluginVersion":"2.30.0"},"project":"cloudshell-gca","requestId":"cloudcode-740584268-94d4bccb-8bdf-43bf-80b3-33e5be498c9d"}
+I0412 18:07:39.362215    3399 handler.go:159] cancel was requested for: 291, needs to be canceled: true
+Completion Provider - completion # 21 - New completion requested from language client at position {"line":6,"character":55}, triggerKind=1
+I0412 18:07:39.405320    3399 document.go:448] OtherEditType (ADD), returning ReasonRecentlyEdited
+I0412 18:07:39.462122    3399 conversation.go:905] Starting getChatIDEContext with detected intent: 
+I0412 18:07:39.462170    3399 document.go:448] OtherEditType (ADD), returning ReasonRecentlyEdited
+I0412 18:07:39.462214    3399 ide_context.go:117] Unable to read file at /home/apoorvtripathi537/.aiexclude
+/home/apoorvtripathi537
+file:///home/apoorvtripathi537
+I0412 18:07:39.462227    3399 conversation.go:950] Unable to retrieve excluded files for request #296: open /home/apoorvtripathi537/.aiexclude: no such file or directory
+I0412 18:07:39.462247    3399 document.go:448] OtherEditType (ADD), returning ReasonRecentlyEdited
+I0412 18:07:39.462258    3399 document.go:448] OtherEditType (UNKNOWN_EDIT), returning ReasonRecentlyEdited
+I0412 18:07:39.553637    3399 handler.go:159] cancel was requested for: 295, needs to be canceled: true
+Completion Provider - completion # 22 - New completion requested from language client at position {"line":6,"character":56}, triggerKind=1
+I0412 18:07:39.590422    3399 document.go:448] OtherEditType (ADD), returning ReasonRecentlyEdited
+I0412 18:07:39.652323    3399 conversation.go:905] Starting getChatIDEContext with detected intent: 
+I0412 18:07:39.652407    3399 document.go:448] OtherEditType (ADD), returning ReasonRecentlyEdited
+I0412 18:07:39.652470    3399 ide_context.go:117] Unable to read file at /home/apoorvtripathi537/.aiexclude
+/home/apoorvtripathi537
+file:///home/apoorvtripathi537
+I0412 18:07:39.652490    3399 conversation.go:950] Unable to retrieve excluded files for request #299: open /home/apoorvtripathi537/.aiexclude: no such file or directory
+I0412 18:07:39.652515    3399 document.go:448] OtherEditType (ADD), returning ReasonRecentlyEdited
+I0412 18:07:39.652525    3399 document.go:448] OtherEditType (UNKNOWN_EDIT), returning ReasonRecentlyEdited
+I0412 18:07:39.787727    3399 handler.go:159] cancel was requested for: 298, needs to be canceled: true
+Completion Provider - completion # 23 - New completion requested from language client at position {"line":6,"character":57}, triggerKind=1
+I0412 18:07:39.810942    3399 document.go:448] OtherEditType (ADD), returning ReasonRecentlyEdited
+I0412 18:07:39.887993    3399 conversation.go:905] Starting getChatIDEContext with detected intent: 
+I0412 18:07:39.888039    3399 document.go:448] OtherEditType (ADD), returning ReasonRecentlyEdited
+I0412 18:07:39.888087    3399 ide_context.go:117] Unable to read file at /home/apoorvtripathi537/.aiexclude
+/home/apoorvtripathi537
+file:///home/apoorvtripathi537
+I0412 18:07:39.888101    3399 conversation.go:950] Unable to retrieve excluded files for request #302: open /home/apoorvtripathi537/.aiexclude: no such file or directory
+I0412 18:07:39.888124    3399 document.go:448] OtherEditType (ADD), returning ReasonRecentlyEdited
+I0412 18:07:39.888132    3399 document.go:448] OtherEditType (UNKNOWN_EDIT), returning ReasonRecentlyEdited
+I0412 18:07:40.019575    3399 handler.go:159] cancel was requested for: 301, needs to be canceled: true
+Completion Provider - completion # 24 - New completion requested from language client at position {"line":6,"character":58}, triggerKind=1
+I0412 18:07:40.046017    3399 document.go:448] OtherEditType (ADD), returning ReasonRecentlyEdited
+I0412 18:07:40.119566    3399 conversation.go:905] Starting getChatIDEContext with detected intent: 
+I0412 18:07:40.119617    3399 document.go:448] OtherEditType (ADD), returning ReasonRecentlyEdited
+I0412 18:07:40.119662    3399 ide_context.go:117] Unable to read file at /home/apoorvtripathi537/.aiexclude
+/home/apoorvtripathi537
+file:///home/apoorvtripathi537
+I0412 18:07:40.119678    3399 conversation.go:950] Unable to retrieve excluded files for request #305: open /home/apoorvtripathi537/.aiexclude: no such file or directory
+I0412 18:07:40.119701    3399 document.go:448] OtherEditType (ADD), returning ReasonRecentlyEdited
+I0412 18:07:40.119712    3399 document.go:448] OtherEditType (UNKNOWN_EDIT), returning ReasonRecentlyEdited
+I0412 18:07:40.287124    3399 handler.go:159] cancel was requested for: 304, needs to be canceled: true
+Completion Provider - completion # 25 - New completion requested from language client at position {"line":6,"character":59}, triggerKind=1
+I0412 18:07:40.316980    3399 document.go:448] OtherEditType (ADD), returning ReasonRecentlyEdited
+I0412 18:07:40.386562    3399 conversation.go:905] Starting getChatIDEContext with detected intent: 
+I0412 18:07:40.386618    3399 document.go:448] OtherEditType (ADD), returning ReasonRecentlyEdited
+I0412 18:07:40.386660    3399 ide_context.go:117] Unable to read file at /home/apoorvtripathi537/.aiexclude
+/home/apoorvtripathi537
+file:///home/apoorvtripathi537
+I0412 18:07:40.386683    3399 conversation.go:950] Unable to retrieve excluded files for request #309: open /home/apoorvtripathi537/.aiexclude: no such file or directory
+I0412 18:07:40.386706    3399 document.go:448] OtherEditType (ADD), returning ReasonRecentlyEdited
+I0412 18:07:40.386716    3399 document.go:448] OtherEditType (UNKNOWN_EDIT), returning ReasonRecentlyEdited
+I0412 18:07:40.485104    3399 handler.go:159] cancel was requested for: 308, needs to be canceled: true
+Completion Provider - completion # 26 - New completion requested from language client at position {"line":6,"character":60}, triggerKind=1
+I0412 18:07:40.512498    3399 document.go:448] OtherEditType (ADD), returning ReasonRecentlyEdited
+I0412 18:07:40.583881    3399 conversation.go:905] Starting getChatIDEContext with detected intent: 
+I0412 18:07:40.583925    3399 document.go:448] OtherEditType (ADD), returning ReasonRecentlyEdited
+I0412 18:07:40.583972    3399 ide_context.go:117] Unable to read file at /home/apoorvtripathi537/.aiexclude
+/home/apoorvtripathi537
+file:///home/apoorvtripathi537
+I0412 18:07:40.583987    3399 conversation.go:950] Unable to retrieve excluded files for request #312: open /home/apoorvtripathi537/.aiexclude: no such file or directory
+I0412 18:07:40.584010    3399 document.go:448] OtherEditType (ADD), returning ReasonRecentlyEdited
+I0412 18:07:40.584017    3399 document.go:448] OtherEditType (UNKNOWN_EDIT), returning ReasonRecentlyEdited
+I0412 18:07:40.785518    3399 handler.go:159] cancel was requested for: 311, needs to be canceled: true
+Completion Provider - completion # 27 - New completion requested from language client at position {"line":6,"character":61}, triggerKind=1
+I0412 18:07:40.811232    3399 document.go:448] OtherEditType (ADD), returning ReasonRecentlyEdited
+I0412 18:07:40.884855    3399 conversation.go:905] Starting getChatIDEContext with detected intent: 
+I0412 18:07:40.884907    3399 document.go:448] OtherEditType (ADD), returning ReasonRecentlyEdited
+I0412 18:07:40.884961    3399 ide_context.go:117] Unable to read file at /home/apoorvtripathi537/.aiexclude
+/home/apoorvtripathi537
+file:///home/apoorvtripathi537
+I0412 18:07:40.884977    3399 conversation.go:950] Unable to retrieve excluded files for request #316: open /home/apoorvtripathi537/.aiexclude: no such file or directory
+I0412 18:07:40.885001    3399 document.go:448] OtherEditType (ADD), returning ReasonRecentlyEdited
+I0412 18:07:40.885010    3399 document.go:448] OtherEditType (UNKNOWN_EDIT), returning ReasonRecentlyEdited
+I0412 18:07:40.953299    3399 handler.go:159] cancel was requested for: 315, needs to be canceled: true
+Completion Provider - completion # 28 - New completion requested from language client at position {"line":6,"character":62}, triggerKind=1
+I0412 18:07:40.997077    3399 document.go:448] OtherEditType (ADD), returning ReasonRecentlyEdited
+I0412 18:07:41.053142    3399 conversation.go:905] Starting getChatIDEContext with detected intent: 
+I0412 18:07:41.053194    3399 document.go:448] OtherEditType (ADD), returning ReasonRecentlyEdited
+I0412 18:07:41.053240    3399 ide_context.go:117] Unable to read file at /home/apoorvtripathi537/.aiexclude
+/home/apoorvtripathi537
+file:///home/apoorvtripathi537
+I0412 18:07:41.053258    3399 conversation.go:950] Unable to retrieve excluded files for request #319: open /home/apoorvtripathi537/.aiexclude: no such file or directory
+I0412 18:07:41.053282    3399 document.go:448] OtherEditType (ADD), returning ReasonRecentlyEdited
+I0412 18:07:41.053290    3399 document.go:448] OtherEditType (UNKNOWN_EDIT), returning ReasonRecentlyEdited
+I0412 18:07:41.118885    3399 handler.go:159] cancel was requested for: 318, needs to be canceled: true
+Completion Provider - completion # 29 - New completion requested from language client at position {"line":6,"character":63}, triggerKind=1
+I0412 18:07:41.147659    3399 document.go:448] OtherEditType (ADD), returning ReasonRecentlyEdited
+I0412 18:07:41.219195    3399 conversation.go:905] Starting getChatIDEContext with detected intent: 
+I0412 18:07:41.219242    3399 document.go:448] OtherEditType (ADD), returning ReasonRecentlyEdited
+I0412 18:07:41.219284    3399 ide_context.go:117] Unable to read file at /home/apoorvtripathi537/.aiexclude
+/home/apoorvtripathi537
+file:///home/apoorvtripathi537
+I0412 18:07:41.219300    3399 conversation.go:950] Unable to retrieve excluded files for request #322: open /home/apoorvtripathi537/.aiexclude: no such file or directory
+I0412 18:07:41.219322    3399 document.go:448] OtherEditType (ADD), returning ReasonRecentlyEdited
+I0412 18:07:41.219330    3399 document.go:448] OtherEditType (UNKNOWN_EDIT), returning ReasonRecentlyEdited
+I0412 18:07:41.448610    3399 completion.go:236] Inline suggestion requested (request #321): {TextDocumentPositionParams:{TextDocument:{URI:file:///home/apoorvtripathi537/test.py} Position:{Line:6 Character:63}} TriggerMode:0 IDESessionIndex:20250412_12 CompletionIndex:29}
+I0412 18:07:41.449081    3399 document.go:448] OtherEditType (ADD), returning ReasonRecentlyEdited
+I0412 18:07:41.449102    3399 document.go:448] OtherEditType (UNKNOWN_EDIT), returning ReasonRecentlyEdited
+I0412 18:07:41.449421    3399 client.go:442] CompleteCode request: {"enablePromptEnhancement":true,"ideContext":{"currentFile":{"codeLanguage":"python","filePath":"/home/apoorvtripathi537/test.py","includedReason":"CURRENTLY_OPEN","lastEdit":["ADD","ADD","ADD","ADD","ADD"],"segments":[{"content":"from vertexai.preview.generative_models import GenerativeModel\nimport vertexai\n\nvertexai.init(project=\"bookai-456604\", location=\"us-central1\")\n\nmodel = GenerativeModel(\"text-bison\")\nresponse = model.generate_content(\"how is the weather in mumbai"},{"isSelected":true},{"content":"\")\nprint(response.text)"}]},"otherFiles":[{"codeLanguage":"pip-requirements","filePath":"/home/apoorvtripathi537/requirements.txt","includedReason":"RECENTLY_EDITED","segments":[{"content":"Flask==3.1.0\r\ngoogle-cloud-speech==2.27.0\r\ngoogle-cloud-texttospeech==2.17.2\r\ngoogle-cloud-language==2.17.0\r\nvertexai==1.71.1\r\ngunicorn==22.0.0\r\n"}]},{"codeLanguage":"python","filePath":"/home/apoorvtripathi537/main.py","includedReason":"RECENTLY_EDITED","segments":[{"content":"from datetime import datetime\r\n\r\nfrom flask import Flask, render_template, request, redirect, url_for, send_file, send_from_directory\r\nfrom werkzeug.utils import secure_filename\r\n\r\nimport os\r\nimport vertexai\r\n\r\nfrom google.protobuf import wrappers_pb2\r\nfrom vertexai.generative_models import GenerativeModel, Part\r\n\r\nproject_id = \"bookai-456604\"\r\nvertexai.init(project=project_id, location=\"us-central1\")\r\nmodel = GenerativeModel(\"gemini-pro\")\r\nprompt = \"\"\"\r\nProvide the exact transcript of the audio along with the sentiment analysis:\r\nFormat should be like this: \r\nText: -- the transcript of the audio--\r\nSentiment analysis: --Sentiment of the text either positive, negative or neutral--\r\n\"\"\"\r\n\r\napp = Flask(__name__)\r\n\r\n\r\n# Configure upload folder\r\nUPLOAD_FOLDER = 'uploads'\r\nALLOWED_EXTENSIONS = {'wav'}\r\napp.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER\r\n\r\nos.makedirs(UPLOAD_FOLDER, exist_ok=True)\r\n\r\ndef allowed_file(filename):\r\n    return '.' in filename and \\\r\n           filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS\r\n\r\n\r\ndef get_files():\r\n    files = []\r\n    for filename in os.listdir(UPLOAD_FOLDER):\r\n        if allowed_file(filename):\r\n            files.append(filename)\r\n            print(filename)\r\n    files.sort(reverse=True)\r\n    return files\r\n\r\n\r\n@app.route('/')\r\ndef index():\r\n    files = get_files()\r\n    return render_template('index.html', files=files)\r\n\r\n\r\n@app.route('/upload', methods=['POST'])\r\ndef upload_audio():\r\n    if 'audio_data' not in request.files:\r\n        flash('No audio data')\r\n        return redirect(request.url)\r\n    file = request.files['audio_data']\r\n    if file.filename == '':\r\n        flash('No selected file')\r\n        return redirect(request.url)\r\n    if file:\r\n        filename = datetime.now().strftime(\"%Y%m%d-%I%M%S%p\") + '.wav'\r\n        file_path = os.path.join(app.config['UPLOAD_FOLDER'], filename)\r\n        file.save(file_path)\r\n       \r\n        filename = file_path\r\n        f = open(file_path,'rb')\r\n        data = f.read()\r\n        f.close()\r\n\r\n        print(file_path)\r\n\r\n        audio_file = Part.from_data(data, mime_type=\"audio/wav\")\r\n        contents = [audio_file,prompt]\r\n        response = model.generate_content(contents)\r\n\r\n        text = response.text\r\n       \r\n\r\n        print(text)\r\n\r\n        with open(filename + '.txt', 'w') as f:\r\n          f.write(text)\r\n          f.close()\r\n\r\n\r\n    return redirect('/') #success\r\n\r\n\r\n@app.route('/upload/\u003cfilename\u003e')\r\ndef get_file(filename):\r\n    file_path = os.path.join(app.config['UPLOAD_FOLDER'], filename)\r\n    return send_file(file_path)\r\n\r\n@app.route('/script.js',methods=['GET'])\r\ndef scripts_js():\r\n    return send_file('./script.js')\r\n\r\n\r\n@app.route('/uploads/\u003cfilename\u003e')\r\ndef uploaded_file(filename):\r\n    return send_from_directory(app.config['UPLOAD_FOLDER'], filename)\r\n\r\n\r\nif __name__ == '__main__':\r\n    app.run(debug=True)\r\n\r\n"}]}]},"metadata":{"ideName":"Code OSS for Cloud Shell","ideType":"CLOUD_SHELL","ideVersion":"1.94.2-cde","platform":"LINUX_AMD64","pluginType":"CLOUD_CODE","pluginVersion":"2.30.0"},"project":"cloudshell-gca","requestId":"cloudcode-740584268-806f7b9e-fff2-405c-aa38-52e3448ae88d"}
+I0412 18:07:41.712419    3399 completion.go:609] Code complete response for request #321 after post-processing: &{Suggestions:[] TraceID:5ed0374ea9b46bde RequestID:cloudcode-740584268-806f7b9e-fff2-405c-aa38-52e3448ae88d ServerTiming:gfet5t7;dur=223, gfet4t7; dur=261 NetPlusServerTiming:262.819742ms FromCache:false Typeover:false TriggerMode:0 ProcessingDetails:{RagStatus:RAG_NOT_FOUND AtlasExperience:4e3ec00c79913174 PromptID: CompletionMethod:COMPLETION ExperimentDebugStringFingerprint: ModelURI: ChatClientIDHash:}}
+Received completion response from language server with 0 valid responses and 0 responses that have been filtered out
+Completion Provider - completion # 29 - Completion result obtained from language client
+Completion Provider - completion # 30 - New completion requested from language client at position {"line":6,"character":64}, triggerKind=1
+I0412 18:07:42.062199    3399 document.go:448] OtherEditType (ADD), returning ReasonRecentlyEdited
+I0412 18:07:42.144201    3399 conversation.go:905] Starting getChatIDEContext with detected intent: 
+I0412 18:07:42.144251    3399 document.go:448] OtherEditType (ADD), returning ReasonRecentlyEdited
+I0412 18:07:42.144291    3399 ide_context.go:117] Unable to read file at /home/apoorvtripathi537/.aiexclude
+/home/apoorvtripathi537
+file:///home/apoorvtripathi537
+I0412 18:07:42.144307    3399 conversation.go:950] Unable to retrieve excluded files for request #326: open /home/apoorvtripathi537/.aiexclude: no such file or directory
+I0412 18:07:42.144328    3399 document.go:448] OtherEditType (ADD), returning ReasonRecentlyEdited
+I0412 18:07:42.144339    3399 document.go:448] OtherEditType (UNKNOWN_EDIT), returning ReasonRecentlyEdited
+I0412 18:07:42.362923    3399 completion.go:236] Inline suggestion requested (request #325): {TextDocumentPositionParams:{TextDocument:{URI:file:///home/apoorvtripathi537/test.py} Position:{Line:6 Character:64}} TriggerMode:0 IDESessionIndex:20250412_12 CompletionIndex:30}
+I0412 18:07:42.363305    3399 document.go:448] OtherEditType (ADD), returning ReasonRecentlyEdited
+I0412 18:07:42.363330    3399 document.go:448] OtherEditType (UNKNOWN_EDIT), returning ReasonRecentlyEdited
+I0412 18:07:42.363667    3399 client.go:442] CompleteCode request: {"enablePromptEnhancement":true,"ideContext":{"currentFile":{"codeLanguage":"python","filePath":"/home/apoorvtripathi537/test.py","includedReason":"CURRENTLY_OPEN","lastEdit":["ADD","ADD","ADD","ADD","ADD"],"segments":[{"content":"from vertexai.preview.generative_models import GenerativeModel\nimport vertexai\n\nvertexai.init(project=\"bookai-456604\", location=\"us-central1\")\n\nmodel = GenerativeModel(\"text-bison\")\nresponse = model.generate_content(\"how is the weather in mumbai?"},{"isSelected":true},{"content":"\")\nprint(response.text)"}]},"otherFiles":[{"codeLanguage":"pip-requirements","filePath":"/home/apoorvtripathi537/requirements.txt","includedReason":"RECENTLY_EDITED","segments":[{"content":"Flask==3.1.0\r\ngoogle-cloud-speech==2.27.0\r\ngoogle-cloud-texttospeech==2.17.2\r\ngoogle-cloud-language==2.17.0\r\nvertexai==1.71.1\r\ngunicorn==22.0.0\r\n"}]},{"codeLanguage":"python","filePath":"/home/apoorvtripathi537/main.py","includedReason":"RECENTLY_EDITED","segments":[{"content":"from datetime import datetime\r\n\r\nfrom flask import Flask, render_template, request, redirect, url_for, send_file, send_from_directory\r\nfrom werkzeug.utils import secure_filename\r\n\r\nimport os\r\nimport vertexai\r\n\r\nfrom google.protobuf import wrappers_pb2\r\nfrom vertexai.generative_models import GenerativeModel, Part\r\n\r\nproject_id = \"bookai-456604\"\r\nvertexai.init(project=project_id, location=\"us-central1\")\r\nmodel = GenerativeModel(\"gemini-pro\")\r\nprompt = \"\"\"\r\nProvide the exact transcript of the audio along with the sentiment analysis:\r\nFormat should be like this: \r\nText: -- the transcript of the audio--\r\nSentiment analysis: --Sentiment of the text either positive, negative or neutral--\r\n\"\"\"\r\n\r\napp = Flask(__name__)\r\n\r\n\r\n# Configure upload folder\r\nUPLOAD_FOLDER = 'uploads'\r\nALLOWED_EXTENSIONS = {'wav'}\r\napp.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER\r\n\r\nos.makedirs(UPLOAD_FOLDER, exist_ok=True)\r\n\r\ndef allowed_file(filename):\r\n    return '.' in filename and \\\r\n           filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS\r\n\r\n\r\ndef get_files():\r\n    files = []\r\n    for filename in os.listdir(UPLOAD_FOLDER):\r\n        if allowed_file(filename):\r\n            files.append(filename)\r\n            print(filename)\r\n    files.sort(reverse=True)\r\n    return files\r\n\r\n\r\n@app.route('/')\r\ndef index():\r\n    files = get_files()\r\n    return render_template('index.html', files=files)\r\n\r\n\r\n@app.route('/upload', methods=['POST'])\r\ndef upload_audio():\r\n    if 'audio_data' not in request.files:\r\n        flash('No audio data')\r\n        return redirect(request.url)\r\n    file = request.files['audio_data']\r\n    if file.filename == '':\r\n        flash('No selected file')\r\n        return redirect(request.url)\r\n    if file:\r\n        filename = datetime.now().strftime(\"%Y%m%d-%I%M%S%p\") + '.wav'\r\n        file_path = os.path.join(app.config['UPLOAD_FOLDER'], filename)\r\n        file.save(file_path)\r\n       \r\n        filename = file_path\r\n        f = open(file_path,'rb')\r\n        data = f.read()\r\n        f.close()\r\n\r\n        print(file_path)\r\n\r\n        audio_file = Part.from_data(data, mime_type=\"audio/wav\")\r\n        contents = [audio_file,prompt]\r\n        response = model.generate_content(contents)\r\n\r\n        text = response.text\r\n       \r\n\r\n        print(text)\r\n\r\n        with open(filename + '.txt', 'w') as f:\r\n          f.write(text)\r\n          f.close()\r\n\r\n\r\n    return redirect('/') #success\r\n\r\n\r\n@app.route('/upload/\u003cfilename\u003e')\r\ndef get_file(filename):\r\n    file_path = os.path.join(app.config['UPLOAD_FOLDER'], filename)\r\n    return send_file(file_path)\r\n\r\n@app.route('/script.js',methods=['GET'])\r\ndef scripts_js():\r\n    return send_file('./script.js')\r\n\r\n\r\n@app.route('/uploads/\u003cfilename\u003e')\r\ndef uploaded_file(filename):\r\n    return send_from_directory(app.config['UPLOAD_FOLDER'], filename)\r\n\r\n\r\nif __name__ == '__main__':\r\n    app.run(debug=True)\r\n\r\n"}]}]},"metadata":{"ideName":"Code OSS for Cloud Shell","ideType":"CLOUD_SHELL","ideVersion":"1.94.2-cde","platform":"LINUX_AMD64","pluginType":"CLOUD_CODE","pluginVersion":"2.30.0"},"project":"cloudshell-gca","requestId":"cloudcode-740584268-3a5aa6cf-3a67-4dbd-93b6-982b31d56160"}
+I0412 18:07:42.566229    3399 completion.go:609] Code complete response for request #325 after post-processing: &{Suggestions:[] TraceID:bfecd538fd92af06 RequestID:cloudcode-740584268-3a5aa6cf-3a67-4dbd-93b6-982b31d56160 ServerTiming:gfet5t7;dur=158, gfet4t7; dur=200 NetPlusServerTiming:202.397439ms FromCache:false Typeover:false TriggerMode:0 ProcessingDetails:{RagStatus:RAG_NOT_FOUND AtlasExperience:4e3ec00c79913174 PromptID: CompletionMethod:COMPLETION ExperimentDebugStringFingerprint: ModelURI: ChatClientIDHash:}}
+Received completion response from language server with 0 valid responses and 0 responses that have been filtered out
+Completion Provider - completion # 30 - Completion result obtained from language client
+I0412 18:07:46.566084    3399 conversation.go:905] Starting getChatIDEContext with detected intent: 
+I0412 18:07:46.566132    3399 document.go:448] OtherEditType (ADD), returning ReasonRecentlyEdited
+I0412 18:07:46.566178    3399 ide_context.go:117] Unable to read file at /home/apoorvtripathi537/.aiexclude
+/home/apoorvtripathi537
+file:///home/apoorvtripathi537
+I0412 18:07:46.566194    3399 conversation.go:950] Unable to retrieve excluded files for request #330: open /home/apoorvtripathi537/.aiexclude: no such file or directory
+I0412 18:07:46.566217    3399 document.go:448] OtherEditType (ADD), returning ReasonRecentlyEdited
+I0412 18:07:46.566224    3399 document.go:448] OtherEditType (UNKNOWN_EDIT), returning ReasonRecentlyEdited
+I0412 18:08:06.510042    3399 life_cycle.go:313] codeReportEvery: recomputing codereport metric
+I0412 18:12:06.510354    3399 life_cycle.go:277] codeReportBasicEvery: recomputing codereportbasic metric
+I0412 18:13:25.077151    3399 conversation.go:905] Starting getChatIDEContext with detected intent: 
+I0412 18:13:25.077284    3399 document.go:448] OtherEditType (ADD), returning ReasonRecentlyEdited
+I0412 18:13:25.077351    3399 ide_context.go:117] Unable to read file at /home/apoorvtripathi537/.aiexclude
+/home/apoorvtripathi537
+file:///home/apoorvtripathi537
+I0412 18:13:25.077366    3399 conversation.go:950] Unable to retrieve excluded files for request #335: open /home/apoorvtripathi537/.aiexclude: no such file or directory
+I0412 18:13:25.077423    3399 document.go:448] OtherEditType (UNKNOWN_EDIT), returning ReasonRecentlyEdited
+I0412 18:22:47.301884    3399 conversation.go:905] Starting getChatIDEContext with detected intent: 
+I0412 18:22:47.301935    3399 document.go:448] OtherEditType (UNKNOWN_EDIT), returning ReasonRecentlyEdited
+I0412 18:22:47.301987    3399 ide_context.go:117] Unable to read file at /home/apoorvtripathi537/.aiexclude
+/home/apoorvtripathi537
+file:///home/apoorvtripathi537
+I0412 18:22:47.302005    3399 conversation.go:950] Unable to retrieve excluded files for request #340: open /home/apoorvtripathi537/.aiexclude: no such file or directory
+I0412 18:23:12.411842    3399 conversation.go:905] Starting getChatIDEContext with detected intent: 
+I0412 18:23:12.411895    3399 document.go:448] OtherEditType (UNKNOWN_EDIT), returning ReasonRecentlyEdited
+I0412 18:23:12.411943    3399 ide_context.go:117] Unable to read file at /home/apoorvtripathi537/.aiexclude
+/home/apoorvtripathi537
+file:///home/apoorvtripathi537
+I0412 18:23:12.411959    3399 conversation.go:950] Unable to retrieve excluded files for request #343: open /home/apoorvtripathi537/.aiexclude: no such file or directory
+I0412 18:23:16.047955    3399 conversation.go:905] Starting getChatIDEContext with detected intent: 
+I0412 18:23:16.048008    3399 document.go:448] OtherEditType (UNKNOWN_EDIT), returning ReasonRecentlyEdited
+I0412 18:23:16.048057    3399 ide_context.go:117] Unable to read file at /home/apoorvtripathi537/.aiexclude
+/home/apoorvtripathi537
+file:///home/apoorvtripathi537
+I0412 18:23:16.048074    3399 conversation.go:950] Unable to retrieve excluded files for request #345: open /home/apoorvtripathi537/.aiexclude: no such file or directory

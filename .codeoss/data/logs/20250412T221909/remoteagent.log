@@ -1,0 +1,12 @@
+2025-04-12 22:19:09.256 [info] 
+
+
+
+
+2025-04-12 22:19:09.348 [info] Extension host agent started.
+2025-04-12 22:19:11.001 [info] [127.0.0.1][d9e479df][ExtensionHostConnection] New connection established.
+2025-04-12 22:19:11.003 [info] [127.0.0.1][2d1d926e][ManagementConnection] New connection established.
+2025-04-12 22:19:12.114 [info] [127.0.0.1][d9e479df][ExtensionHostConnection] <1232> Launched Extension Host Process.
+2025-04-12 22:19:19.174 [error] [File Watcher] Unexpected error: No such file or directory (EUNKNOWN) (path: /home/apoorvtripathi537)
+2025-04-12 22:19:19.175 [error] [File Watcher (universal)] No such file or directory
+2025-04-12 23:22:00.014 [info] [127.0.0.1][2d1d926e][ManagementConnection] The client has disconnected, will wait for reconnection 3h before disposing...

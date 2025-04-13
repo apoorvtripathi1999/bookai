@@ -1,0 +1,41 @@
+2025-04-12 20:46:56.405 [info] [main] Log level: Info
+2025-04-12 20:46:56.405 [info] [main] Validating found git in: "git"
+2025-04-12 20:46:56.405 [info] [main] Using git "2.43.0" from "git"
+2025-04-12 20:46:56.405 [info] [Model][doInitialScan] Initial repository scan started
+2025-04-12 20:46:56.405 [info] > git rev-parse --show-toplevel [8ms]
+2025-04-12 20:46:56.405 [info] > git rev-parse --git-dir --git-common-dir [261ms]
+2025-04-12 20:46:56.405 [info] [Model][openRepository] Opened repository: /home/apoorvtripathi537
+2025-04-12 20:46:58.659 [info] > git check-ignore -v -z --stdin [13ms]
+2025-04-12 20:46:58.664 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [2189ms]
+2025-04-12 20:46:59.152 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [49ms]
+2025-04-12 20:46:59.162 [info] > git rev-parse --show-toplevel [36ms]
+2025-04-12 20:46:59.207 [info] > git rev-parse --show-toplevel [20ms]
+2025-04-12 20:46:59.346 [info] > git rev-parse --show-toplevel [50ms]
+2025-04-12 20:46:59.373 [info] > git rev-parse --show-toplevel [17ms]
+2025-04-12 20:46:59.789 [info] > git status -z -uall [701ms] (cancelled)
+2025-04-12 20:46:59.789 [info] > git rev-parse --show-toplevel [343ms]
+2025-04-12 20:47:01.037 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [1254ms]
+2025-04-12 20:47:01.084 [info] > git config --local branch.master.vscode-merge-base [39ms]
+2025-04-12 20:47:01.084 [warning] [Git][config] git config failed: Failed to execute git
+2025-04-12 20:47:01.093 [info] > git rev-parse --show-toplevel [107ms]
+2025-04-12 20:47:01.126 [info] > git rev-parse --show-toplevel [25ms]
+2025-04-12 20:47:01.126 [info] > git reflog master --grep-reflog=branch: Created from *. [33ms]
+2025-04-12 20:47:01.153 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [30ms]
+2025-04-12 20:47:01.155 [info] > git rev-parse --show-toplevel [3ms]
+2025-04-12 20:47:01.155 [info] > git symbolic-ref --short refs/remotes/origin/HEAD [21ms]
+2025-04-12 20:47:01.155 [info] fatal: ref refs/remotes/origin/HEAD is not a symbolic ref
+2025-04-12 20:47:01.156 [warning] [Repository][getDefaultBranch] Failed to get default branch details: Failed to execute git.
+2025-04-12 20:47:01.197 [info] > git merge-base refs/heads/master refs/remotes/origin/master [31ms]
+2025-04-12 20:47:01.240 [info] > git rev-parse --show-toplevel [63ms]
+2025-04-12 20:47:01.242 [info] > git diff --name-status -z --diff-filter=ADMR ae54d5703c5e6277a64919db1dea687af7ee5769...refs/remotes/origin/master [38ms]
+2025-04-12 20:47:01.253 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [13ms]
+2025-04-12 20:47:01.255 [info] > git rev-parse --show-toplevel [5ms]
+2025-04-12 20:47:01.265 [info] > git rev-parse --show-toplevel [3ms]
+2025-04-12 20:47:01.275 [info] > git rev-parse --show-toplevel [2ms]
+2025-04-12 20:47:01.287 [info] > git rev-parse --show-toplevel [3ms]
+2025-04-12 20:47:01.298 [info] > git rev-parse --show-toplevel [4ms]
+2025-04-12 20:47:01.298 [info] [Model][doInitialScan] Initial repository scan completed - repositories (1), closed repositories (0), parent repositories (0), unsafe repositories (0)
+2025-04-12 20:47:01.318 [info] > git show --textconv :main.py [10ms]
+2025-04-12 20:47:01.325 [info] > git ls-files --stage -- /home/apoorvtripathi537/main.py [8ms]
+2025-04-12 20:47:01.342 [info] > git cat-file -s cd8b840c6a2cc57bb6082c3fa09575f889d656b4 [10ms]
+2025-04-12 20:47:02.951 [info] > git status -z -uall [1727ms] (cancelled)

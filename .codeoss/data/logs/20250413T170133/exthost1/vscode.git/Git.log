@@ -1,0 +1,60 @@
+2025-04-13 17:01:40.009 [info] [main] Log level: Info
+2025-04-13 17:01:40.009 [info] [main] Validating found git in: "git"
+2025-04-13 17:01:40.009 [info] [main] Using git "2.43.0" from "git"
+2025-04-13 17:01:40.009 [info] [Model][doInitialScan] Initial repository scan started
+2025-04-13 17:01:40.009 [info] > git rev-parse --show-toplevel [1826ms]
+2025-04-13 17:01:40.012 [info] > git rev-parse --git-dir --git-common-dir [5ms]
+2025-04-13 17:01:40.030 [info] [Model][openRepository] Opened repository: /home/apoorvtripathi537
+2025-04-13 17:01:42.822 [info] > git check-ignore -v -z --stdin [255ms]
+2025-04-13 17:01:42.828 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [2592ms]
+2025-04-13 17:01:43.421 [info] > git rev-parse --show-toplevel [364ms]
+2025-04-13 17:01:43.441 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [213ms]
+2025-04-13 17:01:43.465 [info] > git rev-parse --show-toplevel [16ms]
+2025-04-13 17:01:43.562 [info] > git rev-parse --show-toplevel [50ms]
+2025-04-13 17:01:43.596 [info] > git rev-parse --show-toplevel [20ms]
+2025-04-13 17:01:43.636 [info] > git rev-parse --show-toplevel [14ms]
+2025-04-13 17:01:43.653 [info] > git rev-parse --show-toplevel [5ms]
+2025-04-13 17:01:43.672 [info] > git rev-parse --show-toplevel [7ms]
+2025-04-13 17:01:43.815 [info] > git rev-parse --show-toplevel [79ms]
+2025-04-13 17:01:43.845 [info] > git rev-parse --show-toplevel [15ms]
+2025-04-13 17:01:43.932 [info] > git rev-parse --show-toplevel [76ms]
+2025-04-13 17:01:43.952 [info] > git rev-parse --show-toplevel [6ms]
+2025-04-13 17:01:43.970 [info] > git rev-parse --show-toplevel [3ms]
+2025-04-13 17:01:43.987 [info] > git rev-parse --show-toplevel [3ms]
+2025-04-13 17:01:44.011 [info] > git rev-parse --show-toplevel [14ms]
+2025-04-13 17:01:44.011 [info] [Model][doInitialScan] Initial repository scan completed - repositories (1), closed repositories (0), parent repositories (0), unsafe repositories (0)
+2025-04-13 17:01:49.162 [info] > git status -z -uall [5946ms] (cancelled)
+2025-04-13 17:01:49.175 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [1930ms]
+2025-04-13 17:01:49.235 [info] > git config --local branch.master.vscode-merge-base [47ms]
+2025-04-13 17:01:49.235 [warning] [Git][config] git config failed: Failed to execute git
+2025-04-13 17:01:49.268 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [4ms]
+2025-04-13 17:01:49.305 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [5ms]
+2025-04-13 17:01:49.464 [info] > git reflog master --grep-reflog=branch: Created from *. [213ms]
+2025-04-13 17:01:49.497 [info] > git symbolic-ref --short refs/remotes/origin/HEAD [16ms]
+2025-04-13 17:01:49.498 [info] fatal: ref refs/remotes/origin/HEAD is not a symbolic ref
+2025-04-13 17:01:49.498 [warning] [Repository][getDefaultBranch] Failed to get default branch details: Failed to execute git.
+2025-04-13 17:01:49.517 [info] > git merge-base refs/heads/master refs/remotes/origin/master [4ms]
+2025-04-13 17:01:51.378 [info] > git status -z -uall [2097ms] (cancelled)
+2025-04-13 17:01:51.379 [info] > git merge-base refs/heads/master refs/remotes/origin/master [1570ms]
+2025-04-13 17:01:51.390 [info] > git diff --name-status -z --diff-filter=ADMR ae54d5703c5e6277a64919db1dea687af7ee5769...refs/remotes/origin/master [1856ms]
+2025-04-13 17:01:51.400 [info] > git diff --name-status -z --diff-filter=ADMR ae54d5703c5e6277a64919db1dea687af7ee5769...refs/remotes/origin/master [11ms]
+2025-04-13 17:02:20.087 [info] > git show --textconv :test.py [14ms]
+2025-04-13 17:02:20.090 [info] > git ls-files --stage -- /home/apoorvtripathi537/test.py [6ms]
+2025-04-13 17:02:31.733 [info] > git ls-files --stage -- /home/apoorvtripathi537/README-cloudshell.txt [5ms]
+2025-04-13 17:02:31.753 [info] > git cat-file -s 9fa5a74e750d98eb725eca4ca09ba01af2f5cd24 [12ms]
+2025-04-13 17:02:31.755 [info] > git show --textconv :README-cloudshell.txt [34ms]
+2025-04-13 17:02:47.428 [info] > git show --textconv :gitignore [27ms]
+2025-04-13 17:02:47.441 [info] > git ls-files --stage -- /home/apoorvtripathi537/gitignore [32ms]
+2025-04-13 17:02:47.664 [info] > git check-ignore -v -z --stdin [4ms]
+2025-04-13 17:03:39.298 [info] > git show --textconv :gitignore [11ms]
+2025-04-13 17:03:39.300 [info] > git ls-files --stage -- /home/apoorvtripathi537/gitignore [4ms]
+2025-04-13 17:03:49.778 [info] > git show --textconv :.gitignore [41ms]
+2025-04-13 17:03:49.798 [info] > git ls-files --stage -- /home/apoorvtripathi537/.gitignore [46ms]
+2025-04-13 17:03:49.879 [info] > git check-ignore -v -z --stdin [4ms]
+2025-04-13 17:04:07.355 [info] > git check-ignore -v -z --stdin [5ms]
+2025-04-13 17:04:09.710 [info] > git check-ignore -v -z --stdin [6ms]
+2025-04-13 17:04:11.941 [info] > git check-ignore -v -z --stdin [5ms]
+2025-04-13 17:04:12.488 [info] > git check-ignore -v -z --stdin [9ms]
+2025-04-13 17:04:13.108 [info] > git check-ignore -v -z --stdin [5ms]
+2025-04-13 17:05:54.091 [info] > git ls-files --stage -- /home/apoorvtripathi537/.gitignore [4ms]
+2025-04-13 17:05:54.130 [info] > git show --textconv :.gitignore [4ms]
