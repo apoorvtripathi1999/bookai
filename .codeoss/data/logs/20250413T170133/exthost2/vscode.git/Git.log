@@ -1,0 +1,94 @@
+2025-04-13 17:11:37.182 [info] [main] Log level: Info
+2025-04-13 17:11:37.182 [info] [main] Validating found git in: "git"
+2025-04-13 17:11:37.182 [info] [main] Using git "2.43.0" from "git"
+2025-04-13 17:11:37.182 [info] [Model][doInitialScan] Initial repository scan started
+2025-04-13 17:11:37.182 [info] > git rev-parse --show-toplevel [69ms]
+2025-04-13 17:11:37.182 [info] > git rev-parse --git-dir --git-common-dir [4ms]
+2025-04-13 17:11:37.182 [info] [Model][openRepository] Opened repository: /home/apoorvtripathi537
+2025-04-13 17:11:37.505 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [92ms]
+2025-04-13 17:11:40.067 [info] > git check-ignore -v -z --stdin [90ms]
+2025-04-13 17:11:40.094 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [72ms]
+2025-04-13 17:11:40.419 [info] > git status -z -uall [417ms]
+2025-04-13 17:11:40.419 [info] > git rev-parse --show-toplevel [286ms]
+2025-04-13 17:11:40.469 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [35ms]
+2025-04-13 17:11:40.509 [info] > git rev-parse --show-toplevel [43ms]
+2025-04-13 17:11:40.586 [info] > git config --local branch.master.vscode-merge-base [106ms]
+2025-04-13 17:11:40.587 [warning] [Git][config] git config failed: Failed to execute git
+2025-04-13 17:11:40.632 [info] > git reflog master --grep-reflog=branch: Created from *. [37ms]
+2025-04-13 17:11:40.643 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [21ms]
+2025-04-13 17:11:40.643 [info] > git rev-parse --show-toplevel [31ms]
+2025-04-13 17:11:40.655 [info] > git symbolic-ref --short refs/remotes/origin/HEAD [14ms]
+2025-04-13 17:11:40.655 [info] fatal: ref refs/remotes/origin/HEAD is not a symbolic ref
+2025-04-13 17:11:40.655 [warning] [Repository][getDefaultBranch] Failed to get default branch details: Failed to execute git.
+2025-04-13 17:11:40.674 [info] > git rev-parse --show-toplevel [20ms]
+2025-04-13 17:11:40.737 [info] > git merge-base refs/heads/master refs/remotes/origin/master [73ms]
+2025-04-13 17:11:40.791 [info] > git rev-parse --show-toplevel [57ms]
+2025-04-13 17:11:40.803 [info] > git diff --name-status -z --diff-filter=ADMR a43e7d2182e1549bd784e0f494f278f5045ffda2...refs/remotes/origin/master [55ms]
+2025-04-13 17:11:40.821 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [36ms]
+2025-04-13 17:11:40.824 [info] > git rev-parse --show-toplevel [6ms]
+2025-04-13 17:11:40.931 [info] > git status -z -uall [174ms]
+2025-04-13 17:11:40.932 [info] > git rev-parse --show-toplevel [14ms]
+2025-04-13 17:11:40.958 [info] > git rev-parse --show-toplevel [17ms]
+2025-04-13 17:11:40.986 [info] > git rev-parse --show-toplevel [16ms]
+2025-04-13 17:11:41.043 [info] > git rev-parse --show-toplevel [37ms]
+2025-04-13 17:11:41.076 [info] > git rev-parse --show-toplevel [18ms]
+2025-04-13 17:11:41.104 [info] > git rev-parse --show-toplevel [14ms]
+2025-04-13 17:11:41.121 [info] > git rev-parse --show-toplevel [3ms]
+2025-04-13 17:11:41.138 [info] > git rev-parse --show-toplevel [3ms]
+2025-04-13 17:11:41.138 [info] [Model][doInitialScan] Initial repository scan completed - repositories (1), closed repositories (0), parent repositories (0), unsafe repositories (0)
+2025-04-13 17:11:42.349 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [18ms]
+2025-04-13 17:11:42.450 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [21ms]
+2025-04-13 17:11:42.595 [info] > git status -z -uall [209ms]
+2025-04-13 17:11:47.627 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [6ms]
+2025-04-13 17:11:47.688 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [4ms]
+2025-04-13 17:11:47.784 [info] > git status -z -uall [135ms]
+2025-04-13 17:11:52.805 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [3ms]
+2025-04-13 17:11:52.852 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [15ms]
+2025-04-13 17:11:52.938 [info] > git status -z -uall [121ms]
+2025-04-13 17:12:10.172 [info] > git check-ignore -v -z --stdin [13ms]
+2025-04-13 17:12:24.643 [info] > git log --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%D%n%B -z --shortstat --diff-merges=first-parent -n50 --skip=0 --topo-order --decorate=full --stdin [15005ms]
+2025-04-13 17:12:24.643 [info] warning: exhaustive rename detection was skipped due to too many files.
+warning: you may want to set your diff.renameLimit variable to at least 14664 and retry the command.
+2025-04-13 17:12:33.431 [info] > git check-ignore -v -z --stdin [15ms]
+2025-04-13 17:12:41.216 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [9ms]
+2025-04-13 17:12:41.264 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [13ms]
+2025-04-13 17:12:41.341 [info] > git status -z -uall [115ms]
+2025-04-13 17:13:34.679 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [2ms]
+2025-04-13 17:13:34.703 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [7ms]
+2025-04-13 17:13:34.801 [info] > git status -z -uall [114ms]
+2025-04-13 17:13:39.818 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [3ms]
+2025-04-13 17:13:39.846 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [7ms]
+2025-04-13 17:13:39.938 [info] > git status -z -uall [111ms]
+2025-04-13 17:14:25.323 [info] > git show -s --decorate=full --shortstat --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%D%n%B -z MERGE_HEAD [13ms]
+2025-04-13 17:14:26.475 [info] > git show -s --decorate=full --shortstat --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%D%n%B -z MERGE_HEAD [14ms]
+2025-04-13 17:14:26.764 [info] > git diff --name-status -z --diff-filter=ADMR MERGE_HEAD...HEAD [1280ms]
+2025-04-13 17:14:26.764 [info] warning: exhaustive rename detection was skipped due to too many files.
+warning: you may want to set your diff.renameLimit variable to at least 14703 and retry the command.
+2025-04-13 17:14:28.386 [info] > git diff --name-status -z --diff-filter=ADMR MERGE_HEAD...HEAD [1817ms]
+2025-04-13 17:14:28.386 [info] warning: exhaustive rename detection was skipped due to too many files.
+warning: you may want to set your diff.renameLimit variable to at least 14703 and retry the command.
+2025-04-13 17:14:28.783 [info] > git show -s --decorate=full --shortstat --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%D%n%B -z MERGE_HEAD [15ms]
+2025-04-13 17:14:29.284 [info] > git show -s --decorate=full --shortstat --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%D%n%B -z MERGE_HEAD [21ms]
+2025-04-13 17:14:29.478 [info] > git show -s --decorate=full --shortstat --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%D%n%B -z MERGE_HEAD [31ms]
+2025-04-13 17:14:29.710 [info] > git show -s --decorate=full --shortstat --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%D%n%B -z MERGE_HEAD [30ms]
+2025-04-13 17:14:33.461 [info] > git diff --name-status -z --diff-filter=ADMR MERGE_HEAD...HEAD [4301ms]
+2025-04-13 17:14:33.461 [info] warning: exhaustive rename detection was skipped due to too many files.
+warning: you may want to set your diff.renameLimit variable to at least 14703 and retry the command.
+2025-04-13 17:14:34.122 [info] > git diff --name-status -z --diff-filter=ADMR MERGE_HEAD...HEAD [4401ms]
+2025-04-13 17:14:34.122 [info] warning: exhaustive rename detection was skipped due to too many files.
+warning: you may want to set your diff.renameLimit variable to at least 14703 and retry the command.
+2025-04-13 17:14:34.324 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [16ms]
+2025-04-13 17:14:34.657 [info] > git diff --name-status -z --diff-filter=ADMR MERGE_HEAD...HEAD [5110ms]
+2025-04-13 17:14:34.657 [info] warning: exhaustive rename detection was skipped due to too many files.
+warning: you may want to set your diff.renameLimit variable to at least 14703 and retry the command.
+2025-04-13 17:14:35.108 [info] > git status -z -uall [754ms]
+2025-04-13 17:14:35.124 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [749ms]
+2025-04-13 17:14:35.674 [info] > git diff --name-status -z --diff-filter=ADMR MERGE_HEAD...HEAD [5727ms]
+2025-04-13 17:14:35.674 [info] warning: exhaustive rename detection was skipped due to too many files.
+warning: you may want to set your diff.renameLimit variable to at least 14703 and retry the command.
+2025-04-13 17:14:37.370 [info] > git show -s --decorate=full --shortstat --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%D%n%B -z HEAD [12067ms]
+2025-04-13 17:14:39.981 [info] > git show -s --decorate=full --shortstat --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%D%n%B -z HEAD [13532ms]
+2025-04-13 17:14:42.727 [info] > git show -s --decorate=full --shortstat --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%D%n%B -z HEAD [13971ms]
+2025-04-13 17:14:43.086 [info] > git show -s --decorate=full --shortstat --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%D%n%B -z HEAD [13840ms]
+2025-04-13 17:14:43.813 [info] > git show -s --decorate=full --shortstat --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%D%n%B -z HEAD [14395ms]
+2025-04-13 17:14:44.195 [info] > git show -s --decorate=full --shortstat --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%D%n%B -z HEAD [14547ms]

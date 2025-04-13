@@ -58,3 +58,4 @@
 2025-04-13 17:04:13.108 [info] > git check-ignore -v -z --stdin [5ms]
 2025-04-13 17:05:54.091 [info] > git ls-files --stage -- /home/apoorvtripathi537/.gitignore [4ms]
 2025-04-13 17:05:54.130 [info] > git show --textconv :.gitignore [4ms]
+2025-04-13 17:06:02.505 [info] > git check-ignore -v -z --stdin [5ms]

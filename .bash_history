@@ -254,3 +254,12 @@ clear
 git init
 git remote add https://github.com/apoorvtripathi1999/bookai.git
 git remote add master https://github.com/apoorvtripathi1999/bookai.git
+git add .
+git commit -m "initial commit"
+git push origin master
+git pull
+git push origin master
+git repo
+grep
+git branch -a
+git remote -v

@@ -159,14 +159,6 @@ def upload_file():
             flash('Your questions were answered!', 'success')
             print(text)
 
-
-            response_from_llm = sample_synthesize_speech(text)
-
-            with open(file_path + '.wav', 'wb') as f:
-                f.write(response_from_llm)
-
-    return redirect('/')
-
 @app.route('/upload/<filename>')
 def get_file(filename):
     file_path = os.path.join(app.config['UPLOAD_FOLDER'], filename)
