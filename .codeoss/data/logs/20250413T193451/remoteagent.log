@@ -7,3 +7,7 @@
 2025-04-13 19:34:55.027 [info] [127.0.0.1][384c8c2f][ExtensionHostConnection] New connection established.
 2025-04-13 19:34:55.028 [info] [127.0.0.1][531a632f][ManagementConnection] New connection established.
 2025-04-13 19:34:55.952 [info] [127.0.0.1][384c8c2f][ExtensionHostConnection] <1232> Launched Extension Host Process.
+2025-04-13 19:41:46.775 [info] [127.0.0.1][531a632f][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+2025-04-13 20:24:15.725 [info] [127.0.0.1][b722a147][ExtensionHostConnection] New connection established.
+2025-04-13 20:24:15.725 [info] [127.0.0.1][b8c52c20][ManagementConnection] New connection established.
+2025-04-13 20:24:15.730 [info] [127.0.0.1][b722a147][ExtensionHostConnection] <3044> Launched Extension Host Process.

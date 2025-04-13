@@ -1,0 +1,161 @@
+2025-04-13 20:24:20.218 [warning] Dir "/home/apoorvtripathi537/.pixi/envs" is not watchable (directory does not exist)
+2025-04-13 20:24:20.218 [info] Python interpreter path: ./venv-translate/bin/python
+2025-04-13 20:24:20.475 [info] > pyenv which python
+2025-04-13 20:24:20.475 [info] cwd: .
+2025-04-13 20:24:25.560 [info] Starting Jedi language server for apoorvtripathi537.
+2025-04-13 20:25:07.319 [info] Running installed packages checker:  {
+  id: '/home/apoorvtripathi537/venv-translate/bin/python',
+  sysPrefix: '/home/apoorvtripathi537/venv-translate',
+  envType: 'Venv',
+  envName: 'venv-translate',
+  envPath: '/home/apoorvtripathi537/venv-translate',
+  path: '/home/apoorvtripathi537/venv-translate/bin/python',
+  architecture: 3,
+  sysVersion: '3.12.3 (main, Jan 17 2025, 18:03:48) [GCC 13.3.0]',
+  version: {
+    raw: '3.12.3',
+    major: 3,
+    minor: 12,
+    patch: 3,
+    build: [],
+    prerelease: [ 'final', '0' ]
+  },
+  displayName: "Python 3.12.3 ('venv-translate')",
+  detailedDisplayName: "Python 3.12.3 ('venv-translate': venv)",
+  type: 'Virtual'
+} /google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/installed_check.py /home/apoorvtripathi537/requirements.txt
+2025-04-13 20:25:07.319 [info] > ./venv-translate/bin/python /google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/installed_check.py ./requirements.txt
+2025-04-13 20:27:15.917 [info] Running installed packages checker:  {
+  id: '/home/apoorvtripathi537/venv-translate/bin/python',
+  sysPrefix: '/home/apoorvtripathi537/venv-translate',
+  envType: 'Venv',
+  envName: 'venv-translate',
+  envPath: '/home/apoorvtripathi537/venv-translate',
+  path: '/home/apoorvtripathi537/venv-translate/bin/python',
+  architecture: 3,
+  sysVersion: '3.12.3 (main, Jan 17 2025, 18:03:48) [GCC 13.3.0]',
+  version: {
+    raw: '3.12.3',
+    major: 3,
+    minor: 12,
+    patch: 3,
+    build: [],
+    prerelease: [ 'final', '0' ]
+  },
+  displayName: "Python 3.12.3 ('venv-translate')",
+  detailedDisplayName: "Python 3.12.3 ('venv-translate': venv)",
+  type: 'Virtual'
+} /google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/installed_check.py /home/apoorvtripathi537/requirements.txt
+2025-04-13 20:27:15.917 [info] > ./venv-translate/bin/python /google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/installed_check.py ./requirements.txt
+2025-04-13 20:27:22.211 [info] Running installed packages checker:  {
+  id: '/home/apoorvtripathi537/venv-translate/bin/python',
+  sysPrefix: '/home/apoorvtripathi537/venv-translate',
+  envType: 'Venv',
+  envName: 'venv-translate',
+  envPath: '/home/apoorvtripathi537/venv-translate',
+  path: '/home/apoorvtripathi537/venv-translate/bin/python',
+  architecture: 3,
+  sysVersion: '3.12.3 (main, Jan 17 2025, 18:03:48) [GCC 13.3.0]',
+  version: {
+    raw: '3.12.3',
+    major: 3,
+    minor: 12,
+    patch: 3,
+    build: [],
+    prerelease: [ 'final', '0' ]
+  },
+  displayName: "Python 3.12.3 ('venv-translate')",
+  detailedDisplayName: "Python 3.12.3 ('venv-translate': venv)",
+  type: 'Virtual'
+} /google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/installed_check.py /home/apoorvtripathi537/requirements.txt
+2025-04-13 20:27:22.211 [info] > ./venv-translate/bin/python /google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/installed_check.py ./requirements.txt
+2025-04-13 20:27:24.462 [info] Running installed packages checker:  {
+  id: '/home/apoorvtripathi537/venv-translate/bin/python',
+  sysPrefix: '/home/apoorvtripathi537/venv-translate',
+  envType: 'Venv',
+  envName: 'venv-translate',
+  envPath: '/home/apoorvtripathi537/venv-translate',
+  path: '/home/apoorvtripathi537/venv-translate/bin/python',
+  architecture: 3,
+  sysVersion: '3.12.3 (main, Jan 17 2025, 18:03:48) [GCC 13.3.0]',
+  version: {
+    raw: '3.12.3',
+    major: 3,
+    minor: 12,
+    patch: 3,
+    build: [],
+    prerelease: [ 'final', '0' ]
+  },
+  displayName: "Python 3.12.3 ('venv-translate')",
+  detailedDisplayName: "Python 3.12.3 ('venv-translate': venv)",
+  type: 'Virtual'
+} /google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/installed_check.py /home/apoorvtripathi537/requirements.txt
+2025-04-13 20:27:24.462 [info] > ./venv-translate/bin/python /google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/installed_check.py ./requirements.txt
+2025-04-13 20:27:25.154 [info] Running installed packages checker:  {
+  id: '/home/apoorvtripathi537/venv-translate/bin/python',
+  sysPrefix: '/home/apoorvtripathi537/venv-translate',
+  envType: 'Venv',
+  envName: 'venv-translate',
+  envPath: '/home/apoorvtripathi537/venv-translate',
+  path: '/home/apoorvtripathi537/venv-translate/bin/python',
+  architecture: 3,
+  sysVersion: '3.12.3 (main, Jan 17 2025, 18:03:48) [GCC 13.3.0]',
+  version: {
+    raw: '3.12.3',
+    major: 3,
+    minor: 12,
+    patch: 3,
+    build: [],
+    prerelease: [ 'final', '0' ]
+  },
+  displayName: "Python 3.12.3 ('venv-translate')",
+  detailedDisplayName: "Python 3.12.3 ('venv-translate': venv)",
+  type: 'Virtual'
+} /google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/installed_check.py /home/apoorvtripathi537/requirements.txt
+2025-04-13 20:27:25.155 [info] > ./venv-translate/bin/python /google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/installed_check.py ./requirements.txt
+2025-04-13 20:27:25.763 [info] Running installed packages checker:  {
+  id: '/home/apoorvtripathi537/venv-translate/bin/python',
+  sysPrefix: '/home/apoorvtripathi537/venv-translate',
+  envType: 'Venv',
+  envName: 'venv-translate',
+  envPath: '/home/apoorvtripathi537/venv-translate',
+  path: '/home/apoorvtripathi537/venv-translate/bin/python',
+  architecture: 3,
+  sysVersion: '3.12.3 (main, Jan 17 2025, 18:03:48) [GCC 13.3.0]',
+  version: {
+    raw: '3.12.3',
+    major: 3,
+    minor: 12,
+    patch: 3,
+    build: [],
+    prerelease: [ 'final', '0' ]
+  },
+  displayName: "Python 3.12.3 ('venv-translate')",
+  detailedDisplayName: "Python 3.12.3 ('venv-translate': venv)",
+  type: 'Virtual'
+} /google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/installed_check.py /home/apoorvtripathi537/requirements.txt
+2025-04-13 20:27:25.763 [info] > ./venv-translate/bin/python /google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/installed_check.py ./requirements.txt
+2025-04-13 20:27:26.304 [info] Running installed packages checker:  {
+  id: '/home/apoorvtripathi537/venv-translate/bin/python',
+  sysPrefix: '/home/apoorvtripathi537/venv-translate',
+  envType: 'Venv',
+  envName: 'venv-translate',
+  envPath: '/home/apoorvtripathi537/venv-translate',
+  path: '/home/apoorvtripathi537/venv-translate/bin/python',
+  architecture: 3,
+  sysVersion: '3.12.3 (main, Jan 17 2025, 18:03:48) [GCC 13.3.0]',
+  version: {
+    raw: '3.12.3',
+    major: 3,
+    minor: 12,
+    patch: 3,
+    build: [],
+    prerelease: [ 'final', '0' ]
+  },
+  displayName: "Python 3.12.3 ('venv-translate')",
+  detailedDisplayName: "Python 3.12.3 ('venv-translate': venv)",
+  type: 'Virtual'
+} /google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/installed_check.py /home/apoorvtripathi537/requirements.txt
+2025-04-13 20:27:26.304 [info] > ./venv-translate/bin/python /google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/installed_check.py ./requirements.txt
+2025-04-13 20:27:29.194 [info] Discover tests for workspace name: apoorvtripathi537 - uri: /home/apoorvtripathi537/main.py
+2025-04-13 20:27:29.672 [info] Discover tests for workspace name: apoorvtripathi537 - uri: /home/apoorvtripathi537/main.py

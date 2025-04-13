@@ -263,3 +263,9 @@ git repo
 grep
 git branch -a
 git remote -v
+git add .
+git commit -m "master commit"
+git push master
+pdfplumber.__version__
+pip list
+clear
