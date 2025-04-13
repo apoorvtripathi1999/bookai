@@ -269,3 +269,6 @@ git push master
 pdfplumber.__version__
 pip list
 clear
+git add .
+git commit -m "fixed deployment issues"
+git push master
